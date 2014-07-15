@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+
+@import "foundation/settings";
+@import "foundation/components/offcanvas";
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSansLt";
+    src: url(../fonts/opensans-light-webfont.woff);
+}
+
+
+@font-face {
+    font-family: "OpenSansLtCn";
+    src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
+
+
+
+body {
+	font-family:"OpenSansLt";
+	
+}
+
+.nothing {
+	color:red;
+}
