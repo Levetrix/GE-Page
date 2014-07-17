@@ -1183,81 +1183,102 @@ ul.off-canvas-list li a:hover {
   src: url(../fonts/OpenSans-CondLight.ttf);
 }
 
-/* line 32, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 36, ../sass/main.scss */
 body {
   font-family: "OpenSansLt";
 }
 
-/* line 37, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 div {
   padding: 0;
   margin: 0;
   border: 0px;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
+.coursesArea2 {
+  width: 100%;
+  height: 1428px;
+}
+
+/* line 57, ../sass/main.scss */
 .coursesArea {
-  border: 3px solid #dfb655;
-  height: 702px;
+  height: 714px;
   width: 100%;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .vertHalf {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
+.vertFull {
+  min-height: 100%;
+  height: 100%;
+  min-width: 100%;
+}
+
+/* line 74, ../sass/main.scss */
 .leftHalf {
   min-height: 100%;
   height: 100%;
-  min-width: 49.5%;
-  max-width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  min-width: calc(100% - 577.6px);
+  max-width: calc(100% - 577.6px);
+  color: #f9f9f9;
+  background-color: #2a1f26;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .tier1 {
   font-size: 1.5em;
   margin: 0;
   padding: 0;
-  padding-left: .5em;
+  padding-left: 1.15em;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .listi {
   display: block;
-  line-height: 1.6em;
-  margin-bottom: .5em;
+  line-height: 1.5em;
+  margin-bottom: .601em;
 }
 
-/* line 84, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
   font-weight: 200;
   font-size: .8em;
-  width: 0.8em;
+  width: 1em;
   float: left;
+  margin-bottom: .1em;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
-  min-width: 49.5%;
-  max-width: 50%;
+  min-width: 577.6px;
+  max-width: 577.6px;
   display: inline-block;
   background-color: rgba(100, 60, 60, 0.5);
 }
 
-/* line 102, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .tier2 {
-  min-width: 49.5%;
+  min-width: 50%;
   max-width: 50%;
   min-height: 100%;
   height: 100%;
@@ -1265,16 +1286,16 @@ div {
   background-color: #2a1f26;
 }
 
-/* line 111, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .tier2Info {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
   max-width: 100%;
-  background-color: #872633;
+  background-color: #3c5346;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .tier2Img {
   min-height: 50%;
   height: 50%;
@@ -1283,9 +1304,9 @@ div {
   background-color: #dfb655;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .tier3 {
-  min-width: 49.5%;
+  min-width: 50%;
   max-width: 50%;
   min-height: 100%;
   height: 100%;
@@ -1293,7 +1314,7 @@ div {
   background-color: #272328;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .tier3Info {
   min-height: 50%;
   height: 50%;
@@ -1302,11 +1323,11 @@ div {
   background-color: #872633;
 }
 
-/* line 144, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 .tier3Img {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
   max-width: 100%;
-  background-color: #dfb655;
+  background-color: #272328;
 }
