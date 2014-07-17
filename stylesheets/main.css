@@ -1198,7 +1198,7 @@ div {
 /* line 48, ../sass/main.scss */
 .coursesArea {
   border: 3px solid #dfb655;
-  height: 688px;
+  height: 702px;
   width: 100%;
 }
 
@@ -1215,26 +1215,27 @@ div {
   height: 100%;
   min-width: 49.5%;
   max-width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
+  vertical-align: top;
 }
 
-/* line 69, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 .tier1 {
   font-size: 1.5em;
-  background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0;
   padding-left: .5em;
 }
 
-/* line 77, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .listi {
   display: block;
   line-height: 1.6em;
   margin-bottom: .5em;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
@@ -1244,7 +1245,7 @@ div {
   float: left;
 }
 
-/* line 92, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
@@ -1254,7 +1255,7 @@ div {
   background-color: rgba(100, 60, 60, 0.5);
 }
 
-/* line 101, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .tier2 {
   min-width: 49.5%;
   max-width: 50%;
@@ -1264,7 +1265,7 @@ div {
   background-color: #2a1f26;
 }
 
-/* line 110, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .tier2Info {
   min-height: 50%;
   height: 50%;
@@ -1273,7 +1274,7 @@ div {
   background-color: #872633;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .tier2Img {
   min-height: 50%;
   height: 50%;
@@ -1282,7 +1283,7 @@ div {
   background-color: #dfb655;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .tier3 {
   min-width: 49.5%;
   max-width: 50%;
@@ -1292,7 +1293,7 @@ div {
   background-color: #272328;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .tier3Info {
   min-height: 50%;
   height: 50%;
@@ -1301,7 +1302,7 @@ div {
   background-color: #872633;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .tier3Img {
   min-height: 50%;
   height: 50%;
