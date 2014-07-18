@@ -55,7 +55,7 @@ div {
 }
 
 .coursesArea {
-	height:714px;
+	height:700px;
 	width:100%
 }
 
@@ -74,8 +74,8 @@ div {
 .leftHalf {
 	min-height:100%;
 	height:100%;
-	min-width:calc(100% - 577.6px);
-	max-width:calc(100% - 577.6px);
+	min-width:50%;
+	max-width:50%;
 	color: $white;
 	background-color:$purple;
     display:inline-block;
@@ -84,16 +84,17 @@ div {
 }
 
 .tier1 {
-    font-size:1.5em;
+    font-size:1.07em;
     margin:0;
     padding:0;
-    padding-left:1.15em;
+    padding-left:.4em;
 }
 
 .listi {
 	display:block;
 	line-height:1.5em;
-	margin-bottom:.601em;
+	margin-bottom:.5em;
+	margin-right:11px;
 }
 
 .listi:before {
@@ -109,13 +110,27 @@ div {
 .rightHalf {
 	min-height:100%;
 	height:100%;
-	min-width:577.6px;
-	max-width:577.6px;
+	min-width:50%;
+	max-width:50%;
 	display:inline-block;
 	background-color:rgba(100,60,60,.5);
 }
 
+.mobi {
+	min-height:50%;
+	max-height:50%;
+}
+
+.mobiTop {
+	background-color: $red;
+}
+
+.mobiBottom {
+	background-color: $green;
+}
+
 .tier2 {
+	display:none;
 	min-width:50%;
     max-width:50%;
 	min-height:100%;
@@ -141,6 +156,7 @@ div {
 }
 
 .tier3 {
+	display:none;
     min-width:50%;
     max-width:50%;
     min-height:100%;
@@ -171,8 +187,185 @@ div {
 
 
 
+@media (min-width:408px) {
+	.coursesArea {
+	   height:540px;
+	}
+}
 
+@media (min-width:665px) {
+	.rightHalf {
+	    min-height:100%;
+	    height:100%;
+	    min-width:435px;
+	    max-width:435px;
+	    display:inline-block;
+	    background-color:rgba(100,60,60,.5);
+    }
+	
+	.leftHalf {
+	    min-height:100%;
+	    height:100%;
+	    min-width:calc(100% - 435px);
+	    max-width:calc(100% - 435px);
+	    color: $white;
+	    background-color:$purple;
+	    display:inline-block;
+	    vertical-align:top;
+    
+    }
+	
+	.mobi {
+	   display:none;
+	}
+	
+	.coursesArea {
+       height:595px;
+    }
+    
+    .tier2 {
+        display:inline-block;
+    }
+    
+    
+    .tier3 {
+        display:inline-block;
+    }
 
+	.tier1 {
+        font-size:1.1em;
+        margin:0;
+        padding:0;
+        padding-left:1.05em;
+    }
+
+    .listi {
+        display:block;
+        line-height:1.5em;
+        margin-bottom:.601em;
+        margin-right:11px;
+    }
+
+    .listi:before {
+        content: "\003E \020";
+        font-family:"consolas";
+        font-weight:200;
+        font-size: .8em;
+        width: 1em;
+        float:left;
+        margin-bottom:.1em;
+    }
+    	
+}
+	
+
+@media (min-width:716px) {
+    .coursesArea {
+        height:645px;
+    }	
+    
+    .tier1 {
+	    font-size:1.3em;
+	    margin:0;
+	    padding:0;
+	    padding-left:1em;
+	}
+
+    .listi {
+	    display:block;
+	    line-height:1.5em;
+	    margin-bottom:.5em;
+	    margin-right:11px;
+	}
+
+    .listi:before {
+	   content: "\003E \020";
+	   font-family:"consolas";
+	   font-weight:200;
+	   font-size: .8em;
+	   width: 1em;
+	   float:left;
+	   margin-bottom:.1em;
+	}
+}
+
+@media (min-width:870px) {
+	.coursesArea {
+	   height:585px;
+	}
+	
+}
+
+@media (min-width:940px) {
+	.coursesArea {
+	   height:775px;
+	}
+	
+	.leftHalf {
+	    min-height:100%;
+	    height:100%;
+	    min-width:calc(100% - 577.6px);
+	    max-width:calc(100% - 577.6px);
+	    color: $white;
+	    background-color:$purple;
+	    display:inline-block;
+	    vertical-align:top; 
+    }
+	
+	
+	.tier1 {
+	    font-size:1.5em;
+	    margin:0;
+	    padding:0;
+	    padding-left:1.15em;
+	}
+
+    .listi {
+	    display:block;
+	    line-height:1.5em;
+	    margin-bottom:.601em;
+	    margin-right:11px;
+	}
+
+    .listi:before {
+		content: "\003E \020";
+		font-family:"consolas";
+		font-weight:200;
+		font-size: .8em;
+		width: 1em;
+		float:left;
+		margin-bottom:.1em;
+	}
+	
+	.rightHalf {
+	    min-height:100%;
+	    height:100%;
+	    min-width:577.6px;
+	    max-width:577.6px;
+	    display:inline-block;
+	    background-color:rgba(100,60,60,.5);
+	}
+	
+}
+
+@media (min-width:978px) {
+	.coursesArea {
+	   height:740px;
+	}
+}
+
+@media (min-width:1073px) {
+	.coursesArea {
+	   height:708px;
+	}
+	
+	.rightHalf {
+		min-width:577.6px;
+		max-width:577.6px;
+	}
+	
+	
+}
 
 
 

@@ -1210,7 +1210,7 @@ div {
 
 /* line 57, ../sass/main.scss */
 .coursesArea {
-  height: 714px;
+  height: 700px;
   width: 100%;
 }
 
@@ -1232,8 +1232,8 @@ div {
 .leftHalf {
   min-height: 100%;
   height: 100%;
-  min-width: calc(100% - 577.6px);
-  max-width: calc(100% - 577.6px);
+  min-width: 50%;
+  max-width: 50%;
   color: #f9f9f9;
   background-color: #2a1f26;
   display: inline-block;
@@ -1242,20 +1242,21 @@ div {
 
 /* line 86, ../sass/main.scss */
 .tier1 {
-  font-size: 1.5em;
+  font-size: 1.07em;
   margin: 0;
   padding: 0;
-  padding-left: 1.15em;
+  padding-left: .4em;
 }
 
 /* line 93, ../sass/main.scss */
 .listi {
   display: block;
   line-height: 1.5em;
-  margin-bottom: .601em;
+  margin-bottom: .5em;
+  margin-right: 11px;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
@@ -1266,18 +1267,35 @@ div {
   margin-bottom: .1em;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
-  min-width: 577.6px;
-  max-width: 577.6px;
+  min-width: 50%;
+  max-width: 50%;
   display: inline-block;
   background-color: rgba(100, 60, 60, 0.5);
 }
 
-/* line 118, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
+.mobi {
+  min-height: 50%;
+  max-height: 50%;
+}
+
+/* line 124, ../sass/main.scss */
+.mobiTop {
+  background-color: #872633;
+}
+
+/* line 128, ../sass/main.scss */
+.mobiBottom {
+  background-color: #3c5346;
+}
+
+/* line 132, ../sass/main.scss */
 .tier2 {
+  display: none;
   min-width: 50%;
   max-width: 50%;
   min-height: 100%;
@@ -1286,7 +1304,7 @@ div {
   background-color: #2a1f26;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .tier2Info {
   min-height: 50%;
   height: 50%;
@@ -1295,7 +1313,7 @@ div {
   background-color: #3c5346;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .tier2Img {
   min-height: 50%;
   height: 50%;
@@ -1304,8 +1322,9 @@ div {
   background-color: #dfb655;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .tier3 {
+  display: none;
   min-width: 50%;
   max-width: 50%;
   min-height: 100%;
@@ -1314,7 +1333,7 @@ div {
   background-color: #272328;
 }
 
-/* line 152, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .tier3Info {
   min-height: 50%;
   height: 50%;
@@ -1323,11 +1342,200 @@ div {
   background-color: #872633;
 }
 
-/* line 160, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .tier3Img {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
   max-width: 100%;
   background-color: #272328;
+}
+
+@media (min-width: 408px) {
+  /* line 191, ../sass/main.scss */
+  .coursesArea {
+    height: 540px;
+  }
+}
+@media (min-width: 665px) {
+  /* line 197, ../sass/main.scss */
+  .rightHalf {
+    min-height: 100%;
+    height: 100%;
+    min-width: 435px;
+    max-width: 435px;
+    display: inline-block;
+    background-color: rgba(100, 60, 60, 0.5);
+  }
+
+  /* line 206, ../sass/main.scss */
+  .leftHalf {
+    min-height: 100%;
+    height: 100%;
+    min-width: calc(100% - 435px);
+    max-width: calc(100% - 435px);
+    color: #f9f9f9;
+    background-color: #2a1f26;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* line 218, ../sass/main.scss */
+  .mobi {
+    display: none;
+  }
+
+  /* line 222, ../sass/main.scss */
+  .coursesArea {
+    height: 595px;
+  }
+
+  /* line 226, ../sass/main.scss */
+  .tier2 {
+    display: inline-block;
+  }
+
+  /* line 231, ../sass/main.scss */
+  .tier3 {
+    display: inline-block;
+  }
+
+  /* line 235, ../sass/main.scss */
+  .tier1 {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    padding-left: 1.05em;
+  }
+
+  /* line 242, ../sass/main.scss */
+  .listi {
+    display: block;
+    line-height: 1.5em;
+    margin-bottom: .601em;
+    margin-right: 11px;
+  }
+
+  /* line 249, ../sass/main.scss */
+  .listi:before {
+    content: "\003E \020";
+    font-family: "consolas";
+    font-weight: 200;
+    font-size: .8em;
+    width: 1em;
+    float: left;
+    margin-bottom: .1em;
+  }
+}
+@media (min-width: 716px) {
+  /* line 263, ../sass/main.scss */
+  .coursesArea {
+    height: 645px;
+  }
+
+  /* line 267, ../sass/main.scss */
+  .tier1 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+  }
+
+  /* line 274, ../sass/main.scss */
+  .listi {
+    display: block;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+    margin-right: 11px;
+  }
+
+  /* line 281, ../sass/main.scss */
+  .listi:before {
+    content: "\003E \020";
+    font-family: "consolas";
+    font-weight: 200;
+    font-size: .8em;
+    width: 1em;
+    float: left;
+    margin-bottom: .1em;
+  }
+}
+@media (min-width: 870px) {
+  /* line 293, ../sass/main.scss */
+  .coursesArea {
+    height: 585px;
+  }
+}
+@media (min-width: 940px) {
+  /* line 300, ../sass/main.scss */
+  .coursesArea {
+    height: 775px;
+  }
+
+  /* line 304, ../sass/main.scss */
+  .leftHalf {
+    min-height: 100%;
+    height: 100%;
+    min-width: calc(100% - 577.6px);
+    max-width: calc(100% - 577.6px);
+    color: #f9f9f9;
+    background-color: #2a1f26;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* line 316, ../sass/main.scss */
+  .tier1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    padding-left: 1.15em;
+  }
+
+  /* line 323, ../sass/main.scss */
+  .listi {
+    display: block;
+    line-height: 1.5em;
+    margin-bottom: .601em;
+    margin-right: 11px;
+  }
+
+  /* line 330, ../sass/main.scss */
+  .listi:before {
+    content: "\003E \020";
+    font-family: "consolas";
+    font-weight: 200;
+    font-size: .8em;
+    width: 1em;
+    float: left;
+    margin-bottom: .1em;
+  }
+
+  /* line 340, ../sass/main.scss */
+  .rightHalf {
+    min-height: 100%;
+    height: 100%;
+    min-width: 577.6px;
+    max-width: 577.6px;
+    display: inline-block;
+    background-color: rgba(100, 60, 60, 0.5);
+  }
+}
+@media (min-width: 978px) {
+  /* line 352, ../sass/main.scss */
+  .coursesArea {
+    height: 740px;
+  }
+}
+@media (min-width: 1073px) {
+  /* line 358, ../sass/main.scss */
+  .coursesArea {
+    height: 708px;
+  }
+
+  /* line 362, ../sass/main.scss */
+  .rightHalf {
+    min-width: 577.6px;
+    max-width: 577.6px;
+  }
 }
