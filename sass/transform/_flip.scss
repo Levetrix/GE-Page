@@ -35,7 +35,7 @@
     /*
     	@include rotateY(-180deg); //Using rotate instead of transform prevents the back of the card from flipping on page load because transition is only targeting transform. Super sweet.
     */
-   @include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg); 
+   @include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px 
    z-index: 800;
   }
 
