@@ -12,13 +12,20 @@
     
     <script type="text/javascript"> 
     var init = function() {
-	  var T2card = document.getElementsByCLassName('T2card');
-	  
-		  document.getElementsByClassName('flip').addEventListener( 'click', function() {
-		    T2card.toggleClassName('flipped');
-		    console.log("Function ran, classname changed");
-		  }, false);
-		   };
+		  var T2card = $('.T2card'),
+		  	flippers = $('.flip');
+		  console.log("inited");
+		  for(var i=0;i<flippers.length;i++) {
+			  console.log("flipper i "+i);
+			  console.log(flippers[i]);
+			  $(flippers[i]).bind( 'click', function() {			  
+			    T2card.toggleClass('flipped');
+			    console.log("Function ran, classname changed");
+			  });
+		  }
+    };
+    $(document).ready(function(){init();});
+    
     </script>
     
     <script type="text/javascript">
