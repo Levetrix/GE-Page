@@ -10,6 +10,17 @@
     <script src="js/foundation/foundation.offcanvas.js"></script>
     
     
+    <script type="text/javascript"> 
+    var init = function() {
+	  var T2card = document.getElementsByCLassName('T2card');
+	  
+		  document.getElementsByClassName('flip').addEventListener( 'click', function() {
+		    T2card.toggleClassName('flipped');
+		    console.log("Function ran, classname changed");
+		  }, false);
+		   };
+    </script>
+    
     <script type="text/javascript">
     (function($){
         var debug = false;
@@ -135,9 +146,21 @@
                     <div class="mobi mobiBottom"></div>
                     
                     <div class="tier2">
-                    <div class="tier2Img">
+                        <div class="tier2Img flip">
+	                        <section class="container">
+							  <div class="T2card">
+							    <figure class="front">Front</figure>
+							    <figure class="back">Back</figure>
+							  </div>
+							</section>
                         </div>
-                        <div class="tier2Info">
+                        <div class="tier2Info flip">
+                            <section class="container">
+                              <div class="T2card">
+                                <figure class="front">Front</figure>
+                                <figure class="back">Back</figure>
+                              </div>
+                            </section>
                         </div>                        
                     </div><div class="tier3">
                         <div class="tier3Info">
@@ -148,6 +171,8 @@
                 </div>
             </div>
         </div>
+        
+        <div class="flip" style="background-color:red; height:100px; width:100px; content:"flip me";></div>
         
         
         
