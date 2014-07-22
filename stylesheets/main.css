@@ -1198,41 +1198,39 @@ ul.off-canvas-list li a:hover {
 }
 /* line 24, ../sass/transform/_flip.scss */
 .flip-card .card-front {
-  /*@include create-transform(false, 1, 1, 1, 0, 0deg);*/
-  /*@include transform3d(perspective($perspective) rotateY(0));*/
-  -webkit-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  -moz-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  -ms-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  -o-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  -webkit-transform: perspective(600) rotateY(0deg) translateX(0);
+  -moz-transform: perspective(600) rotateY(0deg) translateX(0);
+  -ms-transform: perspective(600) rotateY(0deg) translateX(0);
+  -o-transform: perspective(600) rotateY(0deg) translateX(0);
+  transform: perspective(600) rotateY(0deg) translateX(0);
   z-index: 900;
 }
-/* line 34, ../sass/transform/_flip.scss */
+/* line 29, ../sass/transform/_flip.scss */
 .flip-card .card-back {
+  -webkit-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  -moz-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  -ms-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  -o-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  transform: perspective(600) rotateY(-180deg) translateX(100%);
   /*
-  	@include rotateY(-180deg); //Using rotate instead of transform prevents the back of the card from flipping on page load because transition is only targeting transform. Super sweet.
+  	@include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px
   */
-  -webkit-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  -moz-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  -ms-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  -o-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
   z-index: 800;
 }
-/* line 43, ../sass/transform/_flip.scss */
+/* line 38, ../sass/transform/_flip.scss */
 .flip-card:hover .card-front, .flip-card.flip-card-now .card-front {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  -webkit-transform: perspective(600) rotateY(180deg);
-  -moz-transform: perspective(600) rotateY(180deg);
-  -ms-transform: perspective(600) rotateY(180deg);
-  -o-transform: perspective(600) rotateY(180deg);
-  transform: perspective(600) rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-/* line 47, ../sass/transform/_flip.scss */
+/* line 42, ../sass/transform/_flip.scss */
 .flip-card:hover .card-back, .flip-card.flip-card-now .card-back {
   z-index: 950;
   -webkit-transform: rotateY(0deg);
@@ -1240,15 +1238,15 @@ ul.off-canvas-list li a:hover {
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  -webkit-transform: perspective(600) rotateY(0deg);
-  -moz-transform: perspective(600) rotateY(0deg);
-  -ms-transform: perspective(600) rotateY(0deg);
-  -o-transform: perspective(600) rotateY(0deg);
-  transform: perspective(600) rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 /*** Just for show... ***/
-/* line 60, ../sass/transform/_flip.scss */
+/* line 55, ../sass/transform/_flip.scss */
 .flip-card {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -1261,20 +1259,20 @@ ul.off-canvas-list li a:hover {
   max-width: 400px;
   /*.card-back,*/
 }
-/* line 72, ../sass/transform/_flip.scss */
+/* line 67, ../sass/transform/_flip.scss */
 .flip-card .card-front,
 .flip-card .card-back {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 76, ../sass/transform/_flip.scss */
+/* line 71, ../sass/transform/_flip.scss */
 .flip-card .card-front {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 80, ../sass/transform/_flip.scss */
+/* line 75, ../sass/transform/_flip.scss */
 .flip-card .card-shadow {
   -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
   -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
@@ -1316,9 +1314,8 @@ div {
   border: 0px;
 }
 
-<<<<<<< HEAD
 /* Card Flip CSS */
-/* line 50, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .container {
   width: 200px;
   height: 260px;
@@ -1326,7 +1323,7 @@ div {
   perspective: 800px;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .T2card {
   width: 100%;
   height: 100%;
@@ -1336,7 +1333,7 @@ div {
   transform-origin: right center;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .T2card figure {
   display: block;
   position: absolute;
@@ -1345,69 +1342,50 @@ div {
   backface-visibility: hidden;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .T2card .front {
   background: red;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .T2card .back {
   background: blue;
   transform: rotateY(180deg);
 }
 
-/* line 83, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .T2card.flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
 
 /* Card Flip CSS */
-/* line 95, ../sass/main.scss */
-=======
-/* line 56, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 99, ../sass/main.scss */
 .coursesArea2 {
   width: 100%;
   height: 1428px;
 }
 
-<<<<<<< HEAD
-/* line 100, ../sass/main.scss */
-=======
-/* line 61, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 104, ../sass/main.scss */
 .coursesArea {
   height: 700px;
   width: 100%;
 }
 
-<<<<<<< HEAD
-/* line 105, ../sass/main.scss */
-=======
-/* line 66, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 109, ../sass/main.scss */
 .vertHalf {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
 }
 
-<<<<<<< HEAD
-/* line 111, ../sass/main.scss */
-=======
-/* line 72, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 115, ../sass/main.scss */
 .vertFull {
   min-height: 100%;
   height: 100%;
   min-width: 100%;
 }
 
-<<<<<<< HEAD
-/* line 117, ../sass/main.scss */
-=======
-/* line 78, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 121, ../sass/main.scss */
 .leftHalf {
   min-height: 100%;
   height: 100%;
@@ -1419,11 +1397,7 @@ div {
   vertical-align: top;
 }
 
-<<<<<<< HEAD
-/* line 129, ../sass/main.scss */
-=======
-/* line 90, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 133, ../sass/main.scss */
 .tier1 {
   font-size: 1.07em;
   margin: 0;
@@ -1431,11 +1405,7 @@ div {
   padding-left: .4em;
 }
 
-<<<<<<< HEAD
-/* line 136, ../sass/main.scss */
-=======
-/* line 97, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 140, ../sass/main.scss */
 .listi {
   display: block;
   line-height: 1.5em;
@@ -1443,11 +1413,7 @@ div {
   margin-right: 11px;
 }
 
-<<<<<<< HEAD
-/* line 143, ../sass/main.scss */
-=======
-/* line 104, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 147, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
@@ -1458,11 +1424,7 @@ div {
   margin-bottom: .1em;
 }
 
-<<<<<<< HEAD
-/* line 153, ../sass/main.scss */
-=======
-/* line 115, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 158, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
@@ -1472,10 +1434,7 @@ div {
   /*background-color:rgba(100,60,60,.5);*/
 }
 
-<<<<<<< HEAD
-/* line 162, ../sass/main.scss */
-=======
-/* line 124, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .flip-card-container {
   -webkit-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
   -moz-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
@@ -1483,40 +1442,28 @@ div {
   background-color: #ccc;
 }
 
-/* line 129, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 172, ../sass/main.scss */
 .mobi {
   min-height: 50%;
   max-height: 50%;
 }
 
-<<<<<<< HEAD
-/* line 167, ../sass/main.scss */
-=======
-/* line 134, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 177, ../sass/main.scss */
 .mobiTop {
   background-color: #872633;
 }
 
-<<<<<<< HEAD
-/* line 171, ../sass/main.scss */
-=======
-/* line 138, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 181, ../sass/main.scss */
 .mobiBottom {
   background-color: #3c5346;
 }
 
-<<<<<<< HEAD
-/* line 175, ../sass/main.scss */
-=======
-/* line 142, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .rightHalf > div > div {
   text-align: left;
 }
 
-/* line 146, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 .rightHalf > div > div > div {
   padding: 1rem;
 }
@@ -1526,8 +1473,7 @@ div {
 	display:inline-block;
 	line-height:1pem;
 }*/
-/* line 155, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 198, ../sass/main.scss */
 .tier2 {
   display: none;
   min-width: 50%;
@@ -1538,33 +1484,21 @@ div {
   /*background-color: $purple;*/
 }
 
-<<<<<<< HEAD
-/* line 185, ../sass/main.scss */
-.tier2Info {
-  min-height: 50%;
-  height: 50%;
-=======
-/* line 165, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .tier2Info, .tier2Info .card-front, .tier2Img, .tier2Img .card-front {
->>>>>>> flippythingies
   min-width: 100%;
   max-width: 100%;
 }
 
-<<<<<<< HEAD
-/* line 193, ../sass/main.scss */
-.tier2Img {
-=======
-/* line 170, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 .tier2Info .card-front, .tier2Img .card-front, .tier3Info .card-front, .tier3Img .card-front {
   min-height: 100%;
   max-height: 100%;
   height: 100%;
 }
 
-/* line 176, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 .tier2Info, .tier2Img, .tier3Info, .tier3Img {
->>>>>>> flippythingies
   min-height: 50%;
   height: 50%;
   min-width: 100%;
@@ -1572,31 +1506,27 @@ div {
   text-align: left;
 }
 
-/* line 183, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .tier2Info .card-front, .tier2Info > div {
   background-color: #3c5346;
 }
 
-/* line 186, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .tier2Img .card-front, .tier2Img > div {
   background-color: #dfb655;
 }
 
-<<<<<<< HEAD
-/* line 201, ../sass/main.scss */
-=======
-/* line 189, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 .tier3Info .card-front, .tier3Info > div {
   background-color: #872633;
 }
 
-/* line 192, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 .tier3Img .card-front, .tier3Img > div {
   background-color: #272328;
 }
 
-/* line 196, ../sass/main.scss */
->>>>>>> flippythingies
+/* line 239, ../sass/main.scss */
 .tier3 {
   display: none;
   min-width: 50%;
@@ -1604,47 +1534,17 @@ div {
   min-height: 100%;
   height: 100%;
   display: inline-block;
-<<<<<<< HEAD
-  background-color: #272328;
-}
-
-/* line 211, ../sass/main.scss */
-.tier3Info {
-  min-height: 50%;
-  height: 50%;
-  min-width: 100%;
-  max-width: 100%;
-  background-color: #872633;
-}
-
-/* line 219, ../sass/main.scss */
-.tier3Img {
-  min-height: 50%;
-  height: 50%;
-  min-width: 100%;
-  max-width: 100%;
-  background-color: #272328;
-}
-
-@media (min-width: 408px) {
-  /* line 234, ../sass/main.scss */
-=======
   /*   background-color: $black;*/
 }
 
 @media (min-width: 408px) {
-  /* line 212, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 255, ../sass/main.scss */
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 665px) {
-<<<<<<< HEAD
-  /* line 240, ../sass/main.scss */
-=======
-  /* line 218, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 261, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -1654,11 +1554,7 @@ div {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
-<<<<<<< HEAD
-  /* line 249, ../sass/main.scss */
-=======
-  /* line 227, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 270, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -1670,47 +1566,27 @@ div {
     vertical-align: top;
   }
 
-<<<<<<< HEAD
-  /* line 261, ../sass/main.scss */
-=======
-  /* line 239, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 282, ../sass/main.scss */
   .mobi {
     display: none;
   }
 
-<<<<<<< HEAD
-  /* line 265, ../sass/main.scss */
-=======
-  /* line 243, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 286, ../sass/main.scss */
   .coursesArea {
     height: 595px;
   }
 
-<<<<<<< HEAD
-  /* line 269, ../sass/main.scss */
-=======
-  /* line 247, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 290, ../sass/main.scss */
   .tier2 {
     display: inline-block;
   }
 
-<<<<<<< HEAD
-  /* line 274, ../sass/main.scss */
-=======
-  /* line 252, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 295, ../sass/main.scss */
   .tier3 {
     display: inline-block;
   }
 
-<<<<<<< HEAD
-  /* line 278, ../sass/main.scss */
-=======
-  /* line 256, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 299, ../sass/main.scss */
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -1718,11 +1594,7 @@ div {
     padding-left: 1.05em;
   }
 
-<<<<<<< HEAD
-  /* line 285, ../sass/main.scss */
-=======
-  /* line 263, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 306, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1730,11 +1602,7 @@ div {
     margin-right: 11px;
   }
 
-<<<<<<< HEAD
-  /* line 292, ../sass/main.scss */
-=======
-  /* line 270, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 313, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1745,26 +1613,18 @@ div {
     margin-bottom: .1em;
   }
 
-  /* line 280, ../sass/main.scss */
+  /* line 323, ../sass/main.scss */
   .listi a {
     color: #f9f9f9;
   }
 }
 @media (min-width: 716px) {
-<<<<<<< HEAD
-  /* line 306, ../sass/main.scss */
-=======
-  /* line 287, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 330, ../sass/main.scss */
   .coursesArea {
     height: 645px;
   }
 
-<<<<<<< HEAD
-  /* line 310, ../sass/main.scss */
-=======
-  /* line 291, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 334, ../sass/main.scss */
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -1772,11 +1632,7 @@ div {
     padding-left: 1em;
   }
 
-<<<<<<< HEAD
-  /* line 317, ../sass/main.scss */
-=======
-  /* line 298, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 341, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1784,11 +1640,7 @@ div {
     margin-right: 11px;
   }
 
-<<<<<<< HEAD
-  /* line 324, ../sass/main.scss */
-=======
-  /* line 305, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 348, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1800,30 +1652,18 @@ div {
   }
 }
 @media (min-width: 870px) {
-<<<<<<< HEAD
-  /* line 336, ../sass/main.scss */
-=======
-  /* line 317, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 360, ../sass/main.scss */
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
-<<<<<<< HEAD
-  /* line 343, ../sass/main.scss */
-=======
-  /* line 324, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 367, ../sass/main.scss */
   .coursesArea {
     height: 775px;
   }
 
-<<<<<<< HEAD
-  /* line 347, ../sass/main.scss */
-=======
-  /* line 328, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 371, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -1835,11 +1675,7 @@ div {
     vertical-align: top;
   }
 
-<<<<<<< HEAD
-  /* line 359, ../sass/main.scss */
-=======
-  /* line 340, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 383, ../sass/main.scss */
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -1847,11 +1683,7 @@ div {
     padding-left: 1.15em;
   }
 
-<<<<<<< HEAD
-  /* line 366, ../sass/main.scss */
-=======
-  /* line 347, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 390, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1859,11 +1691,7 @@ div {
     margin-right: 11px;
   }
 
-<<<<<<< HEAD
-  /* line 373, ../sass/main.scss */
-=======
-  /* line 354, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 397, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1874,11 +1702,7 @@ div {
     margin-bottom: .1em;
   }
 
-<<<<<<< HEAD
-  /* line 383, ../sass/main.scss */
-=======
-  /* line 364, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 407, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -1889,30 +1713,18 @@ div {
   }
 }
 @media (min-width: 978px) {
-<<<<<<< HEAD
-  /* line 395, ../sass/main.scss */
-=======
-  /* line 376, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 419, ../sass/main.scss */
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
-<<<<<<< HEAD
-  /* line 401, ../sass/main.scss */
-=======
-  /* line 382, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 425, ../sass/main.scss */
   .coursesArea {
     height: 708px;
   }
 
-<<<<<<< HEAD
-  /* line 405, ../sass/main.scss */
-=======
-  /* line 386, ../sass/main.scss */
->>>>>>> flippythingies
+  /* line 429, ../sass/main.scss */
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;

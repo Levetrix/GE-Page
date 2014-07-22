@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
     <meta charset="ISO-8859-1">
     <title>BYUIS GE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +8,13 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.offcanvas.js"></script>
+		<script src="js/vendor/jquery-2.1.1.js"></script>
+		<script src="js/vendor/jquery-ui-1.11.0.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.offcanvas.js"></script>
+		
+		<script src="js/flip.js"></script>
+		
     
     
     <script type="text/javascript"> 
@@ -59,49 +65,6 @@
         });
     })(jQuery);
     </script>
-=======
-		<meta charset="ISO-8859-1">
-		<title>BYUIS GE</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
-		<script src="js/vendor/jquery-2.1.1.js"></script>
-		<script src="js/vendor/jquery-ui-1.11.0.js"></script>
-		<script src="js/foundation/foundation.js"></script>
-		<script src="js/foundation/foundation.offcanvas.js"></script>
-		
-		<script src="js/flip.js"></script>
-		
-		<script type="text/javascript">
-		(function($){
-				var debug = false;
-				$(document).foundation();
-				$(document).ready(function () {
-						var closeMenuFunction = function() {
-								if($('.move-right').length > 0) {
-										$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
-										$('.maincontent').unbind("click.menumain");
-										if(debug) console.log("The menu should be closed/closing. The click handler has been removed from the .maincontent element.");
-								}
-						};
-						$('.left-small').bind("click.menu", function() {
-								if(debug) console.log("left-small clicked.");
-								//	Toggle the menu. This institutes the "current" state the user is requesting. (As in, it adds the class we're checking for later.)
-								$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
-								//	Detect the existence of .move-right on the document. If it exists, then the menu is currently open.
-								if($('.move-right').length == 0) {
-										//	The menu has been closed!
-										if(debug) console.log("The menu has been closed!");
-										$('.maincontent').unbind("click.menumain");
-								} else {
-										//	The menu is open!
-										if(debug) console.log("The menu is open!");
-										$('.maincontent').bind("click.menumain", closeMenuFunction);
-								}
-						});
-				});
-		})(jQuery);
-		</script>
->>>>>>> flippythingies
 </head>
 <body>
 
@@ -120,119 +83,7 @@
 						</section>
  
 				</nav> <!-- END NAV.TAB-BAR HIDE-FOR-LARGE-UP -->
- 
-<<<<<<< HEAD
-        <!-- OFF CANVAS MENU -->
-        <aside class="left-off-canvas-menu">
-            <ul class="off-canvas-list">
-                
-                <li><a href="https://is.byu.edu/o2/index.cfm?event=public.login&redirect=/o2/index.cfm?event=person.currentRegistrations">Login</a></li>
-                <li><a href="http://is.byu.edu/site/courses/index.cfm">Course Catalog</a></li>
-                <li><a href="http://is.byu.edu/site/courses/order.cfm">Request Catalog</a></li>
-                <!--  <li><a href="http://is.byu.edu/site/support/studentsprogress.cfm">Check Student Progress</a></li> -->
-                <li><a href="http://is.byu.edu/site/financial/rewards.cfm">Rewards Program</a></li>
-                <li><a href="http://is.byu.edu/site/programs/purchase/index.cfm">Purchase Orders</a></li>
-                <li><a href="http://is.byu.edu/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
-            </ul>
-           <!--  <ul class="off-canvas-list">
-                <li><label>Educators</label></li>
-                <!-- <li class="has-dropdown"><a href="page.html">Menu List 2</a> -->
-                    <!-- <ul class="off-canvas-list">
-                        <li><a href="http://is.byu.edu/site/support/studentsprogress.cfm">Check Student Progress</a></li>
-                        <li><a href="http://is.byu.edu/site/courses/order.cfm">Request Catalog</a></li>
-                        <li><a href="http://is.byu.edu/site/financial/rewards.cfm">Rewards Program</a></li>
-                        <li><a href="http://is.byu.edu/site/programs/purchase/index.cfm">Purchase Orders</a></li>
-                        <li><a href="http://is.byu.edu/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="off-canvas-list"> 
-                <li><label>Students</label></li> -->
-                <!-- <li class="has-dropdown"><a href="http://is.byu.edu">Menu List 1</a> -->
-                    <!-- <ul class="off-canvas-list">
-                        <li><a href="http://is.byu.edu/site/support/find-testing-center.cfm">Testing Centers</a></li>
-                        <li><a href="http://is.byu.edu/site/courses/ordertrans.cfm">Request Transcript</a></li>
-                        <li><a href="http://is.byu.edu/site/financial/scholarship.cfm">Scholarships</a></li>
-                        <li><a href="http://is.byu.edu/site/about/FAQ.cfm">FAQ</a></li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <ul class="off-canvas-list">
-                <li><label>Parents</label></li> -->
-                <!-- <li class="has-dropdown"><a href="page.html">Menu List 2</a> -->
-                    <!-- <ul class="off-canvas-list">
-                        <li><a href="http://is.byu.edu/site/about/what-is.cfm">About Us</a></li>
-                        <li><a href="http://is.byu.edu/site/programs/HighSchoolProgram.cfm">High School Programs</a></li>
-                        <li><a href="http://is.byu.edu/site/courses/tuition.cfm">Tuition</a></li>
-                    </ul>
-                </li>
-            </ul> -->
-            
-        </aside>
-        
-        <!--  Begin Main Content  -->
-        
-        <div class="section coursesArea">
-            <div class="vertFull full">
-                <div class="leftHalf">
-                    <ul class="tier1">
-                        <li class="listi">Advanced Written &amp; Oral Communication</li>
-                        <li class="listi">American Heritage</li>
-                        <li class="listi">Arts</li>
-                        <li class="listi">Biological Sciences</li>
-                        <li class="listi">Civilization 1</li>
-                        <li class="listi">Civilization 2</li>
-                        <li class="listi">First-Year Writing</li>
-                        <li class="listi">Global and Cultural Awareness</li>
-                        <li class="listi">Languages of Learning</li>
-                        <li class="listi">Letters</li>
-                        <li class="listi">Physical Science</li>
-                        <li class="listi">Quantitative Reasoning</li>
-                        <li class="listi">Religion</li>
-                        <li class="listi">Social Science</li>
-                        
-                    </ul>
-                </div><div class="rightHalf">
-                    <div class="mobi mobiTop"></div>
-                    <div class="mobi mobiBottom"></div>
-                    
-                    <div class="tier2">
-                        <div class="tier2Img flip">
-	                        <section class="container">
-							  <div class="T2card">
-							    <figure class="front">Front</figure>
-							    <figure class="back">Back</figure>
-							  </div>
-							</section>
-                        </div>
-                        <div class="tier2Info flip">
-                            <section class="container">
-                              <div class="T2card">
-                                <figure class="front">Front</figure>
-                                <figure class="back">Back</figure>
-                              </div>
-                            </section>
-                        </div>                        
-                    </div><div class="tier3">
-                        <div class="tier3Info">
-                        </div>
-                        <div class="tier3Img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="flip" style="background-color:red; height:100px; width:100px; content:"flip me";></div>
-        
-        
-        
-        
-        
-        <!--  End Main Content -->
-    </div>
-=======
+
 				<!-- OFF CANVAS MENU -->
 				<aside class="left-off-canvas-menu">
 						<ul class="off-canvas-list">
@@ -245,41 +96,6 @@
 								<li><a href="http://is.byu.edu/site/programs/purchase/index.cfm">Purchase Orders</a></li>
 								<li><a href="http://is.byu.edu/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
 						</ul>
-					 <!--	<ul class="off-canvas-list">
-								<li><label>Educators</label></li>
-								<!-- <li class="has-dropdown"><a href="page.html">Menu List 2</a> -->
-										<!-- <ul class="off-canvas-list">
-												<li><a href="http://is.byu.edu/site/support/studentsprogress.cfm">Check Student Progress</a></li>
-												<li><a href="http://is.byu.edu/site/courses/order.cfm">Request Catalog</a></li>
-												<li><a href="http://is.byu.edu/site/financial/rewards.cfm">Rewards Program</a></li>
-												<li><a href="http://is.byu.edu/site/programs/purchase/index.cfm">Purchase Orders</a></li>
-												<li><a href="http://is.byu.edu/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
-										</ul>
-								</li>
-						</ul>
-						<ul class="off-canvas-list"> 
-								<li><label>Students</label></li> -->
-								<!-- <li class="has-dropdown"><a href="http://is.byu.edu">Menu List 1</a> -->
-										<!-- <ul class="off-canvas-list">
-												<li><a href="http://is.byu.edu/site/support/find-testing-center.cfm">Testing Centers</a></li>
-												<li><a href="http://is.byu.edu/site/courses/ordertrans.cfm">Request Transcript</a></li>
-												<li><a href="http://is.byu.edu/site/financial/scholarship.cfm">Scholarships</a></li>
-												<li><a href="http://is.byu.edu/site/about/FAQ.cfm">FAQ</a></li>
-										</ul>
-								</li>
-						</ul>
-						
-						<ul class="off-canvas-list">
-								<li><label>Parents</label></li> -->
-								<!-- <li class="has-dropdown"><a href="page.html">Menu List 2</a> -->
-										<!-- <ul class="off-canvas-list">
-												<li><a href="http://is.byu.edu/site/about/what-is.cfm">About Us</a></li>
-												<li><a href="http://is.byu.edu/site/programs/HighSchoolProgram.cfm">High School Programs</a></li>
-												<li><a href="http://is.byu.edu/site/courses/tuition.cfm">Tuition</a></li>
-										</ul>
-								</li>
-						</ul> -->
-						
 				</aside>
 				
 				<!--	Begin Main Content	-->
@@ -352,7 +168,6 @@
 				
 				<!--	End Main Content -->
 		</div>
->>>>>>> flippythingies
 </div>
 </body>
 </html>

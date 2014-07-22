@@ -29,41 +29,39 @@
 }
 /* line 24, ../sass/transform/_flip.scss */
 .flip-card .card-front {
-  /*@include create-transform(false, 1, 1, 1, 0, 0deg);*/
-  /*@include transform3d(perspective($perspective) rotateY(0));*/
-  -webkit-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  -moz-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  -ms-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  -o-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
-  transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  -webkit-transform: perspective(600) rotateY(0deg) translateX(0);
+  -moz-transform: perspective(600) rotateY(0deg) translateX(0);
+  -ms-transform: perspective(600) rotateY(0deg) translateX(0);
+  -o-transform: perspective(600) rotateY(0deg) translateX(0);
+  transform: perspective(600) rotateY(0deg) translateX(0);
   z-index: 900;
 }
-/* line 34, ../sass/transform/_flip.scss */
+/* line 29, ../sass/transform/_flip.scss */
 .flip-card .card-back {
+  -webkit-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  -moz-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  -ms-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  -o-transform: perspective(600) rotateY(-180deg) translateX(100%);
+  transform: perspective(600) rotateY(-180deg) translateX(100%);
   /*
-  	@include rotateY(-180deg); //Using rotate instead of transform prevents the back of the card from flipping on page load because transition is only targeting transform. Super sweet.
+  	@include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px
   */
-  -webkit-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  -moz-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  -ms-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  -o-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
-  transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
   z-index: 800;
 }
-/* line 43, ../sass/transform/_flip.scss */
+/* line 38, ../sass/transform/_flip.scss */
 .flip-card:hover .card-front, .flip-card.flip-card-now .card-front {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  -webkit-transform: perspective(600) rotateY(180deg);
-  -moz-transform: perspective(600) rotateY(180deg);
-  -ms-transform: perspective(600) rotateY(180deg);
-  -o-transform: perspective(600) rotateY(180deg);
-  transform: perspective(600) rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-/* line 47, ../sass/transform/_flip.scss */
+/* line 42, ../sass/transform/_flip.scss */
 .flip-card:hover .card-back, .flip-card.flip-card-now .card-back {
   z-index: 950;
   -webkit-transform: rotateY(0deg);
@@ -71,15 +69,15 @@
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  -webkit-transform: perspective(600) rotateY(0deg);
-  -moz-transform: perspective(600) rotateY(0deg);
-  -ms-transform: perspective(600) rotateY(0deg);
-  -o-transform: perspective(600) rotateY(0deg);
-  transform: perspective(600) rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 /*** Just for show... ***/
-/* line 60, ../sass/transform/_flip.scss */
+/* line 55, ../sass/transform/_flip.scss */
 .flip-card {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -92,20 +90,20 @@
   max-width: 400px;
   /*.card-back,*/
 }
-/* line 72, ../sass/transform/_flip.scss */
+/* line 67, ../sass/transform/_flip.scss */
 .flip-card .card-front,
 .flip-card .card-back {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 76, ../sass/transform/_flip.scss */
+/* line 71, ../sass/transform/_flip.scss */
 .flip-card .card-front {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 80, ../sass/transform/_flip.scss */
+/* line 75, ../sass/transform/_flip.scss */
 .flip-card .card-shadow {
   -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
   -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;

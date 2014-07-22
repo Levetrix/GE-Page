@@ -22,32 +22,27 @@
   }
 
   .card-front {
-	  /*@include create-transform(false, 1, 1, 1, 0, 0deg);*/ 
-		/*@include transform3d(perspective($perspective) rotateY(0));*/
-	  @include create-transform(false, 1, 1, 1, 0, 0deg); 
+		@include transform3d(perspective($perspective) rotateY(0deg) translateX(0));
     z-index: 900;
-  }
-  .card-front {
-  	
   }
 
   .card-back {
-    /*
-    	@include rotateY(-180deg); //Using rotate instead of transform prevents the back of the card from flipping on page load because transition is only targeting transform. Super sweet.
-    */
-   @include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px 
+		@include transform3d(perspective($perspective) rotateY(-180deg) translateX(100%));
+		/*
+			@include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px
+		*/ 
    z-index: 800;
   }
 
   &:hover, &.flip-card-now {
     .card-front { 
       @include transform(rotateY(180deg)); //No 3D fallback
-      @include transform3d(perspective($perspective) rotateY(180deg)); 
+      @include transform3d(rotateY(180deg));	//	pserspective-origin(289px)); 
     }
     .card-back { 
       z-index: 950; //No transform fallback
       @include transform(rotateY(0deg)); //No 3D fallback
-      @include transform3d(perspective($perspective) rotateY(0deg)); 
+      @include transform3d(rotateY(0deg)); //	 translateX(0px) pserspective-origin(0)); 
     }
   }
 }
