@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
     <meta charset="ISO-8859-1">
     <title>BYUIS GE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,25 +59,69 @@
         });
     })(jQuery);
     </script>
+=======
+		<meta charset="ISO-8859-1">
+		<title>BYUIS GE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+		<script src="js/vendor/jquery-2.1.1.js"></script>
+		<script src="js/vendor/jquery-ui-1.11.0.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.offcanvas.js"></script>
+		
+		<script src="js/flip.js"></script>
+		
+		<script type="text/javascript">
+		(function($){
+				var debug = false;
+				$(document).foundation();
+				$(document).ready(function () {
+						var closeMenuFunction = function() {
+								if($('.move-right').length > 0) {
+										$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
+										$('.maincontent').unbind("click.menumain");
+										if(debug) console.log("The menu should be closed/closing. The click handler has been removed from the .maincontent element.");
+								}
+						};
+						$('.left-small').bind("click.menu", function() {
+								if(debug) console.log("left-small clicked.");
+								//	Toggle the menu. This institutes the "current" state the user is requesting. (As in, it adds the class we're checking for later.)
+								$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
+								//	Detect the existence of .move-right on the document. If it exists, then the menu is currently open.
+								if($('.move-right').length == 0) {
+										//	The menu has been closed!
+										if(debug) console.log("The menu has been closed!");
+										$('.maincontent').unbind("click.menumain");
+								} else {
+										//	The menu is open!
+										if(debug) console.log("The menu is open!");
+										$('.maincontent').bind("click.menumain", closeMenuFunction);
+								}
+						});
+				});
+		})(jQuery);
+		</script>
+>>>>>>> flippythingies
 </head>
 <body>
 
 <!-- OFF CANVAS SECTIONS WRAPPING THE MAIN CONTENT -->
 <div class="off-canvas-wrap">
-    <div class="inner-wrap">
+		<div class="inner-wrap">
  
-        <!-- OFF CANVAS MENU BAR -->
-        <nav class="tab-bar hide-for-large-up">
+				<!-- OFF CANVAS MENU BAR -->
+				<nav class="tab-bar hide-for-large-up">
  
-            <section class="left-small">
-                <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-            </section>
-            <section class="right tab-bar-section">
-                <h1 class="mytitle"><img src="img/logoWhite1.png" class="logo" alt="BYUIS Logo"></h1>
-            </section>
+						<section class="left-small">
+								<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+						</section>
+						<section class="right tab-bar-section">
+								<h1 class="mytitle"><img src="img/logoWhite1.png" class="logo" alt="BYUIS Logo"></h1>
+						</section>
  
-        </nav> <!-- END NAV.TAB-BAR HIDE-FOR-LARGE-UP -->
+				</nav> <!-- END NAV.TAB-BAR HIDE-FOR-LARGE-UP -->
  
+<<<<<<< HEAD
         <!-- OFF CANVAS MENU -->
         <aside class="left-off-canvas-menu">
             <ul class="off-canvas-list">
@@ -187,8 +232,127 @@
         
         <!--  End Main Content -->
     </div>
+=======
+				<!-- OFF CANVAS MENU -->
+				<aside class="left-off-canvas-menu">
+						<ul class="off-canvas-list">
+								
+								<li><a href="https://is.byu.edu/o2/index.cfm?event=public.login&redirect=/o2/index.cfm?event=person.currentRegistrations">Login</a></li>
+								<li><a href="http://is.byu.edu/site/courses/index.cfm">Course Catalog</a></li>
+								<li><a href="http://is.byu.edu/site/courses/order.cfm">Request Catalog</a></li>
+								<!--	<li><a href="http://is.byu.edu/site/support/studentsprogress.cfm">Check Student Progress</a></li> -->
+								<li><a href="http://is.byu.edu/site/financial/rewards.cfm">Rewards Program</a></li>
+								<li><a href="http://is.byu.edu/site/programs/purchase/index.cfm">Purchase Orders</a></li>
+								<li><a href="http://is.byu.edu/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
+						</ul>
+					 <!--	<ul class="off-canvas-list">
+								<li><label>Educators</label></li>
+								<!-- <li class="has-dropdown"><a href="page.html">Menu List 2</a> -->
+										<!-- <ul class="off-canvas-list">
+												<li><a href="http://is.byu.edu/site/support/studentsprogress.cfm">Check Student Progress</a></li>
+												<li><a href="http://is.byu.edu/site/courses/order.cfm">Request Catalog</a></li>
+												<li><a href="http://is.byu.edu/site/financial/rewards.cfm">Rewards Program</a></li>
+												<li><a href="http://is.byu.edu/site/programs/purchase/index.cfm">Purchase Orders</a></li>
+												<li><a href="http://is.byu.edu/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
+										</ul>
+								</li>
+						</ul>
+						<ul class="off-canvas-list"> 
+								<li><label>Students</label></li> -->
+								<!-- <li class="has-dropdown"><a href="http://is.byu.edu">Menu List 1</a> -->
+										<!-- <ul class="off-canvas-list">
+												<li><a href="http://is.byu.edu/site/support/find-testing-center.cfm">Testing Centers</a></li>
+												<li><a href="http://is.byu.edu/site/courses/ordertrans.cfm">Request Transcript</a></li>
+												<li><a href="http://is.byu.edu/site/financial/scholarship.cfm">Scholarships</a></li>
+												<li><a href="http://is.byu.edu/site/about/FAQ.cfm">FAQ</a></li>
+										</ul>
+								</li>
+						</ul>
+						
+						<ul class="off-canvas-list">
+								<li><label>Parents</label></li> -->
+								<!-- <li class="has-dropdown"><a href="page.html">Menu List 2</a> -->
+										<!-- <ul class="off-canvas-list">
+												<li><a href="http://is.byu.edu/site/about/what-is.cfm">About Us</a></li>
+												<li><a href="http://is.byu.edu/site/programs/HighSchoolProgram.cfm">High School Programs</a></li>
+												<li><a href="http://is.byu.edu/site/courses/tuition.cfm">Tuition</a></li>
+										</ul>
+								</li>
+						</ul> -->
+						
+				</aside>
+				
+				<!--	Begin Main Content	-->
+				
+				<div class="section coursesArea">
+						<div class="vertFull full">
+								<div class="leftHalf">
+										<ul class="tier1">
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">Advanced Written &amp; Oral Communication</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">American Heritage</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">Arts</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">Biological Sciences</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">Civilization 1</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">Civilization 2</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-1">First-Year Writing</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Global and Cultural Awareness</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Languages of Learning</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Letters</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Physical Science</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Quantitative Reasoning</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Religion</a></li>
+												<li class="listi"><a class="click-card" target-card="#target-click-1-2">Social Science</a></li>
+												
+										</ul>
+								</div><div class="rightHalf flip-viewport">
+										<div class="mobi mobiTop"></div>
+										<div class="mobi mobiBottom"></div>
+										
+										<div class="tier2 flip-card-container">
+											<div class="tier2Img flip-card">
+												<div class="card-front">
+													<b>Front</b>
+												</div>
+												<div class="card-back" id="target-click-1-1">
+													Back
+												</div>
+											</div>
+											<div class="tier2Info flip-card">
+												<div class="card-front">
+													Front
+												</div>
+												<div class="card-back" id="target-click-1-2">
+													Back
+												</div>
+											</div>
+										</div><div class="tier3 flip-card-container">
+											<div class="tier3Info flip-card">
+												<div class="card-front">
+													Front
+												</div>
+												<div class="card-back" id="target-click-2-1">
+													Back
+												</div>
+											</div>
+											<div class="tier3Img flip-card">
+												<div class="card-front">
+													Front
+												</div>
+												<div class="card-back" id="target-click-2-2">
+													Back
+												</div>
+											</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				
+				
+				
+				
+				<!--	End Main Content -->
+		</div>
+>>>>>>> flippythingies
 </div>
-        
-
 </body>
 </html>
