@@ -3,6 +3,10 @@
 @import "foundation/settings";
 @import "foundation/components/offcanvas";
 
+@import "compass/css3";
+@import "transform/settings";
+@import "transform/flip";
+
 $green: #3c5346;
 $red: #872633;
 $yellow: #dfb655;
@@ -107,13 +111,19 @@ div {
  margin-bottom:.1em;
 }
 
+
 .rightHalf {
 	min-height:100%;
 	height:100%;
 	min-width:50%;
 	max-width:50%;
 	display:inline-block;
-	background-color:rgba(100,60,60,.5);
+	/*background-color:rgba(100,60,60,.5);*/
+}
+
+.flip-card-container {
+	@include box-shadow(0 0 150px rgba(darken(#000000, 10%), .8) inset);
+	background-color: #ccc;
 }
 
 .mobi {
@@ -129,30 +139,58 @@ div {
 	background-color: $green;
 }
 
+.rightHalf > div > div {
+	text-align:left;
+}
+
+.rightHalf > div > div > div {
+	padding: 1rem;
+}
+
+/*.rightHalf > div > div > div > b {
+	vertical-align:middle;
+	display:inline-block;
+	line-height:1pem;
+}*/
 .tier2 {
 	display:none;
 	min-width:50%;
-    max-width:50%;
+  max-width:50%;
 	min-height:100%;
 	height:100%;
 	display:inline-block;
-	background-color: $purple;
+	/*background-color: $purple;*/
 }
 
-.tier2Info {
+.tier2Info, .tier2Info .card-front,.tier2Img, .tier2Img .card-front, {
+	min-width:100%;
+	max-width:100%;
+}
+
+ .tier2Info .card-front, .tier2Img .card-front, .tier3Info .card-front, .tier3Img .card-front {
+	min-height:100%;
+	max-height:100%;
+	height:100%;
+}
+
+.tier2Info, .tier2Img, .tier3Info, .tier3Img {
 	min-height:50%;
 	height:50%;
 	min-width:100%;
-    max-width:100%;
+  max-width:100%;
+  text-align:left;
+}
+.tier2Info .card-front, .tier2Info > div {
 	background-color: $green;
 }
-
-.tier2Img {
-	min-height:50%;
-	height:50%;
-	min-width:100%;
-    max-width:100%;
+.tier2Img .card-front, .tier2Img > div {
 	background-color: $yellow;
+}
+.tier3Info .card-front, .tier3Info > div {
+	background-color: $red;
+}
+.tier3Img .card-front, .tier3Img > div {
+	background-color: $black;
 }
 
 .tier3 {
@@ -162,25 +200,8 @@ div {
     min-height:100%;
     height:100%;
     display:inline-block;
-    background-color: $black;
+ /*   background-color: $black;*/
 }
-
-.tier3Info {
-    min-height:50%;
-    height:50%;
-    min-width:100%;
-    max-width:100%;
-    background-color: $red;
-}
-
-.tier3Img {
-    min-height:50%;
-    height:50%;
-    min-width:100%;
-    max-width:100%;
-    background-color: $black;
-}
-
 
 
 
@@ -255,7 +276,10 @@ div {
         float:left;
         margin-bottom:.1em;
     }
-    	
+    
+    .listi a {
+    	color: #f9f9f9;
+    }
 }
 	
 
@@ -366,7 +390,6 @@ div {
 	
 	
 }
-
 
 
 

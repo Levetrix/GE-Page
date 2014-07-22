@@ -1168,6 +1168,120 @@ ul.off-canvas-list li a:hover {
   left: 15.625rem;
 }
 
+/***
+* CSS3 FLIP CARDS
+* Markup for an element that a user can hover to reveal content on the back, like a card
+* Browser Support: Safari, Firefox, Chrome, IE8+, and Touch Devices; (IE9 and below will not have any flip effect but will just change on hover)
+***/
+/* line 9, ../sass/transform/_flip.scss */
+.flip-card {
+  display: block;
+  position: relative;
+  z-index: 1000;
+}
+/* line 15, ../sass/transform/_flip.scss */
+.flip-card .card-front,
+.flip-card .card-back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 900ms;
+  -moz-transition: -moz-transform 900ms;
+  -o-transition: -o-transform 900ms;
+  transition: transform 900ms;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+/* line 24, ../sass/transform/_flip.scss */
+.flip-card .card-front {
+  /*@include create-transform(false, 1, 1, 1, 0, 0deg);*/
+  /*@include transform3d(perspective($perspective) rotateY(0));*/
+  -webkit-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  -moz-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  -ms-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  -o-transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  transform:  scale3d(1, 1, 1) rotateX(0) rotateY(0deg);
+  z-index: 900;
+}
+/* line 34, ../sass/transform/_flip.scss */
+.flip-card .card-back {
+  /*
+  	@include rotateY(-180deg); //Using rotate instead of transform prevents the back of the card from flipping on page load because transition is only targeting transform. Super sweet.
+  */
+  -webkit-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
+  -moz-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
+  -ms-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
+  -o-transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
+  transform:  scale3d(0.7, 0.7, 0.7) rotateX(0) rotateY(-180deg);
+  z-index: 800;
+}
+/* line 43, ../sass/transform/_flip.scss */
+.flip-card:hover .card-front, .flip-card.flip-card-now .card-front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: perspective(600) rotateY(180deg);
+  -moz-transform: perspective(600) rotateY(180deg);
+  -ms-transform: perspective(600) rotateY(180deg);
+  -o-transform: perspective(600) rotateY(180deg);
+  transform: perspective(600) rotateY(180deg);
+}
+/* line 47, ../sass/transform/_flip.scss */
+.flip-card:hover .card-back, .flip-card.flip-card-now .card-back {
+  z-index: 950;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: perspective(600) rotateY(0deg);
+  -moz-transform: perspective(600) rotateY(0deg);
+  -ms-transform: perspective(600) rotateY(0deg);
+  -o-transform: perspective(600) rotateY(0deg);
+  transform: perspective(600) rotateY(0deg);
+}
+
+/*** Just for show... ***/
+/* line 60, ../sass/transform/_flip.scss */
+.flip-card {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 100px;
+  max-width: 400px;
+  /*.card-back,*/
+}
+/* line 72, ../sass/transform/_flip.scss */
+.flip-card .card-front,
+.flip-card .card-back {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 76, ../sass/transform/_flip.scss */
+.flip-card .card-front {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 80, ../sass/transform/_flip.scss */
+.flip-card .card-shadow {
+  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
+  /*background-color: #499bea; // Old browsers*/
+}
+
 @font-face {
   font-family: "OpenSans";
   src: url(../fonts/OpenSans-regular.ttf);
@@ -1183,52 +1297,52 @@ ul.off-canvas-list li a:hover {
   src: url(../fonts/OpenSans-CondLight.ttf);
 }
 
-/* line 30, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 html, body {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 body {
   font-family: "OpenSansLt";
 }
 
-/* line 41, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 div {
   padding: 0;
   margin: 0;
   border: 0px;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .coursesArea2 {
   width: 100%;
   height: 1428px;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .coursesArea {
   height: 700px;
   width: 100%;
 }
 
-/* line 62, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .vertHalf {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .vertFull {
   min-height: 100%;
   height: 100%;
   min-width: 100%;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .leftHalf {
   min-height: 100%;
   height: 100%;
@@ -1240,7 +1354,7 @@ div {
   vertical-align: top;
 }
 
-/* line 86, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 .tier1 {
   font-size: 1.07em;
   margin: 0;
@@ -1248,7 +1362,7 @@ div {
   padding-left: .4em;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .listi {
   display: block;
   line-height: 1.5em;
@@ -1256,7 +1370,7 @@ div {
   margin-right: 11px;
 }
 
-/* line 100, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
@@ -1267,33 +1381,56 @@ div {
   margin-bottom: .1em;
 }
 
-/* line 110, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
   min-width: 50%;
   max-width: 50%;
   display: inline-block;
-  background-color: rgba(100, 60, 60, 0.5);
+  /*background-color:rgba(100,60,60,.5);*/
 }
 
-/* line 119, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
+.flip-card-container {
+  -webkit-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
+  background-color: #ccc;
+}
+
+/* line 129, ../sass/main.scss */
 .mobi {
   min-height: 50%;
   max-height: 50%;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .mobiTop {
   background-color: #872633;
 }
 
-/* line 128, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .mobiBottom {
   background-color: #3c5346;
 }
 
-/* line 132, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
+.rightHalf > div > div {
+  text-align: left;
+}
+
+/* line 146, ../sass/main.scss */
+.rightHalf > div > div > div {
+  padding: 1rem;
+}
+
+/*.rightHalf > div > div > div > b {
+	vertical-align:middle;
+	display:inline-block;
+	line-height:1pem;
+}*/
+/* line 155, ../sass/main.scss */
 .tier2 {
   display: none;
   min-width: 50%;
@@ -1301,28 +1438,52 @@ div {
   min-height: 100%;
   height: 100%;
   display: inline-block;
-  background-color: #2a1f26;
+  /*background-color: $purple;*/
 }
 
-/* line 142, ../sass/main.scss */
-.tier2Info {
+/* line 165, ../sass/main.scss */
+.tier2Info, .tier2Info .card-front, .tier2Img, .tier2Img .card-front {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/* line 170, ../sass/main.scss */
+.tier2Info .card-front, .tier2Img .card-front, .tier3Info .card-front, .tier3Img .card-front {
+  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+/* line 176, ../sass/main.scss */
+.tier2Info, .tier2Img, .tier3Info, .tier3Img {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
   max-width: 100%;
+  text-align: left;
+}
+
+/* line 183, ../sass/main.scss */
+.tier2Info .card-front, .tier2Info > div {
   background-color: #3c5346;
 }
 
-/* line 150, ../sass/main.scss */
-.tier2Img {
-  min-height: 50%;
-  height: 50%;
-  min-width: 100%;
-  max-width: 100%;
+/* line 186, ../sass/main.scss */
+.tier2Img .card-front, .tier2Img > div {
   background-color: #dfb655;
 }
 
-/* line 158, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
+.tier3Info .card-front, .tier3Info > div {
+  background-color: #872633;
+}
+
+/* line 192, ../sass/main.scss */
+.tier3Img .card-front, .tier3Img > div {
+  background-color: #272328;
+}
+
+/* line 196, ../sass/main.scss */
 .tier3 {
   display: none;
   min-width: 50%;
@@ -1330,35 +1491,17 @@ div {
   min-height: 100%;
   height: 100%;
   display: inline-block;
-  background-color: #272328;
-}
-
-/* line 168, ../sass/main.scss */
-.tier3Info {
-  min-height: 50%;
-  height: 50%;
-  min-width: 100%;
-  max-width: 100%;
-  background-color: #872633;
-}
-
-/* line 176, ../sass/main.scss */
-.tier3Img {
-  min-height: 50%;
-  height: 50%;
-  min-width: 100%;
-  max-width: 100%;
-  background-color: #272328;
+  /*   background-color: $black;*/
 }
 
 @media (min-width: 408px) {
-  /* line 191, ../sass/main.scss */
+  /* line 212, ../sass/main.scss */
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 665px) {
-  /* line 197, ../sass/main.scss */
+  /* line 218, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -1368,7 +1511,7 @@ div {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
-  /* line 206, ../sass/main.scss */
+  /* line 227, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -1380,27 +1523,27 @@ div {
     vertical-align: top;
   }
 
-  /* line 218, ../sass/main.scss */
+  /* line 239, ../sass/main.scss */
   .mobi {
     display: none;
   }
 
-  /* line 222, ../sass/main.scss */
+  /* line 243, ../sass/main.scss */
   .coursesArea {
     height: 595px;
   }
 
-  /* line 226, ../sass/main.scss */
+  /* line 247, ../sass/main.scss */
   .tier2 {
     display: inline-block;
   }
 
-  /* line 231, ../sass/main.scss */
+  /* line 252, ../sass/main.scss */
   .tier3 {
     display: inline-block;
   }
 
-  /* line 235, ../sass/main.scss */
+  /* line 256, ../sass/main.scss */
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -1408,7 +1551,7 @@ div {
     padding-left: 1.05em;
   }
 
-  /* line 242, ../sass/main.scss */
+  /* line 263, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1416,7 +1559,7 @@ div {
     margin-right: 11px;
   }
 
-  /* line 249, ../sass/main.scss */
+  /* line 270, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1426,14 +1569,19 @@ div {
     float: left;
     margin-bottom: .1em;
   }
+
+  /* line 280, ../sass/main.scss */
+  .listi a {
+    color: #f9f9f9;
+  }
 }
 @media (min-width: 716px) {
-  /* line 263, ../sass/main.scss */
+  /* line 287, ../sass/main.scss */
   .coursesArea {
     height: 645px;
   }
 
-  /* line 267, ../sass/main.scss */
+  /* line 291, ../sass/main.scss */
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -1441,7 +1589,7 @@ div {
     padding-left: 1em;
   }
 
-  /* line 274, ../sass/main.scss */
+  /* line 298, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1449,7 +1597,7 @@ div {
     margin-right: 11px;
   }
 
-  /* line 281, ../sass/main.scss */
+  /* line 305, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1461,18 +1609,18 @@ div {
   }
 }
 @media (min-width: 870px) {
-  /* line 293, ../sass/main.scss */
+  /* line 317, ../sass/main.scss */
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
-  /* line 300, ../sass/main.scss */
+  /* line 324, ../sass/main.scss */
   .coursesArea {
     height: 775px;
   }
 
-  /* line 304, ../sass/main.scss */
+  /* line 328, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -1484,7 +1632,7 @@ div {
     vertical-align: top;
   }
 
-  /* line 316, ../sass/main.scss */
+  /* line 340, ../sass/main.scss */
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -1492,7 +1640,7 @@ div {
     padding-left: 1.15em;
   }
 
-  /* line 323, ../sass/main.scss */
+  /* line 347, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1500,7 +1648,7 @@ div {
     margin-right: 11px;
   }
 
-  /* line 330, ../sass/main.scss */
+  /* line 354, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1511,7 +1659,7 @@ div {
     margin-bottom: .1em;
   }
 
-  /* line 340, ../sass/main.scss */
+  /* line 364, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -1522,18 +1670,18 @@ div {
   }
 }
 @media (min-width: 978px) {
-  /* line 352, ../sass/main.scss */
+  /* line 376, ../sass/main.scss */
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
-  /* line 358, ../sass/main.scss */
+  /* line 382, ../sass/main.scss */
   .coursesArea {
     height: 708px;
   }
 
-  /* line 362, ../sass/main.scss */
+  /* line 386, ../sass/main.scss */
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;
