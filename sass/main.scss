@@ -49,7 +49,7 @@ div {
 	
 }
 
-/* Card Flip CSS */
+    /* Card Flip CSS */
 
 .container { 
   width: 200px;
@@ -90,11 +90,149 @@ div {
 
 
 
-/* Card Flip CSS */
+    /* End Card Flip CSS */
+
+
+
+    /* Down Arrow CSS */
+
+
+
+.arrow {
+  position: absolute;
+  top: calc(100vh - 50px);
+  left: 50%;
+  margin-left:-20px;
+}
+ 
+.bounce {
+    -webkit-animation-name: bounce;
+    -moz-animation-name: bounce;
+    -o-animation-name: bounce;
+    animation-name: bounce;
+}
+.animated{-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+ 
+animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+ 
+ animation-delay: 2s;
+ -moz-animation-delay: 2s;
+ -webkit-animation-delay: 2s;
+ -o-animation-delay: 2s;
+ -ms-animation-delay: 2s;
+ 
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+ 
+ 
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-30px);}
+    60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-30px);}
+    60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+
+
+     /* End Down Arrow CSS */
 
 .section {
-	
+    
 }
+
+.main {
+	height:calc(100vh - 60px);
+	width:100%;
+	background: url("../img/campusPhoto1.jpg");
+    background-position: 80% 60%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Second Section Area */
+
+.two {
+    height:700px;
+    width:100%;
+    color:rgb(215,215,215);    
+    position:relative;
+}
+
+.twoContainer {
+	display:inline-block;
+	text-align:center;
+	width:100%;
+	min-height:100%;
+	background-color:rgba(0,0,0,.1);
+}
+
+.twoH2 {
+	display:block;
+	text-align:center;
+	font-family:"OpenSans";
+	font-weight:800;
+	font-size:1.6em;
+	padding:0;
+	margin:0;		
+}
+
+.col {
+    display:inline-block;
+	min-height:525px;
+	width: 25%;
+	background-color: rgb(115,115,115);
+	overflow:auto;
+	vertical-align:top;
+		
+}
+
+.rightCol {
+}
+
+.leftCol {
+}
+
+.midImg {
+	display:inline-block;
+	width:50%;
+	min-height:525px;
+	background-color: $red;
+	overflow:auto;
+	vetical-align:top;
+}
+
+
+
+
+/* Courses Area */
+
+
 
 .coursesArea2 {
 	width:100%;
