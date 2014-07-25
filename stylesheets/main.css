@@ -1468,6 +1468,21 @@ div {
 
 /* End Down Arrow CSS */
 /* line 168, ../sass/main.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 173, ../sass/main.scss */
+h1, h2, h3, h4 {
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 181, ../sass/main.scss */
 .main {
   height: calc(100vh - 60px);
   width: 100%;
@@ -1475,85 +1490,180 @@ div {
   background-position: 80% 60%;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-right: 15px;
+  padding-top: 2em;
 }
 
-/* Second Section Area */
-/* line 180, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
+.headtext {
+  float: right;
+}
+
+/* line 196, ../sass/main.scss */
+.h1Head {
+  font-size: 1.85em;
+  text-align: right;
+  color: #333;
+  /*font-family:"opensanslt";*/
+}
+
+/* line 203, ../sass/main.scss */
+.h2Head {
+  font-size: 1.35em;
+  text-align: right;
+  color: #333;
+  /*font-family:"opensanslt";*/
+}
+
+/* //////////////////////// */
+/*    Second Section Area   */
+/* //////////////////////// */
+/* line 214, ../sass/main.scss */
 .two {
-  height: 700px;
   width: 100%;
   color: #d7d7d7;
   position: relative;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
 }
 
-/* line 187, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .twoContainer {
-  display: inline-block;
   text-align: center;
   width: 100%;
-  min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 700px;
 }
 
-/* line 195, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 .twoH2 {
   display: block;
   text-align: center;
   font-family: "OpenSans";
-  font-weight: 800;
-  font-size: 1.6em;
+  font-weight: 400;
+  font-size: 1.85em;
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
+  color: #333;
 }
 
-/* line 205, ../sass/main.scss */
-.col {
+/* line 240, ../sass/main.scss */
+.questionnaire {
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 55px;
+  border: 1px lightgrey solid;
+  margin-bottom: 32px;
+}
+
+/* line 250, ../sass/main.scss */
+.tileContainer {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* line 258, ../sass/main.scss */
+.tile {
   display: inline-block;
-  min-height: 525px;
-  width: 25%;
-  background-color: #737373;
+  min-height: 125px;
+  max-width: 400px;
   overflow: auto;
   vertical-align: top;
+  margin-bottom: 1.5em;
 }
 
-/* line 221, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
+.tileInvis {
+  display: none;
+}
+
+/* line 271, ../sass/main.scss */
+.icon {
+  color: #888;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* line 280, ../sass/main.scss */
+.h3Tile {
+  display: block;
+  font-size: 1.15em;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* line 288, ../sass/main.scss */
+.tileText {
+  text-align: center;
+  font-size: .95em;
+  color: #5f5f5f;
+}
+
+/*
+.col {
+    display:inline-block;
+	min-height:525px;
+	width: 25%;
+	background-color: rgb(115,115,115);
+	overflow:auto;
+	vertical-align:top;
+		
+}
+
+.rightCol {
+}
+
+.leftCol {
+}
+
 .midImg {
-  display: inline-block;
-  width: 50%;
-  min-height: 525px;
-  background-color: #872633;
-  overflow: auto;
-  vetical-align: top;
+	display:inline-block;
+	width:50%;
+	min-height:525px;
+	background-color: $red;
+	overflow:auto;
+	vetical-align:top;
 }
-
+*/
+/* //////////////////////// */
+/*  End Second Section Area */
+/* //////////////////////// */
 /* Courses Area */
-/* line 237, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 .coursesArea2 {
   width: 100%;
   height: 1428px;
 }
 
-/* line 242, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 .coursesArea {
   height: 700px;
   width: 100%;
 }
 
-/* line 247, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 .vertHalf {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
 }
 
-/* line 253, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .vertFull {
   min-height: 100%;
   height: 100%;
   min-width: 100%;
 }
 
-/* line 259, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .leftHalf {
   min-height: 100%;
   height: 100%;
@@ -1565,7 +1675,7 @@ div {
   vertical-align: top;
 }
 
-/* line 271, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 .tier1 {
   font-size: 1.07em;
   margin: 0;
@@ -1573,7 +1683,7 @@ div {
   padding-left: .4em;
 }
 
-/* line 278, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 .listi {
   display: block;
   line-height: 1.5em;
@@ -1581,7 +1691,7 @@ div {
   margin-right: 11px;
 }
 
-/* line 285, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
@@ -1592,7 +1702,7 @@ div {
   margin-bottom: .1em;
 }
 
-/* line 296, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
@@ -1602,7 +1712,7 @@ div {
   /*background-color:rgba(100,60,60,.5);*/
 }
 
-/* line 305, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 .flip-card-container {
   -webkit-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
   -moz-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
@@ -1610,28 +1720,28 @@ div {
   background-color: #ccc;
 }
 
-/* line 310, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 .mobi {
   min-height: 50%;
   max-height: 50%;
 }
 
-/* line 315, ../sass/main.scss */
+/* line 416, ../sass/main.scss */
 .mobiTop {
   background-color: #872633;
 }
 
-/* line 319, ../sass/main.scss */
+/* line 420, ../sass/main.scss */
 .mobiBottom {
   background-color: #3c5346;
 }
 
-/* line 323, ../sass/main.scss */
+/* line 424, ../sass/main.scss */
 .rightHalf > div > div {
   text-align: left;
 }
 
-/* line 327, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 .rightHalf > div > div > div {
   padding: 1rem;
 }
@@ -1641,7 +1751,7 @@ div {
 	display:inline-block;
 	line-height:1pem;
 }*/
-/* line 336, ../sass/main.scss */
+/* line 437, ../sass/main.scss */
 .tier2 {
   display: none;
   min-width: 50%;
@@ -1652,20 +1762,20 @@ div {
   /*background-color: $purple;*/
 }
 
-/* line 346, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .tier2Info, .tier2Info .card-front, .tier2Img, .tier2Img .card-front {
   min-width: 100%;
   max-width: 100%;
 }
 
-/* line 351, ../sass/main.scss */
+/* line 452, ../sass/main.scss */
 .tier2Info .card-front, .tier2Img .card-front, .tier3Info .card-front, .tier3Img .card-front {
   min-height: 100%;
   max-height: 100%;
   height: 100%;
 }
 
-/* line 357, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 .tier2Info, .tier2Img, .tier3Info, .tier3Img {
   min-height: 50%;
   height: 50%;
@@ -1674,27 +1784,27 @@ div {
   text-align: left;
 }
 
-/* line 364, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 .tier2Info .card-front, .tier2Info > div {
   background-color: #3c5346;
 }
 
-/* line 367, ../sass/main.scss */
+/* line 468, ../sass/main.scss */
 .tier2Img .card-front, .tier2Img > div {
   background-color: #dfb655;
 }
 
-/* line 370, ../sass/main.scss */
+/* line 471, ../sass/main.scss */
 .tier3Info .card-front, .tier3Info > div {
   background-color: #872633;
 }
 
-/* line 373, ../sass/main.scss */
+/* line 474, ../sass/main.scss */
 .tier3Img .card-front, .tier3Img > div {
   background-color: #272328;
 }
 
-/* line 377, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 .tier3 {
   display: none;
   min-width: 50%;
@@ -1706,13 +1816,71 @@ div {
 }
 
 @media (min-width: 408px) {
-  /* line 393, ../sass/main.scss */
+  /* line 494, ../sass/main.scss */
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 665px) {
-  /* line 399, ../sass/main.scss */
+  /* line 500, ../sass/main.scss */
+  .twoContainer {
+    min-height: 400px;
+  }
+
+  /* line 504, ../sass/main.scss */
+  .questionnaire {
+    width: 445px;
+  }
+
+  /* line 508, ../sass/main.scss */
+  .tileInvis {
+    display: inline-block;
+  }
+
+  /* line 512, ../sass/main.scss */
+  .tileContainer {
+    max-width: 850px;
+    min-height: 400px;
+  }
+
+  /* line 517, ../sass/main.scss */
+  .tile {
+    max-width: 280px;
+    margin-bottom: 2.25em;
+  }
+
+  /* line 522, ../sass/main.scss */
+  .tile:nth-child(even) {
+    margin-left: 2.5em;
+  }
+
+  /* line 527, ../sass/main.scss */
+  .tile:nth-child(even) > .h3Tile,
+  .tile:nth-child(even) > .tileText {
+    text-align: left;
+  }
+
+  /* line 532, ../sass/main.scss */
+  .tile:nth-child(odd) > .h3Tile,
+  .tile:nth-child(odd) > .tileText {
+    text-align: right;
+  }
+
+  /* line 536, ../sass/main.scss */
+  .tile:nth-child(odd) > .icon {
+    float: right;
+    margin-bottom: 3.5em;
+    margin-left: .75em;
+  }
+
+  /* line 542, ../sass/main.scss */
+  .tile:nth-child(even) > .icon {
+    float: left;
+    margin-bottom: 3em;
+    margin-right: .75em;
+  }
+
+  /* line 554, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -1722,7 +1890,7 @@ div {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
-  /* line 408, ../sass/main.scss */
+  /* line 563, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -1734,27 +1902,27 @@ div {
     vertical-align: top;
   }
 
-  /* line 420, ../sass/main.scss */
+  /* line 575, ../sass/main.scss */
   .mobi {
     display: none;
   }
 
-  /* line 424, ../sass/main.scss */
+  /* line 579, ../sass/main.scss */
   .coursesArea {
     height: 595px;
   }
 
-  /* line 428, ../sass/main.scss */
+  /* line 583, ../sass/main.scss */
   .tier2 {
     display: inline-block;
   }
 
-  /* line 433, ../sass/main.scss */
+  /* line 588, ../sass/main.scss */
   .tier3 {
     display: inline-block;
   }
 
-  /* line 437, ../sass/main.scss */
+  /* line 592, ../sass/main.scss */
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -1762,7 +1930,7 @@ div {
     padding-left: 1.05em;
   }
 
-  /* line 444, ../sass/main.scss */
+  /* line 599, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1770,7 +1938,7 @@ div {
     margin-right: 11px;
   }
 
-  /* line 451, ../sass/main.scss */
+  /* line 606, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1781,18 +1949,23 @@ div {
     margin-bottom: .1em;
   }
 
-  /* line 461, ../sass/main.scss */
+  /* line 616, ../sass/main.scss */
   .listi a {
     color: #f9f9f9;
   }
 }
 @media (min-width: 716px) {
-  /* line 468, ../sass/main.scss */
+  /* line 623, ../sass/main.scss */
+  .tile:nth-child(even) {
+    margin-left: 4em;
+  }
+
+  /* line 627, ../sass/main.scss */
   .coursesArea {
     height: 645px;
   }
 
-  /* line 472, ../sass/main.scss */
+  /* line 631, ../sass/main.scss */
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -1800,7 +1973,7 @@ div {
     padding-left: 1em;
   }
 
-  /* line 479, ../sass/main.scss */
+  /* line 638, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1808,7 +1981,7 @@ div {
     margin-right: 11px;
   }
 
-  /* line 486, ../sass/main.scss */
+  /* line 645, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1820,18 +1993,24 @@ div {
   }
 }
 @media (min-width: 870px) {
-  /* line 498, ../sass/main.scss */
+  /* line 657, ../sass/main.scss */
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
-  /* line 505, ../sass/main.scss */
+  /* line 664, ../sass/main.scss */
+  .tile {
+    max-width: 375px;
+    min-height: 100px;
+  }
+
+  /* line 673, ../sass/main.scss */
   .coursesArea {
     height: 775px;
   }
 
-  /* line 509, ../sass/main.scss */
+  /* line 677, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -1843,7 +2022,7 @@ div {
     vertical-align: top;
   }
 
-  /* line 521, ../sass/main.scss */
+  /* line 689, ../sass/main.scss */
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -1851,7 +2030,7 @@ div {
     padding-left: 1.15em;
   }
 
-  /* line 528, ../sass/main.scss */
+  /* line 696, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -1859,7 +2038,7 @@ div {
     margin-right: 11px;
   }
 
-  /* line 535, ../sass/main.scss */
+  /* line 703, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -1870,7 +2049,7 @@ div {
     margin-bottom: .1em;
   }
 
-  /* line 545, ../sass/main.scss */
+  /* line 713, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -1881,18 +2060,18 @@ div {
   }
 }
 @media (min-width: 978px) {
-  /* line 557, ../sass/main.scss */
+  /* line 725, ../sass/main.scss */
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
-  /* line 563, ../sass/main.scss */
+  /* line 731, ../sass/main.scss */
   .coursesArea {
     height: 708px;
   }
 
-  /* line 567, ../sass/main.scss */
+  /* line 735, ../sass/main.scss */
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;
