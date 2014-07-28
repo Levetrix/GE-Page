@@ -7,6 +7,9 @@
 @import "transform/settings";
 @import "transform/flip";
 
+@import "font-awesome";
+@import "font-awesome/variables";
+
 $green: #3c5346;
 $red: #872633;
 $yellow: #dfb655;
@@ -253,6 +256,10 @@ h1, h2, h3, h4 {
     min-height:600px;
     text-align:center;
     padding: 0 15px;
+}
+
+.rightCol {
+	display:none;
 }
 
 .tile {
@@ -740,7 +747,38 @@ h1, h2, h3, h4 {
 	
 }
 
-@media (min-width:1175) {
+@media (min-width:1140px) {
+	.tileContainer {
+	   display:inline-block;
+	   width:310px;
+	   padding:0 15px;
+	   background-color:rgba(0,0,0,.15);
+	   vertical-align:top;
+	   overflow:auto;
+	}
+	
+    .leftCol > .tile:nth-child(even) {
+        display:none;
+    }
+    
+    .rightCol > .tile:nth-child(odd) {
+        display:none;
+        margin-left:0px;
+    }
+    
+    .rightCol > .tile:nth-child(even) {
+        margin-left:0px;
+    }
+    
+    .midImg {
+        display:inline-block;
+        width:445px;
+        height:435px;
+        background-color: $red;
+    }
+}
+
+@media (min-width:1175px) {
 	
 	
 }
