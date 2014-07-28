@@ -4628,3 +4628,48 @@ h1, h2, h3, h4 {
     background-color: #872633;
   }
 }
+@media (min-width: 1175px) {
+  /*
+  	Luke added this section
+  */
+  /* line 785, ../sass/main.scss */
+  .tileContainerLuke {
+    width: 50rem;
+    -webkit-column-count: 3;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 791, ../sass/main.scss */
+  .tileContainerLuke .tileLuke {
+    display: block;
+    width: 15rem;
+  }
+
+  /* line 797, ../sass/main.scss */
+  .tileContainerLuke .tileLuke:nth-child(n+2) > .icon {
+    float: left;
+    margin-bottom: 3em;
+    margin-right: .75em;
+  }
+
+  /* line 802, ../sass/main.scss */
+  .tileContainerLuke .tileLuke:nth-child(-n+3) > .icon {
+    float: right;
+    margin-bottom: 3.5em;
+    margin-left: .75em;
+  }
+
+  /* line 807, ../sass/main.scss */
+  .tileContainerLuke .tileLuke:nth-child(4):before {
+    height: 30em;
+    background-color: blue;
+    width: 15em;
+    content: "Hello world";
+    display: inline-block;
+  }
+
+  /*
+  	END OF == Luke added this section
+  */
+}

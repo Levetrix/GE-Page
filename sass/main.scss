@@ -779,6 +779,41 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width:1175px) {
+	/*
+		Luke added this section
+	*/
+	.tileContainerLuke {
+		width: 50rem;
+		-webkit-column-count: 3;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.tileContainerLuke .tileLuke {
+		display: block;
+		width: 15rem;
+	}
+	.tileContainerLuke .tileLuke .icon {
+	} 
+	.tileContainerLuke .tileLuke:nth-child(n+2) > .icon {
+		float:left;
+		margin-bottom:3em;
+		margin-right:.75em;
+	}
+	.tileContainerLuke .tileLuke:nth-child(-n+3) > .icon {
+		float:right;
+		margin-bottom:3.5em;
+		margin-left:.75em;
+	}
+	.tileContainerLuke .tileLuke:nth-child(4):before {
+		height: 30em;
+		background-color: blue;
+		width: 15em;
+		content: "Hello world";
+		display: inline-block
+	}
+	/*
+		END OF == Luke added this section
+	*/
 	
 	
 }
