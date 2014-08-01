@@ -30,7 +30,7 @@ var doClincherThing = function() {
 	allMods.each(function (i, el) {
 		var el = $(el);
 		if(el.visible(true) && el.is(":visible") && !(el.hasClass("come-in"))) {
-			el.addClass("come-in"); 
+			el.addClass((!el.hasClass("faster"))?"come-in":"come-in-faster"); 
 			console.log("more classes being added");
 		}
 	});

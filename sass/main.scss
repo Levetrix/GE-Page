@@ -98,6 +98,31 @@ div {
 
     /* Fly-in SCSS       */
     
+
+.clincher {
+  display: inline-block;
+  position: relative;
+	top: 0;
+	left: 0;
+	@include opacity(0);
+    
+	&.come-in,&.come-in-faster {
+		@include transition(transform);
+		@include transition-property(transform, opacity);
+		@include transform(translateY(50px));
+		@include opacity(1);
+	}
+	
+	&.come-in {
+		@include transition-duration(1s , 4s);
+	}
+	&.come-in-faster {
+		@include transition-duration(0.2s , 3s);
+	}
+}
+
+
+/*
 .come-in {
   @include transform(translateY(50px));
 }
@@ -108,7 +133,7 @@ div {
   transform: translateY(0);
   animation: none;
 }
-
+*/
     
     /* END Fly-in SCSS   */
 
