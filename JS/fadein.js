@@ -14,7 +14,8 @@
 		var $t						= $(this),
 			$w						= $(window),
 			viewTop			 = $w.scrollTop(),
-			viewBottom		= viewTop + $w.height(),
+			botOffset		= $w.height() * .40, // offset to eliminate bottom 40% of viewport
+			viewBottom		= viewTop + $w.height() - botOffset, // shrinks viewport to top 60% of actual viewport
 			_top					= $t.offset().top,
 			_bottom			 = _top + $t.height(),
 			compareTop		= partial === true ? _bottom : _top,
@@ -36,6 +37,20 @@ var doClincherThing = function() {
 	});
 };
 win.scroll(doClincherThing);
+
+
+var boxFade = function() {
+	var box = $(".questionnaire");
+	var allMods = $(".clincher");
+	box.each(function (allMods, el) {
+		var el = $(el);
+		if(allMods.hasClass("come-in") && !(el.hasClass("fade-in"))) {
+			el.addClass("fade-in");
+		}
+	});
+}
+
+win.scroll(boxFade);
 
 
 /*

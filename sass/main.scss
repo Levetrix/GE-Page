@@ -43,7 +43,6 @@ html, body {
 
 body {
 	font-family:"OpenSansLt";
-	
 }
 
 div {
@@ -96,49 +95,7 @@ div {
 
     /* END Card Flip CSS */
 
-    /* Fly-in SCSS       */
-    
-
-.clincher {
-  display: inline-block;
-  position: relative;
-	top: 0;
-	left: 0;
-	@include opacity(0);
-    
-	&.come-in,&.come-in-faster {
-		@include transition(transform);
-		@include transition-property(transform, opacity);
-		@include transform(translateY(50px));
-		@include opacity(1);
-	}
-	
-	&.come-in {
-		@include transition-duration(1s , 4s);
-	}
-	&.come-in-faster {
-		@include transition-duration(0.2s , 3s);
-	}
-}
-
-
-/*
-.come-in {
-  @include transform(translateY(50px));
-}
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
-*/
-    
-    /* END Fly-in SCSS   */
-
     /* Down Arrow CSS    */
-
 
 
 .arrow {
@@ -308,11 +265,32 @@ h1, h2, h3, h4 {
 	color: $blue;
 }
 
-.clincher {
-	display:none;
-	margin-top:24px;
-}
+/* Fly-in SCSS       */
+    
 
+.clincher {
+    display: none;
+    margin-top:24px;
+    position: relative;
+    top: -100px;
+    left: 0;
+    @include opacity(0);
+    
+    &.come-in,&.come-in-faster {
+        @include transition(transform);
+        @include transition-timing-function(ease);
+        @include transition-property(transform, opacity);
+        @include transform(translateY(100px));
+        @include opacity(1);
+    }
+    
+    &.come-in {
+        @include transition-duration(1s , 3s);
+    }
+}
+    
+    /* END Fly-in SCSS   */
+    
 .clincherNumber {
 	font-size:3.4em;
 }
