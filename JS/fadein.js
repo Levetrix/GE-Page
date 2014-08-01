@@ -40,18 +40,21 @@ win.scroll(doClincherThing);
 
 
 var boxFade = function() {
-	var box = $(".questionnaire");
-	var allMods = $(".clincher");
-	box.each(function (allMods, el) {
+	var box = $(".fades");
+	box.each(function (i, el) {
 		var el = $(el);
-		if(allMods.hasClass("come-in") && !(el.hasClass("fade-in"))) {
+		if(el.prev().hasClass("come-in") && !(el.prev().hasClass("fade-in"))) {
+			el.removeClass("faded-out");
 			el.addClass("fade-in");
 		}
 	});
-}
+};
 
 win.scroll(boxFade);
 
+$(document).ready(function() {
+	$(".fades").addClass("faded-out");
+});
 
 /*
 

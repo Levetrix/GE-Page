@@ -305,6 +305,19 @@ h1, h2, h3, h4 {
 	text-align:center;
 }
 
+.fades {
+		@include transition(opacity);
+		@include transition-timing-function(ease);
+		@include transition-property(opacity);
+		@include transition-duration(3s);
+	&.faded-out {
+		@include opacity(0);
+	}
+	&.fade-in {
+		@include opacity(1);
+	}
+}
+
 .questionnaireH2 {
 	font-family:"OpenSansLt";
 	font-size:1.5em;
