@@ -14,10 +14,11 @@
 		<script src="js/foundation/foundation.js"></script>
 		<script src="js/foundation/foundation.offcanvas.js"></script>
 		
-		<script src="js/flip.js"></script>
-		
+        <script src="js/flip.js"></script>
+        <script src="js/counter.js"></script>
+		<script src="js/fadein.js"></script>
     
-    
+
     <script type="text/javascript"> 
     var init = function() {
 		  var T2card = $('.T2card'),
@@ -101,6 +102,7 @@
 				
 				<!--	Begin Main Content	-->
 				<div class="section main">
+				    <div class="shader"></div>
 				    <div class="headtext">
                         <h1 class="h1Head">L O N G &nbsp; T I T L E</h1>
                         <h2 class="h2Head">SHORT TITLE</h2>
@@ -112,113 +114,78 @@
 				
 				<div class="section two">
 				    <div class="twoContainer">
-					    <h2 class="twoH2"> Title Here</h2>
-					    <div class="questionnaire">
-					    
-					    </div>					    
-					    <div class="tileContainerLuke">
-					       <div class="tileLuke">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
+					    <div class="facts">
+					       <div class="factItem">
+					           <div class="number number-count" end="46" delay="10">46</div>
+					           <div class="label">Majors</div>
 					       </div>
-					       <div class="tileLuke">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-					       </div>
-					       <div class="tileLuke">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-					       </div>
-					       <div class="tileLuke">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-					       </div>
-					       <div class="tileLuke">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-					       </div>
-					       <div class="tileLuke">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-					       </div>
+					       <div class="factItem">
+                               <div class="number number-count" end="317" delay="1" d="2">317</div>
+                               <div class="label">Classes</div>
+                           </div>
+                           <div class="factItem">
+                               <div class="number number-count" end="673" delay="1" d="5">673</div>
+                               <div class="label">Professors</div>
+                           </div>
+                           <div class="factItem">
+                               <div class="number number-count" end="1243" delay="10" d="11">1243</div>
+                               <div class="label">Classrooms</div>
+                           </div>
 					    </div>
-					    <hr style="clear:both" />
-					    <div class="tileContainer leftCol">
-					       <div class="tile">
-					           <span class="icon"><i class="fa fa-calendar"></i></span>
-					           <h3 class="h3Tile"> Convenience</h3>
-					           <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
+					    <div class="clincher">
+					       <div class="number clincherNumber number-count" end="1">1</div>
+					       <div class="clincherLabel label">Way to simplify it all</div>
+					    </div>
+					    <div class="questionnaire">
+					       <h2 class="questionnaireH2">Select your major..</h2>
+					       <div class="questionnaireForm">
+							    <select name="Major">
+								<option value="Major 1">Major 1</option>
+								<option value="Major 2">Major 2</option>
+								<option value="Major 3">Major 3</option>
+								<option value="Major 1">Major 4</option>
+								</select>
+						  </div>
+					    </div>
+					    <div class="majorTiles">
+					       <div class="majorTile">
+					           <p class=majorTileTitle>
+					               Econ 110 <br /> Principles of Economics
+					           </p>
+					           <p class="fulfilledLabel">GE Fulfilled:</p>
+					           <p class="fulfilled">Global and Culural Awareness</p>
+					           <p class="offered">This course is offered by BYU IS</p>
+					           <div class="buttonContainer" ><a href="#"><p class="enrollButton">Enroll Now</p></a></div>					           
 					       </div>
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-check-square-o"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
+					       <div class="majorTile">
+                               <p class=majorTileTitle>
+                                   Econ 110 <br /> Principles of Economics
+                               </p>
+                               <p class="fulfilledLabel">GE Fulfilled:</p>
+                               <p class="fulfilled">Global and Culural Awareness</p>
+                               <p class="offered">This course is offered by BYU IS</p>
+                               <div class="buttonContainer" ><a href="#"><p class="enrollButton">Enroll Now</p></a></div>                              
                            </div>
-                        
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-desktop"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
+                           <div class="majorTile">
+                               <p class=majorTileTitle>
+                                   Econ 110 <br /> Principles of Economics
+                               </p>
+                               <p class="fulfilledLabel">GE Fulfilled:</p>
+                               <p class="fulfilled">Global and Culural Awareness</p>
+                               <p class="offered">This course is offered by BYU IS</p>
+                               <div class="buttonContainer" ><a href="#"><p class="enrollButton">Enroll Now</p></a></div>                              
                            </div>
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-book"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
+                           <div class="majorTile">
+                               <p class=majorTileTitle>
+                                   Econ 110 <br /> Principles of Economics
+                               </p>
+                               <p class="fulfilledLabel">GE Fulfilled:</p>
+                               <p class="fulfilled">Global and Culural Awareness</p>
+                               <p class="offered">This course is offered by BYU IS</p>
+                               <div class="buttonContainer" ><a href="#"><p class="enrollButton">Enroll Now</p></a></div>                              
                            </div>
-                           <div class="tile tileInvis">
-                               <span class="icon"><i class="fa fa-tasks"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                           <div class="tile tileInvis">
-                               <span class="icon"><i class="fa fa-graduation-cap"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                        </div>
-                        <div class="midImg">&nbsp;</div>
-                        <div class="tileContainer rightCol">
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-calendar"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-check-square-o"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                        
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-desktop"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                           <div class="tile">
-                               <span class="icon"><i class="fa fa-book"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                           <div class="tile tileInvis">
-                               <span class="icon"><i class="fa fa-tasks"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                           <div class="tile tileInvis">
-                               <span class="icon"><i class="fa fa-graduation-cap"></i></span>
-                               <h3 class="h3Tile"> Convenience</h3>
-                               <p class="tileText">Students who are away from BYU can continue working on their BYU courses.</p>
-                           </div>
-                        </div>
-			        </div>
-			     </div> 
-					
+					    </div>
+					</div>
 					
 				</div><div class="section coursesArea">
 					   <div class="vertFull full">
@@ -245,7 +212,7 @@
 								<div class="mobi mobiBottom"></div>
 										
 								<div class="tier2 flip-card-container">
-									<div class="tier2Img flip-card">
+									<div class="tier2Info flip-card">
 										<div class="card-front">
 											<b>Front</b>
 										</div>
@@ -253,7 +220,7 @@
 											Back
 										</div>
 									</div>
-									<div class="tier2Info flip-card">
+									<div class="tier2Img flip-card">
 										<div class="card-front">
 											Front
 										</div>
@@ -262,15 +229,13 @@
 										</div>
 									</div>
 								</div><div class="tier3 flip-card-container">
-									<div class="tier3Info flip-card">
-										<div class="card-front">
-											Front
-										</div>
+									<div class="tier3Img flip-card">
+										<div class="card-front"></div>
 										<div class="card-back" id="target-click-2-1">
 											Back
 										</div>
 									</div>
-									<div class="tier3Img flip-card">
+									<div class="tier3Info flip-card">
 										<div class="card-front">
 											Front
 										</div>
@@ -283,38 +248,29 @@
 						</div>
 				    </div>
 				<div class="section  contact">
-				<form name="topRow" id="contactForm">
-                            <div class="contactQuarter">
-                                <h4>Name:</h4>
-                                <input class="contactAreaQuarter" type="text" placeholder="Kyle Jones" name="name" id="name" required >
-                            </div>
-                                     
-                            <div class="topRow contactQuarter">
-                                <h4>School/District:</h4>
-                                <input class="contactAreaQuarter" type="text" placeholder="Clark County School District" name="city" id="school" required >
-                            </div>
-                                     
-                            <div class="contactQuarter">
-                                <h4>Phone:</h4>
-                                <input class="contactAreaQuarter" type="tel" placeholder="(222) 222-2222" name="phone" id="phone">
-                            </div>
-                                     
-                            <div class="contactQuarter">
-                                <h4>Email:</h4>
-                                <input class="contactAreaQuarter" type="email" placeholder="kyle.jones@example.com" name="email" id="email" required >
-                            </div>
-                             
-                            <div class="contactHalf">
-                                <h4>Message:</h4>
-                                <textarea class="contactAreaHalf" name="text" id="message" placeholder="..."></textarea>
-                            </div>
-                            <div class="button1 clickhere">
-                                SUBMIT
-                            </div>
-                            <div id="form-submit"><!-- This is where the response from the form submission code will be placed after they submit. --></div>
-                            <input type="hidden" id="form-id" name="form" value="High School Suite">
-                            <input type="hidden" id="send_email_to_marketing-id" name="send-email-to-marketing" value="true">
-                        </form>
+				    <div class="contactTitle">
+				        <h2>Leave us feedback!</h2>
+				    </div>
+		            <form name="topRow" id="contactForm">
+	                   <div class="contactQuarter">
+	                       <h4>Name:</h4>
+	                       <input class="contactAreaQuarter" type="text" placeholder="Kyle Jones" name="name" id="name" required >
+	                   </div>     
+	                   <div class="contactQuarter">
+	                       <h4>Email:</h4>
+	                       <input class="contactAreaQuarter" type="email" placeholder="kyle.jones@example.com" name="email" id="email" required >
+	                   </div>
+	                   <div class="contactHalf">
+	                       <h4>Message:</h4>
+	                       <textarea class="contactAreaHalf" name="text" id="message" placeholder="Tell us everything"></textarea>
+	                   </div>
+	                   <div class="enrollButton submitButton clickhere">
+	                       SUBMIT
+	                   </div>
+	                   <div id="form-submit"><!-- This is where the response from the form submission code will be placed after they submit. --></div>
+	                   <input type="hidden" id="form-id" name="form" value="High School Suite">
+	                   <input type="hidden" id="send_email_to_marketing-id" name="send-email-to-marketing" value="true">
+	                 </form>
 				</div>
 				
 				
