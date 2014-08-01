@@ -134,7 +134,7 @@ div {
 	-o-animation-duration:2s;
 	animation-duration:2s;
 }
- 
+
  
 @-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 40% {-webkit-transform: translateY(-30px);}
@@ -189,6 +189,8 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     padding-right:15px;
     padding-top:2em;
+    text-align:center;
+    z-index:-1;
 }
 
 .shader {
@@ -196,25 +198,33 @@ h1, h2, h3, h4 {
 	top:0;
 	width:100%;
 	height:100%;
-	background-color:rgba(0,0,0,.13);
-	z-index:2;
+	background-color:rgba(0,0,0,.05);
 }
 
 .headtext {
-    float:right;
+	position:relative;
+	z-index:10;
+    display:inline-block;
+    margin-top: 8%;
+}
+
+.h1Head, .h2Head {
+	font-family:"Lato";
+	color:#fff;
+	font-weight:900;
+	text-align:center;
 }
 
 .h1Head {
-	font-size:1.85em;
-	text-align:right;
-	color:#333;
+	font-size:2.1em;
+	letter-spacing:1px;
+	margin-bottom: 32px;
 	/*font-family:"opensanslt";*/
 }
 
 .h2Head {
-	font-size:1.35em;
-	text-align:right;
-	color:#333;
+	font-size:1.8em;
+	letter-spacing:2px;
 	/*font-family:"opensanslt";*/
 }
 
@@ -272,10 +282,13 @@ h1, h2, h3, h4 {
     display: none;
     margin-top:24px;
     position: relative;
-    top: -100px;
-    left: 0;
-    @include opacity(0);
     
+    &.comes-in {
+        @include opacity(0);
+        top: -100px;
+        left: 0;
+    }
+
     &.come-in,&.come-in-faster {
         @include transition(transform);
         @include transition-timing-function(ease);

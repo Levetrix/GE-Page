@@ -14,7 +14,7 @@
 		var $t						= $(this),
 			$w						= $(window),
 			viewTop			 = $w.scrollTop(),
-			botOffset		= $w.height() * .40, // offset to eliminate bottom 40% of viewport
+			botOffset		= $w.height() * .35, // offset to eliminate bottom 40% of viewport
 			viewBottom		= viewTop + $w.height() - botOffset, // shrinks viewport to top 60% of actual viewport
 			_top					= $t.offset().top,
 			_bottom			 = _top + $t.height(),
@@ -27,7 +27,7 @@
 
 var win = $(window);
 var doClincherThing = function() {
-	var allMods = $(".clincher");	//	Gather all the "clinchers"!
+	var allMods = $(".comes-in");	//	Gather all the "comes-in's"!
 	allMods.each(function (i, el) {
 		var el = $(el);
 		if(el.visible(true) && el.is(":visible") && !(el.hasClass("come-in"))) {
@@ -54,6 +54,7 @@ win.scroll(boxFade);
 
 $(document).ready(function() {
 	$(".fades").addClass("faded-out");
+	$(".clincher").addClass("comes-in");
 });
 
 /*
