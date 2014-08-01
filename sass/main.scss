@@ -99,7 +99,7 @@ div {
     /* Fly-in SCSS       */
     
 .come-in {
-  
+  @include transform(translateY(50px));
 }
 .come-in:nth-child(odd) {
   animation-duration: 0.6s;

@@ -3871,6 +3871,15 @@ div {
 
 /* END Card Flip CSS */
 /* Fly-in SCSS       */
+/* line 101, ../sass/main.scss */
+.come-in {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
 /* line 104, ../sass/main.scss */
 .come-in:nth-child(odd) {
   animation-duration: 0.6s;
