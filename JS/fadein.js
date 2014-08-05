@@ -38,7 +38,7 @@ var doClincherThing = function() {
 };
 win.scroll(doClincherThing);
 
-
+/*
 var boxFade = function() {
 	var box = $(".fades");
 	box.each(function (i, el) {
@@ -50,11 +50,19 @@ var boxFade = function() {
 	});
 };
 
+*/
+
 win.scroll(boxFade);
 
 $(document).ready(function() {
-	$(".fades").addClass("faded-out");
-	$(".clincher").addClass("comes-in");
+	$(".linked-appear").addClass("comes-in");
+	//if($(".clincher").attr("display") == "block" ) {
+		$(".fades").addClass("faded-out");
+	//	console.log("faded-out being added");		
+	//} else {
+	//	console.log("faded-out not being added");
+	//}	
+	
 });
 
 /*
