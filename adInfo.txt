@@ -1,0 +1,178 @@
+{
+	"courseAds": [
+		{
+			"Religion": [
+				{
+					"course-title": "REL A 121",
+					"title": "Book of Mormon 1",
+					"adText": "Gain a solid understanding of the Book of Mormon with this Religion G.E. course!",
+					"photo": ""
+				}
+			],
+			
+			"American Heritage": [
+				{
+					"course-title": "A HTG 100",
+					"title": "American Heritage",
+					"adText": "Get your American Heritage requirement out of the way with A HTG 100!",
+					"photo": ""
+				}
+			],
+			
+			"Global and Cultural Awareness": [
+				{
+					"course-title": "ANTHR 101",
+					"title": "Social/Cultural Anthropology",
+					"adText": "Fulfill your Global and Cultural Awareness requirement as you explore cultures and societies around the world.",
+					"photo": ""
+				}
+			],
+			
+			"First-Year Writing": [
+				{
+					"course-title": "WRTG 150",
+					"title": "Writing and Rhetoric ",
+					"adText": "Fulfill your First-Year Writing requirement as you become an effective communicator and more persuasive writer.",
+					"photo": ""
+			 }
+			],
+			
+			"Advanced Written &amp; Oral Communication": [
+				{
+					"course-title": "ENGL 312",
+					"title": "Persuasive Writing",
+					"adText": "Practice expository and persuasive writing with this Advanced Written & Oral Communication G.E. course!",
+					"photo": ""
+				}
+			],
+			
+			"Quantitative Reasoning": [
+				{
+					"course-title": "MATH 110",
+					"title": "College Algebra",
+					"adText": "Complete your Quantitative Reasoning requirement with MATH 110!",
+					"photo": ""
+				}
+			],
+			
+			"Languages of Learning": [
+				{
+					"course-title": "MATH 112",
+					"title": "Calculus",
+					"adText": "Satisfy your Languages of Learning requirement with MATH 112!",
+					"photo": ""
+				}
+			],
+			
+			"Civilization 1": [
+				{
+					"course-title": "HIST 201",
+					"title": "World Civilization to 1500 ",
+					"adText": "Dive into the civilizations of the past with this Civilization 1 G.E. course!",
+					"photo": ""
+				}
+			],
+			
+			"Civilization 2": [
+				{
+					"course-title": "IHUM 202",
+					"title": "Western Humanities 2",
+					"adText": "Fulfill your Global and Cultural Awareness requirement as you explore cultures and societies around the world.",
+					"photo": ""
+				}
+			],
+			
+			"Arts": [
+				{
+					"course-title": "MUSIC 101",
+					"title": "Introduction to Music ",
+					"adText": "From jazz to hip-hop, learn to appreciate the music all around you with this Arts G.E. course!",
+					"photo": ""
+				}
+			],
+			
+			"Letters": [
+				{
+					"course-title": "ENGL 230",
+					"title": "Introduction to Literature",
+					"adText": "Learn the basics of literature as you satisfy your Letters requirement with ENGL 230!",
+					"photo": ""
+				}
+			],
+			
+			"Biological Science": [
+				{
+					"course-title": "BIO 100",
+					"title": "Principles of Biology ",
+					"adText": "From photosynthesis to Darwin, learn the basics of biology with this Biological Science G.E. course!",
+					"photo": ""
+				}
+			],
+			
+			"Physical Science": [
+				{
+					"course-title": "PHY S 100",
+					"title": "Physical Science ",
+					"adText": "Discover the physical world around in this Physical Science G.E. course!",
+					"photo": ""
+				}
+			],
+			
+			"Social Science": [
+				{
+					"course-title": "ANTHR 101",
+					"title": "Social/Cultural Anthropology ",
+					"adText": "Fulfill your Global and Cultural Awareness requirement as you explore cultures and societies around the world.",
+					"photo": ""
+				}
+			]
+		}
+	],
+
+	"genericAds": [
+		{	
+			"generic1" : [
+				{
+					"header": "head",
+					"message": ""
+				}
+			],
+		
+			"generic2" : [
+				{
+					"header": "head",
+					"message": ""
+				}
+			],
+		
+			"generic3" : [
+				{
+					"header": "head",
+					"message": ""
+				}
+			],
+		
+			"generic4" : [
+				{
+					"header": "head",
+					"message": ""
+				}
+			],
+		
+			"generic5" : [
+				{
+					"header": "head",
+					"message": ""
+				}
+			],
+		
+			"generic6" : [
+				{
+					"header": "head",
+					"message": ""
+				}
+			]
+		}
+	]
+
+}

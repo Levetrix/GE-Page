@@ -1,0 +1,1013 @@
+{
+  "url": "{}",
+  "courses": {
+    "UNIVERSITY": {
+     	"Statistics": [
+	        {
+	          "types": [
+	            {
+	              "tags": [
+	                {
+	                  "name": "",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "Independent Study",
+	                      "description": "",
+	                      "short-title": "STAT-121-M001"
+	                    }
+	                  ]
+	                },
+	                {
+	                  "name": "School Type",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "University",
+	                      "description": "",
+	                      "short-title": "STAT-121-M001"
+	                    }
+	                  ]
+	                },
+	                {
+	                  "name": "Subject",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "Statistics",
+	                      "description": "",
+	                      "short-title": "STAT-121-M001"
+	                    }
+	                  ]
+	                },
+	                {
+	                  "name": "Tag",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "BYU Bookstore Link",
+	                      "description": "",
+	                      "short-title": "STAT-121-M001"
+	                    }
+	                  ]
+	                }
+	              ],
+	              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+	              "course-description": "Stemplots, boxplots, histograms, scatterplots; central tendency, variability; confidence intervals and hypothesis testing involving one and two means and proportions; contingency tables, simple linear regression.",
+	              "short-title": "STAT-121-M001",
+	              "type": "Online"
+	            }
+	          ],
+	          "description": "Stemplots, boxplots, histograms, scatterplots; central tendency, variability; confidence intervals and hypothesis testing involving one and two means and proportions; contingency tables, simple linear regression.",
+	          "highschool-title": "PRINCIPLES OF STATISTICS : STAT 121",
+	          "course-title": "STAT-121",
+	          "title2": "STAT 121 PRINCIPLES OF STATISTICS",
+	          "university-title": "STAT 121: PRINCIPLES OF STATISTICS (ONLINE)",
+	          "short-title": " PRINCIPLES OF STATISTICS : STAT 121",
+	          "sort-title": "STAT 121 PRINCIPLES OF STATISTICS",
+	          "title": " PRINCIPLES OF STATISTICS ",
+	          "GE1": "Quantitative Reasoning",
+	          "GE2": "Languages of Learning"
+	        }
+	      ],
+	        "School of Technology": [
+	        {
+	          "types": [
+	            {
+	              "tags": [
+	                {
+	                  "name": "",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "Independent Study",
+	                      "description": "",
+	                      "short-title": "TECH-202-200"
+	                    }
+	                  ]
+	                },
+	                {
+	                  "name": "School Type",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "University",
+	                      "description": "",
+	                      "short-title": "TECH-202-200"
+	                    }
+	                  ]
+	                },
+	                {
+	                  "name": "Subject",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "School of Technology",
+	                      "description": "",
+	                      "short-title": "TECH-202-200"
+	                    }
+	                  ]
+	                },
+	                {
+	                  "name": "Tag",
+	                  "data": [
+	                    {
+	                      "sequence": "",
+	                      "name": "BYU Bookstore Link",
+	                      "description": "",
+	                      "short-title": "TECH-202-200"
+	                    }
+	                  ]
+	                }
+	              ],
+	              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+	              "course-description": "Western civilization from Renaissance to present from perspective of changes in civilization enabled by technology. Creativity throughout history. How to improve personal creativity.",
+	              "short-title": "TECH-202-200",
+	              "type": "Online"
+	            }
+	          ],
+	          "description": "Western civilization from Renaissance to present from perspective of changes in civilization enabled by technology. Creativity throughout history. How to improve personal creativity.",
+	          "highschool-title": "HISTORY OF CREATIVITY AND INNOVATION IN THE ARTS, SCIENCE, AND TECHNOLOGY 2 : TECH 202",
+	          "course-title": "TECH-202",
+	          "title2": "TECH 202 HISTORY OF CREATIVITY AND INNOVATION IN THE ARTS SCIENCE AND TECHNOLOGY 2",
+	          "university-title": "TECH 202: HISTORY OF CREATIVITY AND INNOVATION IN THE ARTS, SCIENCE, AND TECHNOLOGY 2 (ONLINE)",
+	          "short-title": " HISTORY OF CREATIVITY AND INNOVATION IN THE ARTS, SCIENCE, AND TECHNOLOGY 2 : TECH 202",
+	          "sort-title": "TECH 202 HISTORY OF CREATIVITY AND INNOVATION IN THE ARTS SCIENCE AND TECHNOLOGY 2",
+	          "title": " HISTORY OF CREATIVITY AND INNOVATION IN THE ARTS, SCIENCE, AND TECHNOLOGY 2 ",
+	          "GE1": "Civilization 2",
+	          "GE2": "Arts"
+	        }
+	      ],
+	      "Psychology": [
+	        {
+	          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "PSYCH-308-M001"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "PSYCH-308-M001"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Psychology",
+                      "description": "",
+                      "short-title": "PSYCH-308-M001"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "PSYCH-308-M001"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Descriptive and inferential statistical analysis and hypothesis testing applied to psychological research data.",
+              "short-title": "PSYCH-308-M001",
+              "type": "Online"
+            }
+          ],
+          "description": "Descriptive and inferential statistical analysis and hypothesis testing applied to psychological research data.",
+          "highschool-title": "PSYCHOLOGICAL STATISTICS  : PSYCH 308",
+          "course-title": "PSYCH-308",
+          "title2": "PSYCH 308 PSYCHOLOGICAL STATISTICS",
+          "university-title": "PSYCH 308: PSYCHOLOGICAL STATISTICS  (ONLINE)",
+          "short-title": " PSYCHOLOGICAL STATISTICS  : PSYCH 308",
+          "sort-title": "PSYCH 308 PSYCHOLOGICAL STATISTICS",
+          "title": " PSYCHOLOGICAL STATISTICS  ",
+          "GE1": "Quantitative Reasoning",
+          "GE2": "Languages of Learning"
+        }
+	      ],
+	      "Political Science": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "PLSC-170-M001"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "PLSC-170-M001"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Political Science",
+                      "description": "",
+                      "short-title": "PLSC-170-M001"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "PLSC-170-M001"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Basic forces, practices, institutions, and foreign policies of major powers; problem areas in international politics.",
+              "short-title": "PLSC-170-M001",
+              "type": "Online"
+            }
+          ],
+          "description": "Basic forces, practices, institutions, and foreign policies of major powers; problem areas in international politics.",
+          "highschool-title": "INTRODUCTION TO INTERNATIONAL POLITICS  : PL SC 170",
+          "course-title": "PL SC-170",
+          "title2": "PL SC 170 INTRODUCTION TO INTERNATIONAL POLITICS",
+          "university-title": "PL SC 170: INTRODUCTION TO INTERNATIONAL POLITICS  (ONLINE)",
+          "short-title": " INTRODUCTION TO INTERNATIONAL POLITICS  : PL SC 170",
+          "sort-title": "PL SC 170 INTRODUCTION TO INTERNATIONAL POLITICS",
+          "title": " INTRODUCTION TO INTERNATIONAL POLITICS  ",
+          "GE1": "Social Science",
+          "GE2": "Letters"
+        },
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "PLSC-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "PLSC-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Political Science",
+                      "description": "",
+                      "short-title": "PLSC-202-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Western civilization from Renaissance to present, primarily from perspective of political philosophy; exploring fundamental questions in human experience; examining formative events in history; understanding value of important texts.",
+              "short-title": "PLSC-202-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Western civilization from Renaissance to present, primarily from perspective of political philosophy; exploring fundamental questions in human experience; examining formative events in history; understanding value of important texts.",
+          "highschool-title": "WESTERN POLITICAL HERITAGE 2 : PL SC 202",
+          "course-title": "PL SC-202",
+          "title2": "PL SC 202 WESTERN POLITICAL HERITAGE 2",
+          "university-title": "PL SC 202: WESTERN POLITICAL HERITAGE 2 (ONLINE)",
+          "short-title": " WESTERN POLITICAL HERITAGE 2 : PL SC 202",
+          "sort-title": "PL SC 202 WESTERN POLITICAL HERITAGE 2",
+          "title": " WESTERN POLITICAL HERITAGE 2 ",
+          "GE1": "Civilization 2",
+          "GE2": "Letters"
+        }
+      ],
+      "Mathematics": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "MATH-112-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "MATH-112-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Mathematics",
+                      "description": "",
+                      "short-title": "MATH-112-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "MATH-112-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Differential and integral calculus: limits; continuity; the derivative and applications; extrema; the definite integral; fundamental theorem of calculus; L'Hopital's Rule.",
+              "short-title": "MATH-112-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Differential and integral calculus: limits; continuity; the derivative and applications; extrema; the definite integral; fundamental theorem of calculus; L'Hopital's Rule.",
+          "highschool-title": "CALCULUS 1 : MATH 112",
+          "course-title": "MATH-112",
+          "title2": "MATH 112 CALCULUS 1",
+          "university-title": "MATH 112: CALCULUS 1 (ONLINE)",
+          "short-title": " CALCULUS 1 : MATH 112",
+          "sort-title": "MATH 112 CALCULUS 1",
+          "title": " CALCULUS 1 ",
+          "GE1": "Quantitative Reasoning",
+          "GE2": "Languages of Learning"
+        },
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "MATH-113-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "MATH-113-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Mathematics",
+                      "description": "",
+                      "short-title": "MATH-113-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "MATH-113-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Techniques and applications of integration; sequences, series, convergence tests, power series; parametric equations; polar coordinates.",
+              "short-title": "MATH-113-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Techniques and applications of integration; sequences, series, convergence tests, power series; parametric equations; polar coordinates.",
+          "highschool-title": "CALCULUS 2 : MATH 113",
+          "course-title": "MATH-113",
+          "title2": "MATH 113 CALCULUS 2",
+          "university-title": "MATH 113: CALCULUS 2 (ONLINE)",
+          "short-title": " CALCULUS 2 : MATH 113",
+          "sort-title": "MATH 113 CALCULUS 2",
+          "title": " CALCULUS 2 ",
+          "GE1": "Quantitative Reasoning",
+          "GE2": "Languages of Learning"
+        },
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "MATH-119-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "MATH-119-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Mathematics",
+                      "description": "",
+                      "short-title": "MATH-119-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "MATH-119-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Introduction to plane analytic geometry and calculus. For students in the College of Life Sciences and the Marriott School of Management.",
+              "short-title": "MATH-119-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Introduction to plane analytic geometry and calculus. For students in the College of Life Sciences and the Marriott School of Management.",
+          "highschool-title": "INTRODUCTION TO CALCULUS : MATH 119",
+          "course-title": "MATH-119",
+          "title2": "MATH 119 INTRODUCTION TO CALCULUS",
+          "university-title": "MATH 119: INTRODUCTION TO CALCULUS (ONLINE)",
+          "short-title": " INTRODUCTION TO CALCULUS : MATH 119",
+          "sort-title": "MATH 119 INTRODUCTION TO CALCULUS",
+          "title": " INTRODUCTION TO CALCULUS ",
+          "GE1": "Quantitative Reasoning",
+          "GE2": "Languages of Learning"
+        }
+      ],
+      "Languages": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "FREN-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "FREN-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "French",
+                      "description": "",
+                      "short-title": "FREN-202-200"
+                    },
+                    {
+                      "sequence": "",
+                      "name": "Languages",
+                      "description": "",
+                      "short-title": "FREN-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "FREN-202-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Extensive reading in French literature and culture.",
+              "short-title": "FREN-202-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Extensive reading in French literature and culture.",
+          "highschool-title": "INTERMEDIATE FRENCH, PART 2 : FREN 202",
+          "course-title": "FREN-202",
+          "title2": "FREN 202 INTERMEDIATE FRENCH PART 2",
+          "university-title": "FREN 202: INTERMEDIATE FRENCH, PART 2 (ONLINE)",
+          "short-title": " INTERMEDIATE FRENCH, PART 2 : FREN 202",
+          "sort-title": "FREN 202 INTERMEDIATE FRENCH PART 2",
+          "title": " INTERMEDIATE FRENCH",
+          "GE1": "Global and Cultural Awareness",
+          "GE2": "Languages of Learning"
+        },
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "JAPAN-301-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "JAPAN-301-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Asian and Near Eastern Languages",
+                      "description": "",
+                      "short-title": "JAPAN-301-200"
+                    },
+                    {
+                      "sequence": "",
+                      "name": "Languages",
+                      "description": "",
+                      "short-title": "JAPAN-301-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "JAPAN-301-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Reading and writing emphasizing essential characters, vocabulary, grammar, and culture. First course for returned missionaries.",
+              "short-title": "JAPAN-301-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Reading and writing emphasizing essential characters, vocabulary, grammar, and culture. First course for returned missionaries.",
+          "highschool-title": "JAPANESE READING AND CULTURE : JAPAN 301",
+          "course-title": "JAPAN-301",
+          "title2": "JAPAN 301 JAPANESE READING AND CULTURE",
+          "university-title": "JAPAN 301: JAPANESE READING AND CULTURE (ONLINE)",
+          "short-title": " JAPANESE READING AND CULTURE : JAPAN 301",
+          "sort-title": "JAPAN 301 JAPANESE READING AND CULTURE",
+          "title": " JAPANESE READING AND CULTURE ",
+          "GE1": "Global and Cultural Awareness",
+          "GE2": "Languages of Learning"
+        },
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "JAPAN-302-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Asian and Near Eastern Languages",
+                      "description": "",
+                      "short-title": "JAPAN-302-200"
+                    },
+                    {
+                      "sequence": "",
+                      "name": "Languages",
+                      "description": "",
+                      "short-title": "JAPAN-302-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "JAPAN-302-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Readings in Japanese history and literature with essential characters, vocabulary, and grammatical principles.",
+              "short-title": "JAPAN-302-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Readings in Japanese history and literature with essential characters, vocabulary, and grammatical principles.",
+          "highschool-title": "READINGS IN JAPANESE HISTORY AND CULTURE : JAPAN 302",
+          "course-title": "JAPAN-302",
+          "title2": "JAPAN 302 READINGS IN JAPANESE HISTORY AND CULTURE",
+          "university-title": "JAPAN 302: READINGS IN JAPANESE HISTORY AND CULTURE (ONLINE)",
+          "short-title": " READINGS IN JAPANESE HISTORY AND CULTURE : JAPAN 302",
+          "sort-title": "JAPAN 302 READINGS IN JAPANESE HISTORY AND CULTURE",
+          "title": " READINGS IN JAPANESE HISTORY AND CULTURE ",
+          "GE1": "Global and Cultural Awareness",
+          "GE2": "Languages of Learning"
+        }
+      ],
+      "Interdisciplinary Humanities": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "IHUM-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "IHUM-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Interdisciplinary Humanities",
+                      "description": "",
+                      "short-title": "IHUM-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "IHUM-202-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Western civilization from Renaissance to present from perspective of traditional humanistic values reflected in its arts and ideas. Examines fundamental questions about human experience, formative events in history, and value of important literary and artistic texts.",
+              "short-title": "IHUM-202-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Western civilization from Renaissance to present from perspective of traditional humanistic values reflected in its arts and ideas. Examines fundamental questions about human experience, formative events in history, and value of important literary and artistic texts.",
+          "highschool-title": "WESTERN HUMANITIES 2: RENAISSANCE TO THE PRESENT : IHUM 202",
+          "course-title": "IHUM-202",
+          "title2": "IHUM 202 WESTERN HUMANITIES 2 RENAISSANCE TO THE PRESENT",
+          "university-title": "IHUM 202: WESTERN HUMANITIES 2: RENAISSANCE TO THE PRESENT (ONLINE)",
+          "short-title": " WESTERN HUMANITIES 2: RENAISSANCE TO THE PRESENT : IHUM 202",
+          "sort-title": "IHUM 202 WESTERN HUMANITIES 2 RENAISSANCE TO THE PRESENT",
+          "title": " WESTERN HUMANITIES 2: RENAISSANCE TO THE PRESENT ",
+          "GE1": "Civilization 2",
+          "GE2": "Letters"
+        }
+      ],
+      "History": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "HIST-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "HIST-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "History",
+                      "description": "",
+                      "short-title": "HIST-202-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "HIST-202-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "World civilization from Renaissance to present; explores fundamental questions in the human experience, examines formative events in history, and seeks to teach value of important texts.",
+              "short-title": "HIST-202-200",
+              "type": "Online"
+            }
+          ],
+          "description": "World civilization from Renaissance to present; explores fundamental questions in the human experience, examines formative events in history, and seeks to teach value of important texts.",
+          "highschool-title": "WORLD CIVILIZATION FROM 1500 : HIST 202",
+          "course-title": "HIST-202",
+          "title2": "HIST 202 WORLD CIVILIZATION FROM 1500",
+          "university-title": "HIST 202: WORLD CIVILIZATION FROM 1500 (ONLINE)",
+          "short-title": " WORLD CIVILIZATION FROM 1500 : HIST 202",
+          "sort-title": "HIST 202 WORLD CIVILIZATION FROM 1500",
+          "title": " WORLD CIVILIZATION FROM 1500 ",
+          "GE1": "Global and Cultural Awareness",
+          "GE2": "Civilization 2"
+        }
+      ],
+      "Economics": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "ECON-110-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "ECON-110-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Economics",
+                      "description": "",
+                      "short-title": "ECON-110-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "ECON-110-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Strengths and weaknesses of markets and governments for solving problems of social organization or conflict, including policy response to inflation, unemployment, pollution, poverty, growth, etc.",
+              "short-title": "ECON-110-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Strengths and weaknesses of markets and governments for solving problems of social organization or conflict, including policy response to inflation, unemployment, pollution, poverty, growth, etc.",
+          "highschool-title": "ECONOMIC PRINCIPLES AND PROBLEMS : ECON 110",
+          "course-title": "ECON-110",
+          "title2": "ECON 110 ECONOMIC PRINCIPLES AND PROBLEMS",
+          "university-title": "ECON 110: ECONOMIC PRINCIPLES AND PROBLEMS (ONLINE)",
+          "short-title": " ECONOMIC PRINCIPLES AND PROBLEMS : ECON 110",
+          "sort-title": "ECON 110 ECONOMIC PRINCIPLES AND PROBLEMS",
+          "title": " ECONOMIC PRINCIPLES AND PROBLEMS ",
+          "GE1": "American Heritage (partial)",
+          "GE2": "Social Science"
+        }
+      ],
+      "Anthropology": [
+        {
+          "types": [
+            {
+              "tags": [
+                {
+                  "name": "",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Independent Study",
+                      "description": "",
+                      "short-title": "ANTHR-101-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "School Type",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "University",
+                      "description": "",
+                      "short-title": "ANTHR-101-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Subject",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "Anthropology",
+                      "description": "",
+                      "short-title": "ANTHR-101-200"
+                    }
+                  ]
+                },
+                {
+                  "name": "Tag",
+                  "data": [
+                    {
+                      "sequence": "",
+                      "name": "BYU Bookstore Link",
+                      "description": "",
+                      "short-title": "ANTHR-101-200"
+                    }
+                  ]
+                }
+              ],
+              "description": "Our Self-Guided Online courses provide advanced features and productivity tools, including a student homepage, improved access to student grades, and a student progress calendar.",
+              "course-description": "Aspects of society and culture: kinship, beliefs, economy, and political order among peoples worldwide. Methods and perspectives used in social/cultural anthropology.",
+              "short-title": "ANTHR-101-200",
+              "type": "Online"
+            }
+          ],
+          "description": "Aspects of society and culture: kinship, beliefs, economy, and political order among peoples worldwide. Methods and perspectives used in social/cultural anthropology.",
+          "highschool-title": "SOCIAL/CULTURAL ANTHROPOLOGY : ANTHR 101",
+          "course-title": "ANTHR-101",
+          "title2": "ANTHR 101 SOCIAL/CULTURAL ANTHROPOLOGY",
+          "university-title": "ANTHR 101: SOCIAL/CULTURAL ANTHROPOLOGY (ONLINE)",
+          "short-title": " SOCIAL/CULTURAL ANTHROPOLOGY : ANTHR 101",
+          "sort-title": "ANTHR 101 SOCIAL/CULTURAL ANTHROPOLOGY",
+          "title": " SOCIAL/CULTURAL ANTHROPOLOGY ",
+          "GE1": "Global and Cultural Awareness",
+          "GE2": "Social Science"
+        }
+      ]
+    }
+  }
+ }

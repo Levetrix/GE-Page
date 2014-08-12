@@ -1,5 +1,13 @@
 @CHARSET "ISO-8859-1";
 
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; } 
+}
+
 @import "foundation/settings";
 @import "foundation/components/offcanvas";
 
@@ -17,6 +25,12 @@ $black: #272328;
 $purple: #2a1f26;
 $white: #f9f9f9;
 $blue: #66B9E3;
+$charcoal: #323232;
+
+$default-text-shadow-color: rgba(70,70,70,.5);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 2px;
+$default-text-shadow-h-offset: 1px;
 
 @font-face {
     font-family: "OpenSans";
@@ -213,6 +227,7 @@ h1, h2, h3, h4 {
 	color:#fff;
 	font-weight:400;
 	text-align:center;
+	@include single-text-shadow;
 }
 
 .h1Head {
@@ -278,12 +293,12 @@ h1, h2, h3, h4 {
 /* Fly-in SCSS       */
     
 
-.clincher {
+.comes-in {
     display: none;
     margin-top:24px;
     position: relative;
     
-    &.comes-in {
+    &.come-in {
         @include opacity(0);
         top: -100px;
         left: 0;
@@ -341,6 +356,10 @@ h1, h2, h3, h4 {
 	margin-bottom:8px;
 }
 
+.questionnaireH2 > span {
+	display:none;	
+}
+
 .questionnaireForm {
    display:inline-block;
    background: url(../img/dark-blue-arrow.png) no-repeat #fff;
@@ -383,10 +402,13 @@ h1, h2, h3, h4 {
 .majorTileTitle {
 	font-size:1.1em;
 	margin-bottom:16px;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 .fulfilledLabel {
 	font-size:.95em;
+	text-decoration:underline;
 }
 
 .fulfilled {	
@@ -424,7 +446,14 @@ h1, h2, h3, h4 {
 
 /* Courses Area */
 
+.coursesHeader {
+	text-align:center;
+}
 
+.coursesHeader h2 {
+	font-size:1.8em;
+	margin:32px;
+}
 
 .coursesArea2 {
 	width:100%;
@@ -433,7 +462,7 @@ h1, h2, h3, h4 {
 
 .coursesArea {
 	display:none;
-	height:700px;
+	min-height:700px;
 	width:100%
 }
 
@@ -457,8 +486,8 @@ h1, h2, h3, h4 {
 	color: $white;
     display:inline-block;
 	vertical-align:top;
-	background-color:#eee;
-	border-right:#999 1px solid;
+	background-color:#fff;
+	border-right:#eee 1px solid;
 }
 
 .tier1 {
@@ -554,13 +583,13 @@ h1, h2, h3, h4 {
     text-align:left;
 }
 .tier2Info .card-front, .tier2Info > div {
-	background-color: #eee;
+	background-color: #fff;
 }
 .tier2Img .card-front, .tier2Img > div {
 	
 }
 .tier3Info .card-front, .tier3Info > div {
-	background-color: #eee;
+	background-color: #fff;
 }
 .tier3Img .card-front, .tier3Img > div {
     
@@ -569,11 +598,13 @@ h1, h2, h3, h4 {
 .tier2Img .card-front{
     background-image: url("../img/IMAGES/Physical%20Science/main.jpg");
     background-size:cover;
+    background-position:50% 50%;
 }
 
 .tier3Img .card-front{
     background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
     background-size:cover;
+    background-position:50% 50%;
 }
 .tier3 {
 	display:none;
@@ -592,6 +623,7 @@ h1, h2, h3, h4 {
 .contact {
 	text-align:center;
 	padding:16px;
+	background-color: $charcoal;
 }
 
 .contactTitle {
@@ -600,6 +632,7 @@ h1, h2, h3, h4 {
 
 .contactTitle h2 {
 	font-size:1.5em;
+	color: #fff;
 }
 
 .contactQuarter {
@@ -609,9 +642,20 @@ h1, h2, h3, h4 {
     margin: 8px 16px;
 }
 
+.contactQuarter h4 {
+	color:#fff;	
+}
+
 input {
     font-family:"OpenSansLt";
     font-size:.95em;	
+    background-color:transparent;
+    color:#fff;
+    padding-left:4px;
+    @include input-placeholder {
+    	color:#ddd;
+    }
+    border: 1px $blue solid;
 }
 
 .contactAreaQuarter {
@@ -626,6 +670,10 @@ input {
     margin: 8px 16px;
 }
 
+.contactHalf h4 {
+	color:#fff;	
+}
+
 .contactAreaHalf {
     width:100%;
     height:32px;
@@ -634,7 +682,14 @@ input {
 textarea {
     font-family:"OpenSansLt";
     font-size:.95em;    
-    min-height:48px;
+    min-height:48px;	
+    background-color:transparent;
+    color:#fff;
+    padding-left:4px;
+    @include input-placeholder {
+    	color:#ddd;
+    }
+    border: 1px $blue solid;
 }
 
 .submitButton {
@@ -662,6 +717,10 @@ textarea {
 	   margin-left:0;
 	   font-size:1.8em;
 	   text-align:center;
+	}
+	
+	.questionnaireH2 > span {
+		display:inline;
 	}
 	
     .questionnaireForm {
