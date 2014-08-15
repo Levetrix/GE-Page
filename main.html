@@ -18,31 +18,7 @@
     <script src="js/counter.js"></script>
 	<script src="js/fadein.js"></script>
 	<script src="js/test.js"></script>
-	
-	
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.smooth-scroll.js"></script>
-	
-	<script>
-    $(document)
-    .on('click', 'a[href*="#"]', function() {
-      if ( this.hash && this.pathname === location.pathname ) {
-        $.bbq.pushState( '#/' + this.hash.slice(1) );
-        return false;
-      }
-    })
-    .ready(function() {
-      $(window).bind('hashchange', function(event) {
-        var tgt = location.hash.replace(/^#\/?/,'');
-        if ( document.getElementById(tgt) ) {
-          $.smoothScroll({scrollTarget: '#' + tgt});
-        }
-      });
-
-      $(window).trigger('hashchange');
-    });
-  </script>
-    
+	<script type="text/javascript" src="//is.byu.edu/site/resources/lead_submit.js"></script>
 
     <script type="text/javascript"> 
     var init = function() {
@@ -63,35 +39,46 @@
     </script>
     
     <script type="text/javascript">
-    (function($){
-        var debug = true;
-        $(document).foundation();
-        $(document).ready(function () {
-            var closeMenuFunction = function() {
-                if($('.move-right').length > 0) {
-                    $('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
-                    $('.maincontent').unbind("click.menumain");
-                    if(debug) console.log("The menu should be closed/closing. The click handler has been removed from the .maincontent element.");
-                }
-            };
-            $('.left-small').bind("click.menu", function() {
-                if(debug) console.log("left-small clicked.");
-                //  Toggle the menu. This institutes the "current" state the user is requesting. (As in, it adds the class we're checking for later.)
-                $('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
-                //  Detect the existence of .move-right on the document. If it exists, then the menu is currently open.
-                if($('.move-right').length == 0) {
-                    //  The menu has been closed!
-                    if(debug) console.log("The menu has been closed!");
-                    $('.maincontent').unbind("click.menumain");
-                } else {
-                    //  The menu is open!
-                    if(debug) console.log("The menu is open!");
-                    $('.maincontent').bind("click.menumain", closeMenuFunction);
-                }
-            });
-        });
-    })(jQuery);
-    </script>
+		var debug = false;
+		attachForm("#contactForm",".clickhere", function( data, textStatus, jqXHR ){
+			if(debug){console.log("ajax connection done.")};
+			//	This is an example of a simple thing you could use to create a new element after your form. Placing a "placeholder" element provides you a natural way to move/place the response data where you want it. For flexibility of design, the way you've done it here is actually better. Therefore this is commented out.
+			//$('<div id="form-response">' + data.message + '</div>').insertAfter($("#contactForm"));
+			$("#form-submit").html('<img src="img/green-check-mark.png" class="form-success" />Thank you for your feedback! We appreciate your willingness to share your thoughts with us.').addClass("form-success");
+		}, false, debug);	//	The last two parameters are optional and here are set to their default values. They govern an optional setting if you supply null for the handler function and rely on the default setting there, and the debug setting which needs to be true to include debug information in the console.
+	</script>
+    
+	<script type="text/javascript">
+	(function($){	//	We've wrappered this javascript to keep it contained.
+		var debug = false;	//	development variable. optional and could be deleted here without consequence to execution.
+		$(document).foundation();	//	Initialize the foundation framework.
+			$(document).ready(function () {	//	Run the rest on document "ready" state change. (if document is somehow magically already in that state, this will fire immediately.)
+				//	Because this function is attached in multiple places, we define it as a variable so that it can exist once only in the code.
+			var closeMenuFunction = function() {
+				if($('.move-right').length > 0) {	//	This forces the function to operate as only a "close".
+							$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
+							$('.maincontent').unbind("click.menumain");
+							if(debug) console.log("The menu should be closed/closing. The click handler has been removed from the .maincontent element.");
+				}
+			};
+					$('.left-small').bind("click.menu", function() {
+						if(debug) console.log("left-small clicked.");
+				//	Toggle the menu. This institutes the "current" state the user is requesting. (As in, it adds the class we're checking for later.)
+				$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');
+				//	Detect the existence of .move-right on the document. If it exists, then the menu is currently open.
+				if($('.move-right').length == 0) {
+					//	The menu has been closed!
+					if(debug) console.log("The menu has been closed!");
+							$('.maincontent').unbind("click.menumain");
+					} else {
+					//	The menu is open!
+					if(debug) console.log("The menu is open!");
+						$('.maincontent').bind("click.menumain", closeMenuFunction);
+				}
+					});
+			});
+	})(jQuery);
+	</script>
 </head>
 <body>
 
@@ -144,13 +131,13 @@
 					           <div class="number number-count" end="14" delay="10">14</div>
 					           <div class="label">GE Requirements</div>
 					       </div>
+                           <div class="factItem">
+                               <div class="number number-count" end="143" delay="1" d="4">148</div>
+                               <div class="label">Majors</div>
+                           </div>
 					       <div class="factItem">
                                <div class="number number-count" end="358" delay="1" d="4">317</div>
                                <div class="label">GE Courses</div>
-                           </div>
-                           <div class="factItem">
-                               <div class="number number-count" end="673" delay="1" d="10">673</div>
-                               <div class="label">Somethings</div>
                            </div>
                            <div class="factItem">
                                <div class="number number-count" end="1487" delay="10" d="29">1243</div>
@@ -297,7 +284,7 @@
 	                       SUBMIT
 	                   </div>
 	                   <div id="form-submit"><!-- This is where the response from the form submission code will be placed after they submit. --></div>
-	                   <input type="hidden" id="form-id" name="form" value="High School Suite">
+	                   <input type="hidden" id="form-id" name="form" value="GE Feedback">
 	                   <input type="hidden" id="send_email_to_marketing-id" name="send-email-to-marketing" value="true">
 	                 </form>
 				</div>

@@ -15,7 +15,7 @@ var doubles = {
 	"PL SC-202": ["Letters","Civilization 2"],
 	"PL SC-170": ["Letters","Civilization 2"],
 	"PSYCH-308": ["Quantitative Reasoning","Languages of Learning"],
-	"TECH-202": ["Letters","Arts"],
+	"TECH-202": ["Civilization 2","Arts"],
 	"STAT-121": ["Quantitative Reasoning","Languages of Learning"]
 };
 $(document).ready(function() {
@@ -34,7 +34,7 @@ $(document).ready(function() {
 			       '    <p class="fulfilledLabel">GEs Fulfilled:</p>' +
 			       '    <p class="fulfilled">' + '<div class="ge-category">'+ doubles[geDoubleCreditCourses[geCategory][i]['course-title']].join('</div><div class="ge-category">') +'</div>' + '</p>' +
 			      // '    <p class="offered">This course is offered by BYU IS</p>' +
-			       '    <div class="buttonContainer"><a href="#"><p class="enrollButton">Enroll Now</p></a></div>' +					           
+			       '    <div class="buttonContainer"><a href="//is.byu.edu/site/courses/description.cfm?title='+geDoubleCreditCourses[geCategory][i]['types'].pop()['short-title']+'"><p class="enrollButton">Enroll Now</p></a></div>' +					           
 			       '</div>'));
 			}
 		}

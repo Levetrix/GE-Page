@@ -134,42 +134,42 @@
 			"generic1" : [
 				{
 					"header": "head",
-					"message": ""
+					"message": "BYU Independent Study offers eight different Physical Science G.E. courses for you to choose from!"
 				}
 			],
 		
 			"generic2" : [
 				{
 					"header": "head",
-					"message": ""
+					"message": "Is the Letters class you need full? Fulfill your G.E. credit now with BYU Independent Study!"
 				}
 			],
 		
 			"generic3" : [
 				{
 					"header": "head",
-					"message": ""
+					"message": "Can’t fit your Languages of Learning class in your schedule? Skip the stress and take it online!"
 				}
 			],
 		
 			"generic4" : [
 				{
 					"header": "head",
-					"message": ""
+					"message": "Work schedule interfering with class? Gain flexibility and take your Arts class online with BYU Independent Study!"
 				}
 			],
 		
 			"generic5" : [
 				{
 					"header": "head",
-					"message": ""
+					"message": "Pursue your passions and by taking your Social Science class with BYU Independent Study!"
 				}
 			],
 		
 			"generic6" : [
 				{
 					"header": "head",
-					"message": ""
+					"message": "Is your Civilization 2 class not offered this semester? Take it through BYU Independent Study!"
 				}
 			]
 		}

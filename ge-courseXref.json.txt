@@ -12,5 +12,5 @@
 	"First-Year Writing": "((WRTG)-(150))",
 	"Advanced Written & Oral Communication": "((ENGL)-(312|313|315|316|495)|(M COM-320))",
 	"Quantitative Reasoning": "((ACC-200)|(MATH)-(110|111|112|113|119)|(PHIL-205)|(SFL-260)|(STAT-121))",
-	"Languages of Learning": "((MATH)-(112|113|119)|(PHIL-305)|(PHYSCH-308)|(STAT-121)|(FREN-202)|(JAPAN)-(301|302))"
+	"Languages of Learning": "((MATH)-(112|113|119)|(PHIL-305)|(PSYCH-308)|(STAT-121)|(FREN-202)|(JAPAN)-(301|302))"
 }
