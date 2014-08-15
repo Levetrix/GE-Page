@@ -18,6 +18,29 @@
     <script src="js/counter.js"></script>
 	<script src="js/fadein.js"></script>
 	<script src="js/test.js"></script>
+	
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script>
+    $(document)
+    .on('click', 'a[href*="#"]', function() {
+      if ( this.hash && this.pathname === location.pathname ) {
+        $.bbq.pushState( '#/' + this.hash.slice(1) );
+        return false;
+      }
+    })
+    .ready(function() {
+      $(window).bind('hashchange', function(event) {
+        var tgt = location.hash.replace(/^#\/?/,'');
+        if ( document.getElementById(tgt) ) {
+          $.smoothScroll({scrollTarget: '#' + tgt});
+        }
+      });
+
+      $(window).trigger('hashchange');
+    });
+  </script>
     
 
     <script type="text/javascript"> 
@@ -141,15 +164,8 @@
 						    <div class="questionnaire fades">
 						       <h2 class="questionnaireH2"><span>Find </span>Double-Credit GEs..</h2>
 						       <div class="questionnaireForm">
-								    <select name="GEcat">
-									<option value="American Heritage">American Heritage</option>
-									<option value="Arts">Arts</option>
-									<option value="Civiliation 2">Civiliation 2</option>
-									<option value="Global and Cultural Awareness">Global and Cultural Awareness</option>
-									<option value="Languages of Learning">Languages of Learning</option>
-									<option value="">Letters</option>
-									<option value="Quantitative Reasoning">Quantitative Reasoning</option>
-									<option value="Social Science">Social Science</option>
+								    <select name="GEcat" id="geDoubleCreditCourseSelect">
+									<option value="">Not Initialized. Please Enable Javascript!</option>
 									</select>
 							  </div>
 						    </div>
