@@ -725,6 +725,11 @@ textarea {
 	background-color:$blue;
 }
 
+.submitButton:hover  {
+	cursor:pointer;
+	background-color:rgba($blue, .95);
+}
+
 .form-success {
 	color:#fff;
 }

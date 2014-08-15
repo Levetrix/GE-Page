@@ -4648,6 +4648,12 @@ textarea::-webkit-input-placeholder {
 }
 
 /* line 728, ../sass/main.scss */
+.submitButton:hover {
+  cursor: pointer;
+  background-color: rgba(102, 185, 227, 0.95);
+}
+
+/* line 733, ../sass/main.scss */
 .form-success {
   color: #fff;
 }
@@ -4656,94 +4662,94 @@ textarea::-webkit-input-placeholder {
 /*//// Media Queries////*/
 /*//////////////////////*/
 @media (min-width: 408px) {
-  /* line 739, ../sass/main.scss */
+  /* line 744, ../sass/main.scss */
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 577px) {
-  /* line 745, ../sass/main.scss */
+  /* line 750, ../sass/main.scss */
   .questionnaireH2 {
     margin-left: 0;
     font-size: 1.8em;
     text-align: center;
   }
 
-  /* line 751, ../sass/main.scss */
+  /* line 756, ../sass/main.scss */
   .questionnaireH2 > span {
     display: inline;
   }
 
-  /* line 755, ../sass/main.scss */
+  /* line 760, ../sass/main.scss */
   .questionnaireForm {
     width: calc(460px + 32px);
   }
 
-  /* line 760, ../sass/main.scss */
+  /* line 765, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(460px + 32px + 25px);
   }
 
-  /* line 765, ../sass/main.scss */
+  /* line 770, ../sass/main.scss */
   .contactTitle h2 {
     font-size: 1.8em;
   }
 
-  /* line 769, ../sass/main.scss */
+  /* line 774, ../sass/main.scss */
   .contactHalf {
     width: calc(464px + 32px);
   }
 }
 @media (min-width: 665px) {
-  /* line 779, ../sass/main.scss */
+  /* line 784, ../sass/main.scss */
   .tileInvis {
     display: inline-block;
   }
 
-  /* line 783, ../sass/main.scss */
+  /* line 788, ../sass/main.scss */
   .tileContainer {
     max-width: 850px;
     min-height: 400px;
   }
 
-  /* line 788, ../sass/main.scss */
+  /* line 793, ../sass/main.scss */
   .tile {
     max-width: 280px;
     margin-bottom: 2.25em;
   }
 
-  /* line 793, ../sass/main.scss */
+  /* line 798, ../sass/main.scss */
   .tile:nth-child(even) {
     margin-left: 2.5em;
   }
 
-  /* line 798, ../sass/main.scss */
+  /* line 803, ../sass/main.scss */
   .tile:nth-child(even) > .h3Tile,
   .tile:nth-child(even) > .tileText {
     text-align: left;
   }
 
-  /* line 803, ../sass/main.scss */
+  /* line 808, ../sass/main.scss */
   .tile:nth-child(odd) > .h3Tile,
   .tile:nth-child(odd) > .tileText {
     text-align: right;
   }
 
-  /* line 807, ../sass/main.scss */
+  /* line 812, ../sass/main.scss */
   .tile:nth-child(odd) > .icon {
     float: right;
     margin-bottom: 3.5em;
     margin-left: .75em;
   }
 
-  /* line 813, ../sass/main.scss */
+  /* line 818, ../sass/main.scss */
   .tile:nth-child(even) > .icon {
     float: left;
     margin-bottom: 3em;
     margin-right: .75em;
   }
 
-  /* line 825, ../sass/main.scss */
+  /* line 830, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -4753,7 +4759,7 @@ textarea::-webkit-input-placeholder {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
-  /* line 834, ../sass/main.scss */
+  /* line 839, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -4764,27 +4770,27 @@ textarea::-webkit-input-placeholder {
     vertical-align: top;
   }
 
-  /* line 845, ../sass/main.scss */
+  /* line 850, ../sass/main.scss */
   .mobi {
     display: none;
   }
 
-  /* line 849, ../sass/main.scss */
+  /* line 854, ../sass/main.scss */
   .coursesArea {
     height: 595px;
   }
 
-  /* line 853, ../sass/main.scss */
+  /* line 858, ../sass/main.scss */
   .tier2 {
     display: inline-block;
   }
 
-  /* line 858, ../sass/main.scss */
+  /* line 863, ../sass/main.scss */
   .tier3 {
     display: inline-block;
   }
 
-  /* line 862, ../sass/main.scss */
+  /* line 867, ../sass/main.scss */
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -4792,7 +4798,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 1.05em;
   }
 
-  /* line 869, ../sass/main.scss */
+  /* line 874, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -4800,7 +4806,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 11px;
   }
 
-  /* line 876, ../sass/main.scss */
+  /* line 881, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -4812,23 +4818,23 @@ textarea::-webkit-input-placeholder {
     color: #333;
   }
 
-  /* line 887, ../sass/main.scss */
+  /* line 892, ../sass/main.scss */
   .listi a {
     color: #333;
   }
 }
 @media (min-width: 716px) {
-  /* line 893, ../sass/main.scss */
+  /* line 898, ../sass/main.scss */
   .tile:nth-child(even) {
     margin-left: 4em;
   }
 
-  /* line 897, ../sass/main.scss */
+  /* line 902, ../sass/main.scss */
   .coursesArea {
     height: 645px;
   }
 
-  /* line 901, ../sass/main.scss */
+  /* line 906, ../sass/main.scss */
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -4836,7 +4842,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 1em;
   }
 
-  /* line 908, ../sass/main.scss */
+  /* line 913, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -4844,7 +4850,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 11px;
   }
 
-  /* line 915, ../sass/main.scss */
+  /* line 920, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -4856,27 +4862,27 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width: 843px) {
-  /* line 927, ../sass/main.scss */
+  /* line 932, ../sass/main.scss */
   .facts {
     display: block;
   }
 
-  /* line 931, ../sass/main.scss */
+  /* line 936, ../sass/main.scss */
   .clincher {
     display: block;
   }
 
-  /* line 935, ../sass/main.scss */
+  /* line 940, ../sass/main.scss */
   .questionnaireForm {
     width: calc(462px + 64px);
   }
 
-  /* line 939, ../sass/main.scss */
+  /* line 944, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(462px + 64px + 25px);
   }
 
-  /* line 943, ../sass/main.scss */
+  /* line 948, ../sass/main.scss */
   .contactHalf {
     display: block;
     margin-right: auto;
@@ -4884,24 +4890,24 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width: 870px) {
-  /* line 951, ../sass/main.scss */
+  /* line 956, ../sass/main.scss */
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
-  /* line 958, ../sass/main.scss */
+  /* line 963, ../sass/main.scss */
   .tile {
     max-width: 375px;
     min-height: 100px;
   }
 
-  /* line 967, ../sass/main.scss */
+  /* line 972, ../sass/main.scss */
   .coursesArea {
     height: 775px;
   }
 
-  /* line 971, ../sass/main.scss */
+  /* line 976, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -4912,7 +4918,7 @@ textarea::-webkit-input-placeholder {
     vertical-align: top;
   }
 
-  /* line 982, ../sass/main.scss */
+  /* line 987, ../sass/main.scss */
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -4920,7 +4926,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 1.15em;
   }
 
-  /* line 989, ../sass/main.scss */
+  /* line 994, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -4928,7 +4934,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 11px;
   }
 
-  /* line 996, ../sass/main.scss */
+  /* line 1001, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -4939,7 +4945,7 @@ textarea::-webkit-input-placeholder {
     margin-bottom: .1em;
   }
 
-  /* line 1006, ../sass/main.scss */
+  /* line 1011, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -4950,47 +4956,47 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width: 978px) {
-  /* line 1018, ../sass/main.scss */
+  /* line 1023, ../sass/main.scss */
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
-  /* line 1024, ../sass/main.scss */
+  /* line 1029, ../sass/main.scss */
   .coursesArea {
     height: 708px;
   }
 
-  /* line 1028, ../sass/main.scss */
+  /* line 1033, ../sass/main.scss */
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;
   }
 }
 @media (min-width: 1109px) {
-  /* line 1037, ../sass/main.scss */
+  /* line 1042, ../sass/main.scss */
   .factItem {
     width: calc(230px);
     margin: 16px;
   }
 
-  /* line 1042, ../sass/main.scss */
+  /* line 1047, ../sass/main.scss */
   .questionnaireForm {
     width: calc(492px + 64px);
   }
 
-  /* line 1046, ../sass/main.scss */
+  /* line 1051, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(492px + 64px + 25px);
   }
 
-  /* line 1050, ../sass/main.scss */
+  /* line 1055, ../sass/main.scss */
   .number {
     font-size: 3em;
   }
 }
 @media (min-width: 1140px) {
-  /* line 1056, ../sass/main.scss */
+  /* line 1061, ../sass/main.scss */
   .tileContainer {
     display: inline-block;
     width: 310px;
@@ -5000,23 +5006,23 @@ textarea::-webkit-input-placeholder {
     overflow: auto;
   }
 
-  /* line 1065, ../sass/main.scss */
+  /* line 1070, ../sass/main.scss */
   .leftCol > .tile:nth-child(even) {
     display: none;
   }
 
-  /* line 1069, ../sass/main.scss */
+  /* line 1074, ../sass/main.scss */
   .rightCol > .tile:nth-child(odd) {
     display: none;
     margin-left: 0px;
   }
 
-  /* line 1074, ../sass/main.scss */
+  /* line 1079, ../sass/main.scss */
   .rightCol > .tile:nth-child(even) {
     margin-left: 0px;
   }
 
-  /* line 1078, ../sass/main.scss */
+  /* line 1083, ../sass/main.scss */
   .midImg {
     display: inline-block;
     width: 445px;
@@ -5028,7 +5034,7 @@ textarea::-webkit-input-placeholder {
   /*
   	Luke added this section
   */
-  /* line 1090, ../sass/main.scss */
+  /* line 1095, ../sass/main.scss */
   .tileContainerLuke {
     width: 50rem;
     -webkit-column-count: 3;
@@ -5036,27 +5042,27 @@ textarea::-webkit-input-placeholder {
     margin-right: auto;
   }
 
-  /* line 1096, ../sass/main.scss */
+  /* line 1101, ../sass/main.scss */
   .tileContainerLuke .tileLuke {
     display: block;
     width: 15rem;
   }
 
-  /* line 1102, ../sass/main.scss */
+  /* line 1107, ../sass/main.scss */
   .tileContainerLuke .tileLuke:nth-child(n+2) > .icon {
     float: left;
     margin-bottom: 3em;
     margin-right: .75em;
   }
 
-  /* line 1107, ../sass/main.scss */
+  /* line 1112, ../sass/main.scss */
   .tileContainerLuke .tileLuke:nth-child(-n+3) > .icon {
     float: right;
     margin-bottom: 3.5em;
     margin-left: .75em;
   }
 
-  /* line 1112, ../sass/main.scss */
+  /* line 1117, ../sass/main.scss */
   .tileContainerLuke .tileLuke:nth-child(4):before {
     height: 30em;
     background-color: blue;
