@@ -636,6 +636,34 @@ h1, h2, h3, h4 {
  /*   background-color: $black;*/
 }
 
+.ge-section {
+	min-width:50%;
+	width:50%;
+	
+	& > ul {
+		background-color: white;
+		border: 1px solid #ccc;
+		margin:0;
+		padding:0;
+		
+		& > li:before {
+			content: "\003E \020";
+			font-family:"consolas";
+			width:1em;
+			float:left;
+		}
+		& > li {
+			display:block;
+			font-family:"consolas";
+			margin:0;
+			padding:0;
+		}
+	}
+	& > h3 {
+		display:none;
+	}
+}
+
 /* ------------------------ */
 /* ------Contact Form------ */
 /* ------------------------ */

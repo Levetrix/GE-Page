@@ -63,8 +63,8 @@ $(document).ready(function() {
 			for(var key in geXref) {
 				geCourses[key] = [];
 				for(var i=0; i < categories.length ; i++) {
-					//console.log("Course? Please! " + categories[i]);
-					//console.log(geData[categories[i]]);
+					console.log("Course? Please! " + categories[i]);
+					console.log(geData[categories[i]]);
 					for(var j=0; j < geData[categories[i]].length ; j++){
 						var courseTitle = geData[categories[i]][j]['course-title'],
 							matchRegEx = new RegExp(geXref[key]);
@@ -105,7 +105,13 @@ $(document).ready(function() {
 			});
 			for(var geCategory in geCourses) {
 				//console.log(geCategory + ": " + geCourses[geCategory].length);
+				var categoryParent = $('<div class="ge-section"><h3 id="ge-category-'+geCategory.replace(/\s/g,"_")+'">'+geCategory+'</h3><ul></ul></div>'),
+					courseList = $("#ge-courselist").append(categoryParent);
 				for(var i=0; i < geCourses[geCategory].length; i++) {
+					if(geCourses[geCategory][i]) {
+						var course = $('<li class="course-title">'+geCourses[geCategory][i]['university-title'].replace(/\s*\([^\)]+\)/g,"")+'</li>');
+							categoryParent.find("ul").append(course);
+					}
 					//console.log(geCourses[geCategory][i]['title']);
 					$("#courseData").append($('<div class="majorTile">' +
 					   '    	<p class="majorTileTitle">' +
