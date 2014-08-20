@@ -1168,116 +1168,134 @@ ul.off-canvas-list li a:hover {
   left: 15.625rem;
 }
 
-/***
-* CSS3 FLIP CARDS
-* Markup for an element that a user can hover to reveal content on the back, like a card
-* Browser Support: Safari, Firefox, Chrome, IE8+, and Touch Devices; (IE9 and below will not have any flip effect but will just change on hover)
-***/
-/* line 9, ../sass/transform/_flip.scss */
-.flip-card {
-  display: block;
+@CHARSET "ISO-8859-1";
+/* line 6, ../sass/transform/_animateReplace.jquery.scss */
+.appear-animation {
+  display: inline-block;
   position: relative;
   z-index: 1000;
+  overflow: shown;
 }
-/* line 15, ../sass/transform/_flip.scss */
-.flip-card .card-front,
-.flip-card .card-back {
+/* line 12, ../sass/transform/_animateReplace.jquery.scss */
+.appear-animation .coming-in, .appear-animation .going-out {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 900ms;
-  -moz-transition: -moz-transform 900ms;
-  -o-transition: -o-transform 900ms;
-  transition: transform 900ms;
+  -webkit-transition: -webkit-transform, box-shadow;
+  -moz-transition: -moz-transform, box-shadow;
+  -o-transition: -o-transform, box-shadow;
+  transition: transform, box-shadow;
+  -webkit-transition-duration: 0.75s, 0.5s;
+  -moz-transition-duration: 0.75s, 0.5s;
+  -o-transition-duration: 0.75s, 0.5s;
+  transition-duration: 0.75s, 0.5s;
   display: inline-block;
   height: 100%;
-  position: absolute;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
 }
-/* line 24, ../sass/transform/_flip.scss */
-.flip-card .card-front {
-  -webkit-transform: perspective(600) rotateY(0deg) translateX(0);
-  -moz-transform: perspective(600) rotateY(0deg) translateX(0);
-  -ms-transform: perspective(600) rotateY(0deg) translateX(0);
-  -o-transform: perspective(600) rotateY(0deg) translateX(0);
-  transform: perspective(600) rotateY(0deg) translateX(0);
+/* line 27, ../sass/transform/_animateReplace.jquery.scss */
+.appear-animation .coming-in {
+  -webkit-transform: perspective(600) rotateY(0deg);
+  -moz-transform: perspective(600) rotateY(0deg);
+  -ms-transform: perspective(600) rotateY(0deg);
+  -o-transform: perspective(600) rotateY(0deg);
+  transform: perspective(600) rotateY(0deg);
+  -webkit-transform: perspective(600) rotateY(0deg);
+  -moz-transform: perspective(600) rotateY(0deg);
+  -ms-transform: perspective(600) rotateY(0deg);
+  -o-transform: perspective(600) rotateY(0deg);
+  transform: perspective(600) rotateY(0deg);
+  -webkit-transform-origin: left 50%;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -o-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(0.645, -0.6, 0, 1);
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(0.645, -0.6, 0, 1);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(0.645, -0.6, 0, 1);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(0.645, -0.6, 0, 1);
+  -webkit-box-shadow: #cccccc 0 0 10px;
+  -moz-box-shadow: #cccccc 0 0 10px;
+  box-shadow: #cccccc 0 0 10px;
   z-index: 900;
+  /*background-color: lightyellow;*/
 }
-/* line 29, ../sass/transform/_flip.scss */
-.flip-card .card-back {
-  -webkit-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  -moz-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  -ms-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  -o-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  transform: perspective(600) rotateY(-180deg) translateX(100%);
-  /*
-  	@include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px
-  */
+/* line 37, ../sass/transform/_animateReplace.jquery.scss */
+.appear-animation .going-out {
+  -webkit-transform: perspective(600) rotateY(180deg);
+  -moz-transform: perspective(600) rotateY(180deg);
+  -ms-transform: perspective(600) rotateY(180deg);
+  -o-transform: perspective(600) rotateY(180deg);
+  transform: perspective(600) rotateY(180deg);
+  -webkit-transform: perspective(600) rotateY(180deg);
+  -moz-transform: perspective(600) rotateY(180deg);
+  -ms-transform: perspective(600) rotateY(180deg);
+  -o-transform: perspective(600) rotateY(180deg);
+  transform: perspective(600) rotateY(180deg);
+  -webkit-transform-origin: left 50%;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -o-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(1, 0, 0.255, 1.6);
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(1, 0, 0.255, 1.6);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(1, 0, 0.255, 1.6);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), cubic-bezier(1, 0, 0.255, 1.6);
+  -webkit-box-shadow: #cccccc -50px -10px 40px;
+  -moz-box-shadow: #cccccc -50px -10px 40px;
+  box-shadow: #cccccc -50px -10px 40px;
   z-index: 800;
+  /*background-color: lavender;*/
 }
-/* line 38, ../sass/transform/_flip.scss */
-.flip-card:hover .card-front, .flip-card.flip-card-now .card-front {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+/* line 48, ../sass/transform/_animateReplace.jquery.scss */
+.appear-animation.animated .coming-in {
+  -webkit-transform: perspective(600) rotateY(180deg);
+  -moz-transform: perspective(600) rotateY(180deg);
+  -ms-transform: perspective(600) rotateY(180deg);
+  -o-transform: perspective(600) rotateY(180deg);
+  transform: perspective(600) rotateY(180deg);
+  -webkit-transform: perspective(600) rotateY(180deg);
+  -moz-transform: perspective(600) rotateY(180deg);
+  -ms-transform: perspective(600) rotateY(180deg);
+  -o-transform: perspective(600) rotateY(180deg);
+  transform: perspective(600) rotateY(180deg);
+  -webkit-transform-origin: left 50%;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -o-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -webkit-box-shadow: #cccccc -50px -10px 40px;
+  -moz-box-shadow: #cccccc -50px -10px 40px;
+  box-shadow: #cccccc -50px -10px 40px;
 }
-/* line 42, ../sass/transform/_flip.scss */
-.flip-card:hover .card-back, .flip-card.flip-card-now .card-back {
+/* line 54, ../sass/transform/_animateReplace.jquery.scss */
+.appear-animation.animated .going-out {
+  -webkit-transform: perspective(600) rotateY(0deg);
+  -moz-transform: perspective(600) rotateY(0deg);
+  -ms-transform: perspective(600) rotateY(0deg);
+  -o-transform: perspective(600) rotateY(0deg);
+  transform: perspective(600) rotateY(0deg);
+  -webkit-transform: perspective(600) rotateY(0deg);
+  -moz-transform: perspective(600) rotateY(0deg);
+  -ms-transform: perspective(600) rotateY(0deg);
+  -o-transform: perspective(600) rotateY(0deg);
+  transform: perspective(600) rotateY(0deg);
+  -webkit-transform-origin: left 50%;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -o-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -webkit-box-shadow: #cccccc 0 0 10px;
+  -moz-box-shadow: #cccccc 0 0 10px;
+  box-shadow: #cccccc 0 0 10px;
   z-index: 950;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-
-/*** Just for show... ***/
-/* line 55, ../sass/transform/_flip.scss */
-.flip-card {
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
-  color: #fff;
-  cursor: pointer;
-  float: left;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  min-width: 100px;
-  max-width: 400px;
-  /*.card-back,*/
-}
-/* line 67, ../sass/transform/_flip.scss */
-.flip-card .card-front,
-.flip-card .card-back {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 71, ../sass/transform/_flip.scss */
-.flip-card .card-front {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 75, ../sass/transform/_flip.scss */
-.flip-card .card-shadow {
-  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
-  -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
-  /*background-color: #499bea; // Old browsers*/
 }
 
 /*!
@@ -3816,19 +3834,19 @@ ul.off-canvas-list li a:hover {
   src: url(../fonts/opensans-light-webfont.eot);
 }
 
-/* line 65, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 html, body {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 body {
   font-family: "OpenSansLt", OpenSansLt_IE;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 div {
   padding: 0;
   margin: 0;
@@ -3836,7 +3854,7 @@ div {
 }
 
 /* Card Flip CSS */
-/* line 84, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .container {
   width: 200px;
   height: 260px;
@@ -3844,7 +3862,7 @@ div {
   perspective: 800px;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .T2card {
   width: 100%;
   height: 100%;
@@ -3854,7 +3872,7 @@ div {
   transform-origin: right center;
 }
 
-/* line 100, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 .T2card figure {
   display: block;
   position: absolute;
@@ -3863,25 +3881,25 @@ div {
   backface-visibility: hidden;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .T2card .front {
   background: red;
 }
 
-/* line 112, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .T2card .back {
   background: blue;
   transform: rotateY(180deg);
 }
 
-/* line 117, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 .T2card.flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
 
 /* END Card Flip CSS */
 /* Down Arrow CSS    */
-/* line 128, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .arrow {
   position: absolute;
   top: calc(100vh - 50px - 60px);
@@ -3889,7 +3907,7 @@ div {
   margin-left: -20px;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .bounce {
   -webkit-animation-name: bounce;
   -moz-animation-name: bounce;
@@ -3897,7 +3915,7 @@ div {
   animation-name: bounce;
 }
 
-/* line 141, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .animated {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -3920,81 +3938,81 @@ div {
 }
 
 @-webkit-keyframes bounce {
-  /* line 167, ../sass/main.scss */
+  /* line 165, ../sass/main.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
   }
 
-  /* line 167, ../sass/main.scss */
+  /* line 165, ../sass/main.scss */
   40% {
     -webkit-transform: translateY(-30px);
   }
 
-  /* line 168, ../sass/main.scss */
+  /* line 166, ../sass/main.scss */
   60% {
     -webkit-transform: translateY(-15px);
   }
 }
 
 @-moz-keyframes bounce {
-  /* line 172, ../sass/main.scss */
+  /* line 170, ../sass/main.scss */
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
   }
 
-  /* line 173, ../sass/main.scss */
+  /* line 171, ../sass/main.scss */
   40% {
     -moz-transform: translateY(-30px);
   }
 
-  /* line 174, ../sass/main.scss */
+  /* line 172, ../sass/main.scss */
   60% {
     -moz-transform: translateY(-15px);
   }
 }
 
 @-o-keyframes bounce {
-  /* line 178, ../sass/main.scss */
+  /* line 176, ../sass/main.scss */
   0%, 20%, 50%, 80%, 100% {
     -o-transform: translateY(0);
   }
 
-  /* line 179, ../sass/main.scss */
+  /* line 177, ../sass/main.scss */
   40% {
     -o-transform: translateY(-30px);
   }
 
-  /* line 180, ../sass/main.scss */
+  /* line 178, ../sass/main.scss */
   60% {
     -o-transform: translateY(-15px);
   }
 }
 
 @keyframes bounce {
-  /* line 183, ../sass/main.scss */
+  /* line 181, ../sass/main.scss */
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
 
-  /* line 184, ../sass/main.scss */
+  /* line 182, ../sass/main.scss */
   40% {
     transform: translateY(-30px);
   }
 
-  /* line 185, ../sass/main.scss */
+  /* line 183, ../sass/main.scss */
   60% {
     transform: translateY(-15px);
   }
 }
 
 /* End Down Arrow CSS */
-/* line 196, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 p {
   margin: 0;
   padding: 0;
 }
 
-/* line 201, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 h1, h2, h3, h4 {
   font-family: "OpenSansLt", OpenSansLt_IE;
   font-size: 16px;
@@ -4003,7 +4021,7 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-/* line 209, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .main {
   position: relative;
   height: calc(100vh - 60px);
@@ -4018,7 +4036,7 @@ h1, h2, h3, h4 {
   z-index: -1;
 }
 
-/* line 223, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .shader {
   position: absolute;
   top: 0;
@@ -4027,7 +4045,7 @@ h1, h2, h3, h4 {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* line 231, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .headtext {
   position: relative;
   z-index: 10;
@@ -4035,7 +4053,7 @@ h1, h2, h3, h4 {
   margin-top: 8%;
 }
 
-/* line 238, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 .h1Head, .h2Head {
   font-family: "OpenSans", "OpenSans_IE";
   color: #fff;
@@ -4044,7 +4062,7 @@ h1, h2, h3, h4 {
   text-shadow: 1px 2px 3px rgba(70, 70, 70, 0.5);
 }
 
-/* line 246, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 .h1Head {
   font-size: 2.1em;
   letter-spacing: 1px;
@@ -4052,7 +4070,7 @@ h1, h2, h3, h4 {
   /*font-family:"opensanslt";*/
 }
 
-/* line 253, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 .h2Head {
   font-size: 1.8em;
   letter-spacing: 2px;
@@ -4062,7 +4080,7 @@ h1, h2, h3, h4 {
 /* //////////////////////// */
 /*    Second Section Area   */
 /* //////////////////////// */
-/* line 263, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 .two {
   width: 100%;
   color: #d7d7d7;
@@ -4073,19 +4091,19 @@ h1, h2, h3, h4 {
   background-color: #323232;
 }
 
-/* line 273, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .twoContainer {
   text-align: center;
   width: 100%;
   min-height: 600px;
 }
 
-/* line 279, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 .facts {
   display: none;
 }
 
-/* line 283, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 .factItem {
   display: inline-block;
   margin: 0 0em;
@@ -4093,7 +4111,7 @@ h1, h2, h3, h4 {
   max-height: 115px;
 }
 
-/* line 290, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 .number {
   font-family: "Trebuchet MS";
   font-weight: 800;
@@ -4103,7 +4121,7 @@ h1, h2, h3, h4 {
   margin-bottom: 16px;
 }
 
-/* line 299, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .label {
   font-family: "OpenSansLt", OpenSansLt_IE;
   font-weight: 400;
@@ -4112,20 +4130,20 @@ h1, h2, h3, h4 {
 }
 
 /* Fly-in SCSS       */
-/* line 309, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .comes-in {
   display: none;
   margin-top: 24px;
   position: relative;
 }
-/* line 314, ../sass/main.scss */
+/* line 312, ../sass/main.scss */
 .comes-in.come-in {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   top: -100px;
   left: 0;
 }
-/* line 320, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 .comes-in.come-in, .comes-in.come-in-faster {
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
@@ -4147,7 +4165,7 @@ h1, h2, h3, h4 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 328, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .comes-in.come-in {
   -webkit-transition-duration: 1s, 3s;
   -moz-transition-duration: 1s, 3s;
@@ -4156,12 +4174,12 @@ h1, h2, h3, h4 {
 }
 
 /* END Fly-in SCSS   */
-/* line 335, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .clincherNumber {
   font-size: 3.4em;
 }
 
-/* line 339, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 .questionnaire {
   display: block;
   margin-left: auto;
@@ -4172,7 +4190,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-/* line 349, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 .fades {
   -webkit-transition: opacity;
   -moz-transition: opacity;
@@ -4191,18 +4209,18 @@ h1, h2, h3, h4 {
   -o-transition-duration: 3s;
   transition-duration: 3s;
 }
-/* line 354, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .fades.faded-out {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 357, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .fades.fade-in {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 362, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .questionnaireH2 {
   font-family: "OpenSansLt", OpenSansLt_IE;
   font-size: 1.5em;
@@ -4213,12 +4231,12 @@ h1, h2, h3, h4 {
   margin-bottom: 8px;
 }
 
-/* line 372, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .questionnaireH2 > span {
   display: none;
 }
 
-/* line 376, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .questionnaireForm {
   display: inline-block;
   background: url(../img/dark-blue-arrow.png) no-repeat white;
@@ -4229,7 +4247,7 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
-/* line 386, ../sass/main.scss */
+/* line 384, ../sass/main.scss */
 .questionnaireForm select {
   background: transparent;
   width: 255px;
@@ -4245,12 +4263,12 @@ h1, h2, h3, h4 {
   z-index: 10;
 }
 
-/* line 401, ../sass/main.scss */
+/* line 399, ../sass/main.scss */
 .majorTiles {
   text-align: center;
 }
 
-/* line 405, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 .majorTile {
   display: inline-block;
   text-align: left;
@@ -4261,7 +4279,7 @@ h1, h2, h3, h4 {
   width: 230px;
 }
 
-/* line 415, ../sass/main.scss */
+/* line 413, ../sass/main.scss */
 .majorTileTitle {
   font-size: 1.1em;
   margin-bottom: 16px;
@@ -4270,31 +4288,31 @@ h1, h2, h3, h4 {
   max-height: 84px;
 }
 
-/* line 423, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
 .fulfilledLabel {
   font-size: .95em;
   text-decoration: underline;
 }
 
-/* line 428, ../sass/main.scss */
+/* line 426, ../sass/main.scss */
 .fulfilled {
   font-size: .95em;
   margin-bottom: 16px;
 }
 
-/* line 434, ../sass/main.scss */
+/* line 432, ../sass/main.scss */
 .ge-category {
   font-size: .95em;
   line-height: 1.45em;
 }
 
-/* line 439, ../sass/main.scss */
+/* line 437, ../sass/main.scss */
 .offered {
   font-size: .95em;
   margin-bottom: 16px;
 }
 
-/* line 444, ../sass/main.scss */
+/* line 442, ../sass/main.scss */
 .enrollButton {
   display: block;
   width: 95px;
@@ -4309,7 +4327,7 @@ h1, h2, h3, h4 {
   margin-bottom: 8px;
 }
 
-/* line 458, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 .buttonContainer {
   text-align: center;
 }
@@ -4318,45 +4336,45 @@ h1, h2, h3, h4 {
 /*  End Second Section Area */
 /* //////////////////////// */
 /* Courses Area */
-/* line 469, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 .coursesHeader {
   text-align: center;
 }
 
-/* line 473, ../sass/main.scss */
+/* line 471, ../sass/main.scss */
 .coursesHeader h2 {
   font-size: 1.8em;
   margin: 32px;
 }
 
-/* line 478, ../sass/main.scss */
+/* line 476, ../sass/main.scss */
 .coursesArea2 {
   width: 100%;
   height: 1428px;
 }
 
-/* line 483, ../sass/main.scss */
+/* line 481, ../sass/main.scss */
 .coursesArea {
   display: none;
   min-height: 700px;
   width: 100%;
 }
 
-/* line 489, ../sass/main.scss */
+/* line 487, ../sass/main.scss */
 .vertHalf {
   min-height: 50%;
   height: 50%;
   min-width: 100%;
 }
 
-/* line 495, ../sass/main.scss */
+/* line 493, ../sass/main.scss */
 .vertFull {
   min-height: 100%;
   height: 100%;
   min-width: 100%;
 }
 
-/* line 501, ../sass/main.scss */
+/* line 499, ../sass/main.scss */
 .leftHalf {
   min-height: 100%;
   height: 100%;
@@ -4369,7 +4387,7 @@ h1, h2, h3, h4 {
   border-right: #eee 1px solid;
 }
 
-/* line 513, ../sass/main.scss */
+/* line 511, ../sass/main.scss */
 .tier1 {
   font-size: 1.07em;
   margin: 0;
@@ -4377,7 +4395,7 @@ h1, h2, h3, h4 {
   padding-left: .4em;
 }
 
-/* line 520, ../sass/main.scss */
+/* line 518, ../sass/main.scss */
 .listi {
   display: block;
   line-height: 1.5em;
@@ -4385,7 +4403,7 @@ h1, h2, h3, h4 {
   margin-right: 11px;
 }
 
-/* line 527, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 .listi:before {
   content: "\003E \020";
   font-family: "consolas";
@@ -4396,7 +4414,7 @@ h1, h2, h3, h4 {
   margin-bottom: .1em;
 }
 
-/* line 537, ../sass/main.scss */
+/* line 538, ../sass/main.scss */
 .rightHalf {
   min-height: 100%;
   height: 100%;
@@ -4406,7 +4424,7 @@ h1, h2, h3, h4 {
   /*background-color:rgba(100,60,60,.5);*/
 }
 
-/* line 546, ../sass/main.scss */
+/* line 547, ../sass/main.scss */
 .flip-card-container {
   -webkit-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
   -moz-box-shadow: 0 0 150px rgba(0, 0, 0, 0.8) inset;
@@ -4414,29 +4432,29 @@ h1, h2, h3, h4 {
   background-color: #ccc;
 }
 
-/* line 551, ../sass/main.scss */
+/* line 552, ../sass/main.scss */
 .mobi {
   min-height: 50%;
   max-height: 50%;
 }
 
-/* line 556, ../sass/main.scss */
+/* line 557, ../sass/main.scss */
 .mobiTop {
   background-color: #872633;
 }
 
-/* line 560, ../sass/main.scss */
+/* line 561, ../sass/main.scss */
 .mobiBottom {
   background-color: #3c5346;
 }
 
-/* line 564, ../sass/main.scss */
-.rightHalf > div > div {
+/* line 565, ../sass/main.scss */
+.rightHalf .tier2Info {
   text-align: left;
 }
 
-/* line 568, ../sass/main.scss */
-.rightHalf > div > div > div {
+/* line 569, ../sass/main.scss */
+.rightHalf .card-front {
   padding: 1rem;
 }
 
@@ -4445,7 +4463,7 @@ h1, h2, h3, h4 {
 	display:inline-block;
 	line-height:1pem;
 }*/
-/* line 577, ../sass/main.scss */
+/* line 578, ../sass/main.scss */
 .tier2 {
   display: none;
   min-width: 50%;
@@ -4454,22 +4472,32 @@ h1, h2, h3, h4 {
   height: 100%;
   display: inline-block;
   /*background-color: $purple;*/
+  vertical-align: top;
+  /*margin-right:-1px;*/
+  position: relative;
+  /*left:-1px;*/
 }
 
-/* line 587, ../sass/main.scss */
+/* line 591, ../sass/main.scss */
+.tier2 > div {
+  height: 100%;
+}
+
+/* line 595, ../sass/main.scss */
 .tier2Info, .tier2Info .card-front, .tier2Img, .tier2Img .card-front {
   min-width: 100%;
   max-width: 100%;
+  vertical-align: top;
 }
 
-/* line 592, ../sass/main.scss */
+/* line 601, ../sass/main.scss */
 .tier2Info .card-front, .tier2Img .card-front, .tier3Info .card-front, .tier3Img .card-front {
   min-height: 100%;
   max-height: 100%;
   height: 100%;
 }
 
-/* line 598, ../sass/main.scss */
+/* line 607, ../sass/main.scss */
 .tier2Info, .tier2Img, .tier3Info, .tier3Img {
   min-height: 50%;
   height: 50%;
@@ -4478,31 +4506,31 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
-/* line 605, ../sass/main.scss */
+/* line 614, ../sass/main.scss */
 .tier2Info .card-front, .tier2Info > div {
   background-color: #fff;
 }
 
-/* line 611, ../sass/main.scss */
+/* line 620, ../sass/main.scss */
 .tier3Info .card-front, .tier3Info > div {
   background-color: #fff;
 }
 
-/* line 618, ../sass/main.scss */
+/* line 627, ../sass/main.scss */
 .tier2Img .card-front {
   background-image: url("../img/IMAGES/Physical%20Science/main.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 
-/* line 624, ../sass/main.scss */
+/* line 633, ../sass/main.scss */
 .tier3Img .card-front {
   background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 
-/* line 629, ../sass/main.scss */
+/* line 638, ../sass/main.scss */
 .tier3 {
   display: none;
   min-width: 50%;
@@ -4511,43 +4539,48 @@ h1, h2, h3, h4 {
   height: 100%;
   display: inline-block;
   /*   background-color: $black;*/
+  vertical-align: top;
 }
 
-/* line 639, ../sass/main.scss */
+/* line 649, ../sass/main.scss */
 .ge-section {
   min-width: 50%;
-  width: 50%;
-}
-/* line 642, ../sass/main.scss */
-.ge-section > ul {
-  background-color: white;
-  border: 1px solid #ccc;
+  width: 100%;
   margin: 0;
   padding: 0;
+  min-height: 50%;
+  background-color: white;
+  /*border: 1px solid #ccc;*/
 }
-/* line 648, ../sass/main.scss */
-.ge-section > ul > li:before {
+/* line 658, ../sass/main.scss */
+.ge-section ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* line 663, ../sass/main.scss */
+.ge-section ul li:before {
   content: "\003E \020";
   font-family: "consolas";
   width: 1em;
   float: left;
 }
-/* line 654, ../sass/main.scss */
-.ge-section > ul > li {
+/* line 669, ../sass/main.scss */
+.ge-section ul li {
   display: block;
   font-family: "consolas";
   margin: 0;
   padding: 0;
 }
-/* line 661, ../sass/main.scss */
-.ge-section > h3 {
+/* line 676, ../sass/main.scss */
+.ge-section h3 {
   display: none;
 }
 
 /* ------------------------ */
 /* ------Contact Form------ */
 /* ------------------------ */
-/* line 670, ../sass/main.scss */
+/* line 685, ../sass/main.scss */
 .contact {
   text-align: center;
   padding: 16px;
@@ -4555,19 +4588,19 @@ h1, h2, h3, h4 {
   background-color: #323232;
 }
 
-/* line 677, ../sass/main.scss */
+/* line 692, ../sass/main.scss */
 .contactTitle {
   display: inline-block;
   margin-bottom: 6px;
 }
 
-/* line 682, ../sass/main.scss */
+/* line 697, ../sass/main.scss */
 .contactTitle h2 {
   font-size: 1.8em;
   color: #fff;
 }
 
-/* line 687, ../sass/main.scss */
+/* line 702, ../sass/main.scss */
 .contactQuarter {
   display: inline-block;
   width: 230px;
@@ -4575,13 +4608,13 @@ h1, h2, h3, h4 {
   margin: 12px 16px;
 }
 
-/* line 694, ../sass/main.scss */
+/* line 709, ../sass/main.scss */
 .contactQuarter h4 {
   color: #fff;
   font-size: 1.25em;
 }
 
-/* line 699, ../sass/main.scss */
+/* line 714, ../sass/main.scss */
 input {
   font-family: "OpenSansLt", OpenSansLt_IE;
   font-size: .95em;
@@ -4611,13 +4644,13 @@ input::-webkit-input-placeholder {
   color: #ddd;
 }
 
-/* line 711, ../sass/main.scss */
+/* line 726, ../sass/main.scss */
 .contactAreaQuarter {
   width: 100%;
   height: 32px;
 }
 
-/* line 716, ../sass/main.scss */
+/* line 731, ../sass/main.scss */
 .contactHalf {
   display: inline-block;
   width: 230px;
@@ -4626,19 +4659,19 @@ input::-webkit-input-placeholder {
   margin-bottom: 0;
 }
 
-/* line 724, ../sass/main.scss */
+/* line 739, ../sass/main.scss */
 .contactHalf h4 {
   color: #fff;
   font-size: 1.25em;
 }
 
-/* line 729, ../sass/main.scss */
+/* line 744, ../sass/main.scss */
 .contactAreaHalf {
   width: 100%;
   height: 32px;
 }
 
-/* line 734, ../sass/main.scss */
+/* line 749, ../sass/main.scss */
 textarea {
   font-family: "OpenSansLt", OpenSansLt_IE;
   font-size: .95em;
@@ -4669,7 +4702,7 @@ textarea::-webkit-input-placeholder {
   color: #ddd;
 }
 
-/* line 747, ../sass/main.scss */
+/* line 762, ../sass/main.scss */
 .submitButton {
   padding-top: 7px;
   margin-top: 24px;
@@ -4678,13 +4711,13 @@ textarea::-webkit-input-placeholder {
   background-color: #66b9e3;
 }
 
-/* line 755, ../sass/main.scss */
+/* line 770, ../sass/main.scss */
 .submitButton:hover {
   cursor: pointer;
   background-color: rgba(102, 185, 227, 0.95);
 }
 
-/* line 760, ../sass/main.scss */
+/* line 775, ../sass/main.scss */
 .form-success {
   color: #fff;
 }
@@ -4693,94 +4726,94 @@ textarea::-webkit-input-placeholder {
 /*//// Media Queries////*/
 /*//////////////////////*/
 @media (min-width: 408px) {
-  /* line 771, ../sass/main.scss */
+  /* line 786, ../sass/main.scss */
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 577px) {
-  /* line 777, ../sass/main.scss */
+  /* line 792, ../sass/main.scss */
   .questionnaireH2 {
     margin-left: 0;
     font-size: 1.8em;
     text-align: center;
   }
 
-  /* line 783, ../sass/main.scss */
+  /* line 798, ../sass/main.scss */
   .questionnaireH2 > span {
     display: inline;
   }
 
-  /* line 787, ../sass/main.scss */
+  /* line 802, ../sass/main.scss */
   .questionnaireForm {
     width: calc(460px + 32px);
   }
 
-  /* line 792, ../sass/main.scss */
+  /* line 807, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(460px + 32px + 25px);
   }
 
-  /* line 797, ../sass/main.scss */
+  /* line 812, ../sass/main.scss */
   .contactTitle h2 {
     font-size: 1.8em;
   }
 
-  /* line 801, ../sass/main.scss */
+  /* line 816, ../sass/main.scss */
   .contactHalf {
     width: calc(464px + 32px);
   }
 }
 @media (min-width: 665px) {
-  /* line 811, ../sass/main.scss */
+  /* line 826, ../sass/main.scss */
   .tileInvis {
     display: inline-block;
   }
 
-  /* line 815, ../sass/main.scss */
+  /* line 830, ../sass/main.scss */
   .tileContainer {
     max-width: 850px;
     min-height: 400px;
   }
 
-  /* line 820, ../sass/main.scss */
+  /* line 835, ../sass/main.scss */
   .tile {
     max-width: 280px;
     margin-bottom: 2.25em;
   }
 
-  /* line 825, ../sass/main.scss */
+  /* line 840, ../sass/main.scss */
   .tile:nth-child(even) {
     margin-left: 2.5em;
   }
 
-  /* line 830, ../sass/main.scss */
+  /* line 845, ../sass/main.scss */
   .tile:nth-child(even) > .h3Tile,
   .tile:nth-child(even) > .tileText {
     text-align: left;
   }
 
-  /* line 835, ../sass/main.scss */
+  /* line 850, ../sass/main.scss */
   .tile:nth-child(odd) > .h3Tile,
   .tile:nth-child(odd) > .tileText {
     text-align: right;
   }
 
-  /* line 839, ../sass/main.scss */
+  /* line 854, ../sass/main.scss */
   .tile:nth-child(odd) > .icon {
     float: right;
     margin-bottom: 3.5em;
     margin-left: .75em;
   }
 
-  /* line 845, ../sass/main.scss */
+  /* line 860, ../sass/main.scss */
   .tile:nth-child(even) > .icon {
     float: left;
     margin-bottom: 3em;
     margin-right: .75em;
   }
 
-  /* line 857, ../sass/main.scss */
+  /* line 872, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -4790,7 +4823,7 @@ textarea::-webkit-input-placeholder {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
-  /* line 866, ../sass/main.scss */
+  /* line 881, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -4801,27 +4834,27 @@ textarea::-webkit-input-placeholder {
     vertical-align: top;
   }
 
-  /* line 877, ../sass/main.scss */
+  /* line 892, ../sass/main.scss */
   .mobi {
     display: none;
   }
 
-  /* line 881, ../sass/main.scss */
+  /* line 896, ../sass/main.scss */
   .coursesArea {
     height: 595px;
   }
 
-  /* line 885, ../sass/main.scss */
+  /* line 900, ../sass/main.scss */
   .tier2 {
     display: inline-block;
   }
 
-  /* line 890, ../sass/main.scss */
+  /* line 905, ../sass/main.scss */
   .tier3 {
     display: inline-block;
   }
 
-  /* line 894, ../sass/main.scss */
+  /* line 909, ../sass/main.scss */
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -4829,7 +4862,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 1.05em;
   }
 
-  /* line 901, ../sass/main.scss */
+  /* line 916, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -4837,7 +4870,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 11px;
   }
 
-  /* line 908, ../sass/main.scss */
+  /* line 923, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -4849,23 +4882,23 @@ textarea::-webkit-input-placeholder {
     color: #333;
   }
 
-  /* line 919, ../sass/main.scss */
+  /* line 934, ../sass/main.scss */
   .listi a {
     color: #333;
   }
 }
 @media (min-width: 716px) {
-  /* line 925, ../sass/main.scss */
+  /* line 940, ../sass/main.scss */
   .tile:nth-child(even) {
     margin-left: 4em;
   }
 
-  /* line 929, ../sass/main.scss */
+  /* line 944, ../sass/main.scss */
   .coursesArea {
     height: 645px;
   }
 
-  /* line 933, ../sass/main.scss */
+  /* line 948, ../sass/main.scss */
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -4873,7 +4906,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 1em;
   }
 
-  /* line 940, ../sass/main.scss */
+  /* line 955, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -4881,7 +4914,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 11px;
   }
 
-  /* line 947, ../sass/main.scss */
+  /* line 962, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -4893,27 +4926,27 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width: 843px) {
-  /* line 959, ../sass/main.scss */
+  /* line 974, ../sass/main.scss */
   .facts {
     display: block;
   }
 
-  /* line 963, ../sass/main.scss */
+  /* line 978, ../sass/main.scss */
   .clincher {
     display: block;
   }
 
-  /* line 967, ../sass/main.scss */
+  /* line 982, ../sass/main.scss */
   .questionnaireForm {
     width: calc(462px + 64px);
   }
 
-  /* line 971, ../sass/main.scss */
+  /* line 986, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(462px + 64px + 25px);
   }
 
-  /* line 975, ../sass/main.scss */
+  /* line 990, ../sass/main.scss */
   .contactHalf {
     display: block;
     margin-right: auto;
@@ -4921,24 +4954,24 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width: 870px) {
-  /* line 983, ../sass/main.scss */
+  /* line 998, ../sass/main.scss */
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
-  /* line 990, ../sass/main.scss */
+  /* line 1005, ../sass/main.scss */
   .tile {
     max-width: 375px;
     min-height: 100px;
   }
 
-  /* line 999, ../sass/main.scss */
+  /* line 1014, ../sass/main.scss */
   .coursesArea {
     height: 775px;
   }
 
-  /* line 1003, ../sass/main.scss */
+  /* line 1018, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -4949,7 +4982,7 @@ textarea::-webkit-input-placeholder {
     vertical-align: top;
   }
 
-  /* line 1014, ../sass/main.scss */
+  /* line 1029, ../sass/main.scss */
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -4957,7 +4990,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 1.15em;
   }
 
-  /* line 1021, ../sass/main.scss */
+  /* line 1036, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -4965,7 +4998,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 11px;
   }
 
-  /* line 1028, ../sass/main.scss */
+  /* line 1043, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -4976,7 +5009,7 @@ textarea::-webkit-input-placeholder {
     margin-bottom: .1em;
   }
 
-  /* line 1038, ../sass/main.scss */
+  /* line 1053, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -4987,47 +5020,47 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width: 978px) {
-  /* line 1050, ../sass/main.scss */
+  /* line 1065, ../sass/main.scss */
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
-  /* line 1056, ../sass/main.scss */
+  /* line 1071, ../sass/main.scss */
   .coursesArea {
     height: 708px;
   }
 
-  /* line 1060, ../sass/main.scss */
+  /* line 1075, ../sass/main.scss */
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;
   }
 }
 @media (min-width: 1109px) {
-  /* line 1069, ../sass/main.scss */
+  /* line 1084, ../sass/main.scss */
   .factItem {
     width: calc(230px);
     margin: 16px;
   }
 
-  /* line 1074, ../sass/main.scss */
+  /* line 1089, ../sass/main.scss */
   .questionnaireForm {
     width: calc(492px + 64px);
   }
 
-  /* line 1078, ../sass/main.scss */
+  /* line 1093, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(492px + 64px + 25px);
   }
 
-  /* line 1082, ../sass/main.scss */
+  /* line 1097, ../sass/main.scss */
   .number {
     font-size: 3em;
   }
 }
 @media (min-width: 1140px) {
-  /* line 1088, ../sass/main.scss */
+  /* line 1103, ../sass/main.scss */
   .tileContainer {
     display: inline-block;
     width: 310px;
@@ -5037,72 +5070,27 @@ textarea::-webkit-input-placeholder {
     overflow: auto;
   }
 
-  /* line 1097, ../sass/main.scss */
+  /* line 1112, ../sass/main.scss */
   .leftCol > .tile:nth-child(even) {
     display: none;
   }
 
-  /* line 1101, ../sass/main.scss */
+  /* line 1116, ../sass/main.scss */
   .rightCol > .tile:nth-child(odd) {
     display: none;
     margin-left: 0px;
   }
 
-  /* line 1106, ../sass/main.scss */
+  /* line 1121, ../sass/main.scss */
   .rightCol > .tile:nth-child(even) {
     margin-left: 0px;
   }
 
-  /* line 1110, ../sass/main.scss */
+  /* line 1125, ../sass/main.scss */
   .midImg {
     display: inline-block;
     width: 445px;
     height: 435px;
     background-color: #872633;
   }
-}
-@media (min-width: 1175px) {
-  /*
-  	Luke added this section
-  */
-  /* line 1122, ../sass/main.scss */
-  .tileContainerLuke {
-    width: 50rem;
-    -webkit-column-count: 3;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 1128, ../sass/main.scss */
-  .tileContainerLuke .tileLuke {
-    display: block;
-    width: 15rem;
-  }
-
-  /* line 1134, ../sass/main.scss */
-  .tileContainerLuke .tileLuke:nth-child(n+2) > .icon {
-    float: left;
-    margin-bottom: 3em;
-    margin-right: .75em;
-  }
-
-  /* line 1139, ../sass/main.scss */
-  .tileContainerLuke .tileLuke:nth-child(-n+3) > .icon {
-    float: right;
-    margin-bottom: 3.5em;
-    margin-left: .75em;
-  }
-
-  /* line 1144, ../sass/main.scss */
-  .tileContainerLuke .tileLuke:nth-child(4):before {
-    height: 30em;
-    background-color: blue;
-    width: 15em;
-    content: "Hello world";
-    display: inline-block;
-  }
-
-  /*
-  	END OF == Luke added this section
-  */
 }

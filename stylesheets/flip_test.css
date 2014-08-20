@@ -1,130 +1,60 @@
-@CHARSET "ISO-8859-1";
-/***
-* CSS3 FLIP CARDS
-* Markup for an element that a user can hover to reveal content on the back, like a card
-* Browser Support: Safari, Firefox, Chrome, IE8+, and Touch Devices; (IE9 and below will not have any flip effect but will just change on hover)
-***/
-/* line 9, ../sass/transform/_flip.scss */
-.flip-card {
-  display: block;
-  position: relative;
-  z-index: 1000;
-}
-/* line 15, ../sass/transform/_flip.scss */
-.flip-card .card-front,
-.flip-card .card-back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 900ms;
-  -moz-transition: -moz-transform 900ms;
-  -o-transition: -o-transform 900ms;
-  transition: transform 900ms;
-  display: inline-block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-/* line 24, ../sass/transform/_flip.scss */
-.flip-card .card-front {
-  -webkit-transform: perspective(600) rotateY(0deg) translateX(0);
-  -moz-transform: perspective(600) rotateY(0deg) translateX(0);
-  -ms-transform: perspective(600) rotateY(0deg) translateX(0);
-  -o-transform: perspective(600) rotateY(0deg) translateX(0);
-  transform: perspective(600) rotateY(0deg) translateX(0);
-  z-index: 900;
-}
-/* line 29, ../sass/transform/_flip.scss */
-.flip-card .card-back {
-  -webkit-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  -moz-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  -ms-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  -o-transform: perspective(600) rotateY(-180deg) translateX(100%);
-  transform: perspective(600) rotateY(-180deg) translateX(100%);
-  /*
-  	@include create-transform(false, 0.7, 0.7, 0.7, 0, -180deg);	//	, 0, true, 289px, 0, 0, 0, 0, 0, 289px
-  */
-  z-index: 800;
-}
-/* line 38, ../sass/transform/_flip.scss */
-.flip-card:hover .card-front, .flip-card.flip-card-now .card-front {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-/* line 42, ../sass/transform/_flip.scss */
-.flip-card:hover .card-back, .flip-card.flip-card-now .card-back {
-  z-index: 950;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
+/*
+Syntax error: File to import not found or unreadable: transform/flip.
+              Load paths:
+                C:/xampp/htdocs/GitHub/GE-Page/sass
+                C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+                C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 5 of C:/xampp/htdocs/GitHub/GE-Page/sass/flip_test.scss
 
-/*** Just for show... ***/
-/* line 55, ../sass/transform/_flip.scss */
-.flip-card {
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
-  color: #fff;
-  cursor: pointer;
-  float: left;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  min-width: 100px;
-  max-width: 400px;
-  /*.card-back,*/
-}
-/* line 67, ../sass/transform/_flip.scss */
-.flip-card .card-front,
-.flip-card .card-back {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 71, ../sass/transform/_flip.scss */
-.flip-card .card-front {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 75, ../sass/transform/_flip.scss */
-.flip-card .card-shadow {
-  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
-  -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.8) inset;
-  /*background-color: #499bea; // Old browsers*/
-}
+1: C:/xampp/htdocs/GitHub/GE-Page/sass/flip_test.scss
 
-/* line 8, ../sass/flip_test.scss */
-body {
-  background-color: #e6f2f7;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFE6F2F7', endColorstr='#FFA0D8EF');
-  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #e6f2f7), color-stop(100%, #a0d8ef));
-  background-image: -webkit-radial-gradient(center, circle cover, #e6f2f7 0%, #a0d8ef 100%);
-  background-image: -moz-radial-gradient(center, circle cover, #e6f2f7 0%, #a0d8ef 100%);
-  background-image: -o-radial-gradient(center, circle cover, #e6f2f7 0%, #a0d8ef 100%);
-  background-image: radial-gradient(center, circle cover, #e6f2f7 0%, #a0d8ef 100%);
-}
-
-/* line 15, ../sass/flip_test.scss */
-.viewport {
-  margin: 10px auto 0;
-  width: 500px;
-}
+Backtrace:
+C:/xampp/htdocs/GitHub/GE-Page/sass/flip_test.scss:5
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/update_project.rb:45:in `perform'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
+C:/Ruby200-x64/bin/compass:23:in `load'
+C:/Ruby200-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: transform/flip.\A               Load paths:\A                 C:/xampp/htdocs/GitHub/GE-Page/sass\A                 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/blueprint/stylesheets\A                 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 5 of C:/xampp/htdocs/GitHub/GE-Page/sass/flip_test.scss\A \A 1: C:/xampp/htdocs/GitHub/GE-Page/sass/flip_test.scss"; }

@@ -11,9 +11,7 @@
 @import "foundation/settings";
 @import "foundation/components/offcanvas";
 
-@import "compass/css3";
-@import "transform/settings";
-@import "transform/flip";
+@import "transform/animateReplace.jquery";
 
 @import "font-awesome";
 @import "font-awesome/variables";
@@ -534,6 +532,9 @@ h1, h2, h3, h4 {
  margin-bottom:.1em;
 }
 
+.coursesArea {
+}
+
 .rightHalf {
 	min-height:100%;
 	height:100%;
@@ -561,11 +562,11 @@ h1, h2, h3, h4 {
 	background-color: $green;
 }
 
-.rightHalf > div > div {
+.rightHalf .tier2Info {
 	text-align:left;
 }
 
-.rightHalf > div > div > div {
+.rightHalf .card-front {
 	padding: 1rem;
 }
 
@@ -582,11 +583,19 @@ h1, h2, h3, h4 {
 	height:100%;
 	display:inline-block;
 	/*background-color: $purple;*/
+	vertical-align: top;
+	/*margin-right:-1px;*/
+	position:relative;
+	/*left:-1px;*/
+}
+.tier2 > div {
+	height:100%;
 }
 
-.tier2Info, .tier2Info .card-front,.tier2Img, .tier2Img .card-front, {
+.tier2Info, .tier2Info .card-front,.tier2Img, .tier2Img .card-front {
 	min-width:100%;
 	max-width:100%;
+	vertical-align: top;
 }
 
  .tier2Info .card-front, .tier2Img .card-front, .tier3Info .card-front, .tier3Img .card-front {
@@ -634,32 +643,37 @@ h1, h2, h3, h4 {
     height:100%;
     display:inline-block;
  /*   background-color: $black;*/
+	vertical-align: top;
 }
 
 .ge-section {
 	min-width:50%;
-	width:50%;
+	width:100%;
+	margin:0;
+	padding:0;
+	min-height:50%;
+	background-color: white;
+	/*border: 1px solid #ccc;*/
 	
-	& > ul {
-		background-color: white;
-		border: 1px solid #ccc;
+	& ul {
 		margin:0;
 		padding:0;
+		height:100%;
 		
-		& > li:before {
+		& li:before {
 			content: "\003E \020";
 			font-family:"consolas";
 			width:1em;
 			float:left;
 		}
-		& > li {
+		& li {
 			display:block;
 			font-family:"consolas";
 			margin:0;
 			padding:0;
 		}
 	}
-	& > h3 {
+	& h3 {
 		display:none;
 	}
 }
@@ -1117,42 +1131,7 @@ textarea {
 }
 
 @media (min-width:1175px) {
-	/*
-		Luke added this section
-	*/
-	.tileContainerLuke {
-		width: 50rem;
-		-webkit-column-count: 3;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	.tileContainerLuke .tileLuke {
-		display: block;
-		width: 15rem;
-	}
-	.tileContainerLuke .tileLuke .icon {
-	} 
-	.tileContainerLuke .tileLuke:nth-child(n+2) > .icon {
-		float:left;
-		margin-bottom:3em;
-		margin-right:.75em;
-	}
-	.tileContainerLuke .tileLuke:nth-child(-n+3) > .icon {
-		float:right;
-		margin-bottom:3.5em;
-		margin-left:.75em;
-	}
-	.tileContainerLuke .tileLuke:nth-child(4):before {
-		height: 30em;
-		background-color: blue;
-		width: 15em;
-		content: "Hello world";
-		display: inline-block
-	}
-	/*
-		END OF == Luke added this section
-	*/
-	
+
 	
 }
 

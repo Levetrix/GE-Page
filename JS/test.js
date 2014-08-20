@@ -105,8 +105,10 @@ $(document).ready(function() {
 			});
 			for(var geCategory in geCourses) {
 				//console.log(geCategory + ": " + geCourses[geCategory].length);
-				var categoryParent = $('<div class="ge-section"><h3 id="ge-category-'+geCategory.replace(/\s/g,"_")+'">'+geCategory+'</h3><ul></ul></div>'),
-					courseList = $("#ge-courselist").append(categoryParent);
+				var id = geCategory.replace(/\s/g,"").replace(/\W/g,"-")
+					,categoryParent = $('<div class="ge-section"><h3 id="ge-category-'+id+'">'+geCategory+'</h3><ul></ul></div>')
+					,courseList = $("#ge-courselist").append(categoryParent)
+				;
 				for(var i=0; i < geCourses[geCategory].length; i++) {
 					if(geCourses[geCategory][i]) {
 						var course = $('<li class="course-title">'+geCourses[geCategory][i]['university-title'].replace(/\s*\([^\)]+\)/g,"")+'</li>');
@@ -123,6 +125,30 @@ $(document).ready(function() {
 				       '    <div class="buttonContainer"><a href="#"><p class="enrollButton">Enroll Now</p></a></div>' +					           
 				       '</div>'));
 				}
+				//console.log($("#".id));
+				$("#"+id).on("click",function( e ) {
+					var newTile =	$("#ge-category-"+$(this).attr("id")).parent().clone(true, true),
+						targetTile = $("#tier2-fliphandle").children().first(),
+						ttHeight = targetTile.height()
+					;
+					targetTile.replaceWith(newTile);
+					var ntHeight = newTile.innerHeight();
+					newTile.replaceWith(targetTile);
+					console.log(ttHeight+" < "+ntHeight);
+					if(ttHeight < ntHeight) {
+						newTile = $('<div></div>').append(newTile).css("height","100%").css("width","100%").addClass("tier2 flip-card-container"); ///**/
+						newTile.children().css("height","100%");
+						//newTile.css("width","100%");
+						targetTile = $(".tier2").children().first();
+					}
+					$("#temp-height-div").remove();
+					console.log(targetTile);
+					newTile.css("width",targetTile.css("width"));
+					targetTile.css("width",targetTile.css("width"));
+					/*newTile.css("min-width","none");*/
+					newTile.css("max-width","none");
+					targetTile.animateReplace("flip",newTile);
+				});
 			}
 			$("#geDoubleCreditCourseSelect").empty();
 			var dcCategories = Object.keys(geDoubleCreditCourses);
