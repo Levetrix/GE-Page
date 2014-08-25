@@ -18,6 +18,46 @@ var doubles = {
 	"TECH-202": ["Civilization 2","Arts"],
 	"STAT-121": ["Quantitative Reasoning","Languages of Learning"]
 };
+var flipFunction = function( e ) {
+	console.log($(this).data());
+	var $element = $(this),
+		data = $element.data("ge-courses-element"),
+		targetToReplace = $(e.data.targetId).children().first(),
+		flipTo = data.element.clone(true,true).addClass(targetToReplace.attr("class"))
+	;
+	console.log("click registered on "+$element.text());
+	if(targetToReplace) {
+		var ftIH = data.innerHeight, //flipTo.insertAfter(targetToReplace).innerHeight(),
+			ttrIH = targetToReplace.innerHeight()
+		;
+		console.log("new element height: "+ftIH);
+		console.log("space to hold it: "+ttrIH);
+		flipTo.detach();
+		if( (ftIH <= ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) || ($(e.data.targetId).find(".flipcombined").length > 0 && ftIH > data.overflowElementHeight) ) {
+			//	Normal case - flip the tile like "normal"
+			console.log("Case 1");
+			if($(e.data.targetId).find(".flipcombined").length == 0) {
+				flipTo.removeClass("flipcombined");
+			}
+			targetToReplace.animateReplace("flip",flipTo);
+		} else if( ftIH > ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) {
+			//	Secondary case where the tile is too large - AND there hasn't already been a larger tile flipped.
+			console.log("Case 2");
+			$(e.data.targetId).append($("<div></div>").addClass("flipcombined boxshadow").append($(e.data.targetId).children()));
+			flipTo.addClass("flipcombined");
+			$(e.data.targetId).children().first().animateReplace("flip",flipTo);
+		} else if( ftIH <= data.overflowElementHeight ) {
+			//	Third case, where the content is smaller than a tile height and a previous tile was large
+			console.log("Case 3");
+			flipTo.removeClass("flipcombined");
+			targetToReplace.parent().animateReplace("flip",$('<div></div>').css("width","100%").attr("id",e.data.targetId.replace(/\#/,"")).append(flipTo).append(data.overflowElement.clone(true, true)));
+		} else {
+			console.log("Unhandled case!");
+		}
+	} else {
+		console.log("target place not found! What is happening!?");
+	}
+};
 $(document).ready(function() {
 	var displayDoubleCredits = function(geCategory){
 		$(".majorTiles").empty();
@@ -111,11 +151,12 @@ $(document).ready(function() {
 				;
 				for(var i=0; i < geCourses[geCategory].length; i++) {
 					if(geCourses[geCategory][i]) {
-						var course = $('<li class="course-title">'+geCourses[geCategory][i]['university-title'].replace(/\s*\([^\)]+\)/g,"")+'</li>');
-							categoryParent.find("ul").append(course);
+						var course = $('<li class="course-title">'+geCourses[geCategory][i]['course-title'].replace(/(\w)-(\d)/g,"$1 $2")+': '+(geCourses[geCategory][i]['title'].replace(/\s*\([^\)]+\)/g,"")).toTitleCase()+'</li>');
+						categoryParent.find("ul").append(course);
+						course.css("cursor","pointer");
 					}
 					//console.log(geCourses[geCategory][i]['title']);
-					$("#courseData").append($('<div class="majorTile">' +
+					var courseElement = $('<div class="majorTile">' +
 					   '    	<p class="majorTileTitle">' +
 				       '    	' + geCourses[geCategory][i]['course-title'] + '<br /> ' + geCourses[geCategory][i]['title'] + '' +
 				       '    </p>' +
@@ -123,20 +164,51 @@ $(document).ready(function() {
 				       '    <p class="fulfilled">' + geCategory + '</p>' +
 				       //'    <p class="offered">This course is offered by BYU IS</p>' +
 				       '    <div class="buttonContainer"><a href="#"><p class="enrollButton">Enroll Now</p></a></div>' +					           
-				       '</div>'));
+				       '</div>').attr("id","course-detail-"+geCategory.replace(/\W/g,"")+"-"+i);
+					
+					course.data("ge-courses-element",
+						{
+							innerHeight:	courseElement.appendTo("#fliphandle-course").innerHeight(), 
+							element:		courseElement.detach(),
+							overflowElementHeight:	$("#fliphandle-course").children().last().innerHeight(),	
+							overflowElement:	$("#fliphandle-course").children().first().clone(true, true)
+					});		//	courseElement.attr("id")
+					course.on("click",{targetId: "#fliphandle-course"},flipFunction);
+					$("#courseData").append(course);
 				}
 				//console.log($("#".id));
-				$("#"+id).on("click",function( e ) {
+				$("#"+id).each(function(i,e) {
+					var $e = $(e),
+						geCourseListElement = $("#ge-category-"+$(this).attr("id")).parent()
+					;
+					$e.data("ge-courses-element", {
+						innerHeight:	geCourseListElement.appendTo("#fliphandle").innerHeight(), 
+						element:		geCourseListElement.detach(),
+						overflowElementHeight:	$("#fliphandle").children().last().innerHeight(),	
+						overflowElement:	$("#fliphandle").children().last().clone(true, true)
+					});
+					$e.on("click", {targetId: "#fliphandle"},flipFunction);
+				});
+				
+				/*
+				
+				"click",function( e ) {
 					var newTile =	$("#ge-category-"+$(this).attr("id")).parent().clone(true, true),
 						targetTile = $("#tier2-fliphandle").children().first(),
 						ttHeight = targetTile.height()
 					;
+					if(! $(".tier2").data("preexistingElements")) $(".tier2").data("preexistingElements",$(".tier2").children());
 					targetTile.replaceWith(newTile);
 					var ntHeight = newTile.innerHeight();
 					newTile.replaceWith(targetTile);
 					console.log(ttHeight+" < "+ntHeight);
-					if(ttHeight < ntHeight) {
-						newTile = $('<div></div>').append(newTile).css("height","100%").css("width","100%").addClass("tier2 flip-card-container"); ///**/
+					console.log(targetTile.parent().height());
+					if(ttHeight == ntHeight) {
+						console.log("normal tile flip");
+						//	Verify that there are the right number of tiles on the page (some might have been removed during previous flips)
+						
+					} else if(ttHeight < ntHeight) {
+						newTile = $('<div></div>').append(newTile).css("height","100%").css("width","100%").addClass("tier2 flip-card-container");
 						newTile.children().css("height","100%");
 						//newTile.css("width","100%");
 						targetTile = $(".tier2").children().first();
@@ -145,10 +217,11 @@ $(document).ready(function() {
 					console.log(targetTile);
 					newTile.css("width",targetTile.css("width"));
 					targetTile.css("width",targetTile.css("width"));
-					/*newTile.css("min-width","none");*/
 					newTile.css("max-width","none");
-					targetTile.animateReplace("flip",newTile);
+					newTile.attr("id", targetTile.attr("id"));
+					targetTile.animateReplace("flip",newTile,{"do-debug":["flip"]});
 				});
+				*/
 			}
 			$("#geDoubleCreditCourseSelect").empty();
 			var dcCategories = Object.keys(geDoubleCreditCourses);
@@ -171,7 +244,9 @@ $(document).ready(function(){
 });
 
 
-
+String.prototype.toTitleCase = function() {
+    return (this instanceof String)?this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}):"";
+};
 
 
 

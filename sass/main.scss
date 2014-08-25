@@ -588,7 +588,7 @@ h1, h2, h3, h4 {
 	position:relative;
 	/*left:-1px;*/
 }
-.tier2 > div {
+.tier2 > div, .tier3 > div {
 	height:100%;
 }
 
@@ -611,13 +611,17 @@ h1, h2, h3, h4 {
     max-width:100%;
     text-align:left;
 }
+.flipcombined {
+	height:100%;
+}
+
 .tier2Info .card-front, .tier2Info > div {
 	background-color: #fff;
 }
 .tier2Img .card-front, .tier2Img > div {
 	
 }
-.tier3Info .card-front, .tier3Info > div {
+.tier3Info .card-front {
 	background-color: #fff;
 }
 .tier3Img .card-front, .tier3Img > div {
@@ -634,6 +638,7 @@ h1, h2, h3, h4 {
     background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
     background-size:cover;
     background-position:50% 50%;
+    position:relative;
 }
 .tier3 {
 	display:none;
@@ -657,8 +662,9 @@ h1, h2, h3, h4 {
 	
 	& ul {
 		margin:0;
-		padding:0;
+		padding:0.75em;
 		height:100%;
+		font-family: OpenSansLt, OpenSansLt_IE;
 		
 		& li:before {
 			content: "\003E \020";
@@ -668,7 +674,7 @@ h1, h2, h3, h4 {
 		}
 		& li {
 			display:block;
-			font-family:"consolas";
+			font-family:OpenSansLt, OpenSansLt_IE, "consolas";
 			margin:0;
 			padding:0;
 		}
@@ -676,6 +682,32 @@ h1, h2, h3, h4 {
 	& h3 {
 		display:none;
 	}
+}
+.tier3Info {
+	& .majorTile {
+		margin: 0px;
+		width:100%;
+		height:100%;
+		border: 1px solid #ccc;
+	}
+	& .majorTile.card-front {
+		background-color:#fff;
+	}
+}
+
+.tier3Info, .tier2Info {
+	z-index:5000;
+	position:relative;
+}
+.tier3Img, .tier2Img {
+	position:relative;
+	z-index:0;
+}
+
+.boxshadow {
+	@include box-shadow(#999 5px 1px 10px);
+	position:relative;
+	z-index:5000;
 }
 
 /* ------------------------ */

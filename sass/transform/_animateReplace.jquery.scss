@@ -4,7 +4,7 @@
 @import "transform/settings";
 
 .appear-animation {
-  display: inline-block;
+  display: block;
   position: relative;
   z-index: 1000;
   overflow:shown;
@@ -14,7 +14,7 @@
     @include transition(transform, box-shadow);
     @include transition-duration(0.75s, 0.5s);
     
-    display: inline-block;
+    display: block;
     height: 100%;
     width: 100%; 
     position: absolute;
@@ -30,7 +30,7 @@
 		@include transform-origin(left);
     @include transition-timing-function(cubic-bezier(0.680, -0.550, 0.265, 1.550), cubic-bezier(0.645, -0.600, 0.000, 1.000));
 		
-		@include box-shadow(#cccccc 0 0 10px);
+		@include box-shadow(#999 5px 1px 10px);
 		z-index: 900;
 		/*background-color: lightyellow;*/
 	}
@@ -39,7 +39,7 @@
 		@include transform3d(perspective($perspective) rotateY(180deg));
 		@include transform-origin(left);
     @include transition-timing-function(cubic-bezier(0.680, -0.550, 0.265, 1.550), cubic-bezier(1.000, 0.000, 0.255, 1.600));
-		@include box-shadow(#cccccc -50px -10px 40px);
+		@include box-shadow(#999 -50px -10px 40px);
 		z-index: 800;
 		/*background-color: lavender;*/
 	}
@@ -49,13 +49,13 @@
 			@include transform(perspective($perspective) rotateY(180deg));
 			@include transform3d(perspective($perspective) rotateY(180deg));
 			@include transform-origin(left);
-			@include box-shadow(#cccccc -50px -10px 40px);
+			@include box-shadow(#999 -50px -10px 40px);
 		}
 		.going-out {
 			@include transform(perspective($perspective) rotateY(0deg));
 			@include transform3d(perspective($perspective) rotateY(0deg));
 			@include transform-origin(left);
-			@include box-shadow(#cccccc 0 0 10px);
+			@include box-shadow(#999 5px 1px 10px);
 			z-index: 950;
 		}
 	}

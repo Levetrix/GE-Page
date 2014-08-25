@@ -19,9 +19,9 @@ Animate and Replace (animateReplace for short)
 	// regularly referenced in your plugin).
 
 	var pluginName = 'animateReplace',
-		defaultDebug = false,
+		defaultDebug = true,
 		defaults = {
-			"do-debug":(defaultDebug)?["pre"]:false,
+			"do-debug":(defaultDebug)?["pre","init-data"]:false,
 			"timing-duration": 0.75
 		},
 		methods = {
@@ -41,10 +41,11 @@ Animate and Replace (animateReplace for short)
 						new Plugin( _this, $.extend(true, defaults, options) )
 					);
 					//console.log($(_this).attr("id"));
-					if($(_this).attr("id") == "" || $(_this).attr("id") == "undefined") {
+					if($(_this).attr("id") == "" || ""+$(_this).attr("id") == "undefined") {
 						//console.log("adding id");
 						data['id-added'] = true;
 						$(_this).attr("id", "ar-id"+parseInt($(_this).text(), 36).toString(16));
+						methods['debug']( _this, "setting id on primary element: "+$(_this).attr("id"), "init-data" );
 					}
 					data['_this'] = _this;
 					data = methods['put-data']( _this, data );
@@ -129,11 +130,12 @@ Animate and Replace (animateReplace for short)
 					data = methods['put-data']( _this, {flipping: true} );
 					methods['debug']( _this, data, "flip");
 					//	This part allows for either option listed above (1 or 2)
-					if( !data.options['anchor'] || data.options['anchor'].toLowerCase() !== "parent") {
+					methods['debug']( _this, "attr(id): "+$this.attr("id"), "flip");
+					if( (!data.options['anchor'] || data.options['anchor'].toLowerCase() !== "parent") && $this.attr("id") != "undefined" ) {
 						//	2
-						var anchor = $('<div style="display:inline-block;margin:0;padding:0;border:0"></div>').attr("id", "arparent-id"+$this.attr("id")).css("height",$this.height()+"px").css("max-height",$this.height()+"px").css("width",$this.width()+"px").css("max-width",$this.width()+"px");
-						anchor.css("height",$this.height());
-						anchor.css("width",$this.width());
+						var anchor = $('<div style="display:inline-block;margin:0;padding:0;border:0"></div>').attr("id", "arparent-id"+$this.attr("id")).css("height",$this.outerHeight()+"px").css("max-height",$this.outerHeight()+"px").css("width",$this.outerWidth()+"px").css("max-width",$this.outerWidth()+"px");
+						anchor.css("height",$this.outerHeight());
+						anchor.css("width",$this.outerWidth());
 						anchor.insertAfter($this);
 						anchor.data($this.data());
 						anchor.append($this);
