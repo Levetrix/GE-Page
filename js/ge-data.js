@@ -19,36 +19,36 @@ var doubles = {
 	"STAT-121": ["Quantitative Reasoning","Languages of Learning"]
 };
 var flipFunction = function( e ) {
-	console.log($(this).data());
+	//console.log($(this).data());
 	var $element = $(this),
 		data = $element.data("ge-courses-element"),
 		targetToReplace = $(e.data.targetId).children().first(),
 		flipTo = data.element.clone(true,true).addClass(targetToReplace.attr("class"))
 	;
-	console.log("click registered on "+$element.text());
+	//console.log("click registered on "+$element.text());
 	if(targetToReplace) {
 		var ftIH = data.innerHeight, //flipTo.insertAfter(targetToReplace).innerHeight(),
 			ttrIH = targetToReplace.innerHeight()
 		;
-		console.log("new element height: "+ftIH);
-		console.log("space to hold it: "+ttrIH);
+		//console.log("new element height: "+ftIH);
+		//console.log("space to hold it: "+ttrIH);
 		flipTo.detach();
 		if( (ftIH <= ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) || ($(e.data.targetId).find(".flipcombined").length > 0 && ftIH > data.overflowElementHeight) ) {
 			//	Normal case - flip the tile like "normal"
-			console.log("Case 1");
+			//console.log("Case 1");
 			if($(e.data.targetId).find(".flipcombined").length == 0) {
 				flipTo.removeClass("flipcombined");
 			}
 			targetToReplace.animateReplace("flip",flipTo);
 		} else if( ftIH > ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) {
 			//	Secondary case where the tile is too large - AND there hasn't already been a larger tile flipped.
-			console.log("Case 2");
+			//console.log("Case 2");
 			$(e.data.targetId).append($("<div></div>").addClass("flipcombined boxshadow").append($(e.data.targetId).children()));
 			flipTo.addClass("flipcombined");
 			$(e.data.targetId).children().first().animateReplace("flip",flipTo);
 		} else if( ftIH <= data.overflowElementHeight ) {
 			//	Third case, where the content is smaller than a tile height and a previous tile was large
-			console.log("Case 3");
+			//console.log("Case 3");
 			flipTo.removeClass("flipcombined");
 			targetToReplace.parent().animateReplace("flip",$('<div></div>').css("width","100%").attr("id",e.data.targetId.replace(/\#/,"")).append(flipTo).append(data.overflowElement.clone(true, true)));
 		} else {
@@ -65,6 +65,7 @@ $(document).ready(function() {
 			//console.log(geDoubleCreditCourses);
 			console.log("change the string: "+geCategory);
 			console.log(geDoubleCreditCourses[geCategory]);
+			var preHeight = $(".majorTiles").height();
 			for(var i in geDoubleCreditCourses[geCategory]) {
 				//console.log(geCourses[geCategory][i]['title']);
 				$(".majorTiles").append($('<div class="majorTile">' +
@@ -74,15 +75,22 @@ $(document).ready(function() {
 			       '    <p class="fulfilledLabel">GEs Fulfilled:</p>' +
 			       '    <p class="fulfilled">' + '<div class="ge-category">'+ doubles[geDoubleCreditCourses[geCategory][i]['course-title']].join('</div><div class="ge-category">') +'</div>' + '</p>' +
 			      // '    <p class="offered">This course is offered by BYU IS</p>' +
-			       '    <div class="buttonContainer"><a href="//is.byu.edu/site/courses/description.cfm?title='+geDoubleCreditCourses[geCategory][i]['types'].pop()['short-title']+'"><p class="enrollButton">Enroll Now</p></a></div>' +					           
-			       '</div>'));
+			       '    <div class="buttonContainer"><a href="//is.byu.edu/site/courses/description.cfm?title='+geDoubleCreditCourses[geCategory][i]['types'][geDoubleCreditCourses[geCategory][i]['types'].length-1]['short-title']+'"><p class="enrollButton">Enroll Now</p></a></div>' +					           
+			       '</div>')
+				);
 			}
-		}
-		
-		else {
+			//$(".majorTiles").addClass("fades fade-in");
+			$(".majorTiles").css("transition-property", "height");
+			$(".majorTiles").css("height", "auto");
+			$(".majorTiles").css("opacity", "0");
+			window.setTimeout('$(".majorTiles").css("transition-property","height,opacity");',0);
+			window.setTimeout('$(".majorTiles").height('+$(".majorTiles").height()+');$(".majorTiles").css("opacity","1");',250);
+			console.log("sliding height from "+preHeight+" to "+$(".majorTiles").height());
+			$(".majorTiles").height(preHeight);
+		} else {
 			console.log("Category not found: '"+geCategory+"'. :(" );
-			console.log(geDoubleCreditCourses);
-			console.log(geDoubleCreditCourses[geCategory]);
+			//console.log(geDoubleCreditCourses);
+			//console.log(geDoubleCreditCourses[geCategory]);
 		}
 	};
 	$.ajax({
@@ -99,12 +107,13 @@ $(document).ready(function() {
 			dataType: "json"
 		}).done(function( data, textStatus ) {
 			//console.log(data);
+			console.log($("#BiologicalScience"));
 			var geXref = data;
 			for(var key in geXref) {
 				geCourses[key] = [];
 				for(var i=0; i < categories.length ; i++) {
-					console.log("Course? Please! " + categories[i]);
-					console.log(geData[categories[i]]);
+					//console.log("Course? Please! " + categories[i]);
+					//console.log(geData[categories[i]]);
 					for(var j=0; j < geData[categories[i]].length ; j++){
 						var courseTitle = geData[categories[i]][j]['course-title'],
 							matchRegEx = new RegExp(geXref[key]);
@@ -130,21 +139,21 @@ $(document).ready(function() {
 					}
 				}
 			}
-			//console.log(geCourses);
+			console.log(geCourses);
 			var geCategories = Object.keys(geCourses);
+			console.log(geCategories);
 			$(".listi").each(function(i,el) {
 				var	$el = $(el);
 				if (geCategories.indexOf($el.text()) > -1) {
 					//console.log($el.text()+ "? It's there!"); //it's there
 					//	Process something about this...
-				}
-				else {
-					//console.log($el.text()+" not found in the data provided. ("+i+")");
+				} else {
+					console.log($el.text()+" not found in the data provided. ("+i+")");
 					$el.css("display","none"); // or $el.remove();
 				};
 			});
 			for(var geCategory in geCourses) {
-				//console.log(geCategory + ": " + geCourses[geCategory].length);
+				console.log(geCategory + ": " + geCourses[geCategory].length);
 				var id = geCategory.replace(/\s/g,"").replace(/\W/g,"-")
 					,categoryParent = $('<div class="ge-section"><h3 id="ge-category-'+id+'">'+geCategory+'</h3><ul></ul></div>')
 					,courseList = $("#ge-courselist").append(categoryParent)
@@ -155,7 +164,7 @@ $(document).ready(function() {
 						categoryParent.find("ul").append(course);
 						course.css("cursor","pointer");
 					}
-					//console.log(geCourses[geCategory][i]['title']);
+					console.log(geCourses[geCategory][i]);
 					var courseElement = $('<div class="majorTile">' +
 					   '    	<p class="majorTileTitle">' +
 				       '    	' + geCourses[geCategory][i]['course-title'] + '<br /> ' + geCourses[geCategory][i]['title'] + '' +
@@ -163,7 +172,7 @@ $(document).ready(function() {
 				       '    <p class="fulfilledLabel">GE Fulfilled:</p>' +
 				       '    <p class="fulfilled">' + geCategory + '</p>' +
 				       //'    <p class="offered">This course is offered by BYU IS</p>' +
-				       '    <div class="buttonContainer"><a href="#"><p class="enrollButton">Enroll Now</p></a></div>' +					           
+				       '    <div class="buttonContainer"><a href="//is.byu.edu/site/courses/description.cfm?title='+geCourses[geCategory][i]['types'][geCourses[geCategory][i]['types'].length-1]['short-title']+'"><p class="enrollButton">Enroll Now</p></a></div>' +					           
 				       '</div>').attr("id","course-detail-"+geCategory.replace(/\W/g,"")+"-"+i);
 					
 					course.data("ge-courses-element",
@@ -176,7 +185,10 @@ $(document).ready(function() {
 					course.on("click",{targetId: "#fliphandle-course"},flipFunction);
 					$("#courseData").append(course);
 				}
-				//console.log($("#".id));
+				console.log($("#"+id));
+				if(!$("#"+id)['length']) {
+					console.log("GE Category not found!!");
+				}
 				$("#"+id).each(function(i,e) {
 					var $e = $(e),
 						geCourseListElement = $("#ge-category-"+$(this).attr("id")).parent()
@@ -226,11 +238,13 @@ $(document).ready(function() {
 			$("#geDoubleCreditCourseSelect").empty();
 			var dcCategories = Object.keys(geDoubleCreditCourses);
 			dcCategories.sort();
+			$("#geDoubleCreditCourseSelect").append($("<option>--SELECT COURSE CATEGORY--</option>"));
 			for(var i=0; i < dcCategories.length; i++) {
 				$("#geDoubleCreditCourseSelect").append($("<option>"+dcCategories[i]+"</option>"));
 			}
 			$("#geDoubleCreditCourseSelect").bind("change",function(){
-				displayDoubleCredits($(this).val());
+				var val = $(this).val();
+				if(val!="") displayDoubleCredits(val);
 			});
 			displayDoubleCredits("");
 		});

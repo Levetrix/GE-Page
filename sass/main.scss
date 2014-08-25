@@ -271,7 +271,7 @@ h1, h2, h3, h4 {
 .twoContainer {
 	text-align:center;
 	width:100%;
-	min-height:600px;
+	/*min-height:600px;*/
 }
 
 .facts {
@@ -397,7 +397,13 @@ h1, h2, h3, h4 {
 }
 
 .majorTiles {
+	position:relative;
 	text-align:center;
+	transition-property: height,opacity;
+	transition-duration: 1s,0.75s;
+	transition-timing-function: ease;
+	height: auto;
+	opacity: 1;
 }
 
 .majorTile{

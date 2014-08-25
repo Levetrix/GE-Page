@@ -39,7 +39,7 @@
 		@include transform3d(perspective($perspective) rotateY(180deg));
 		@include transform-origin(left);
     @include transition-timing-function(cubic-bezier(0.680, -0.550, 0.265, 1.550), cubic-bezier(1.000, 0.000, 0.255, 1.600));
-		@include box-shadow(#999 -50px -10px 40px);
+		@include box-shadow(#fff -50px -10px 40px);
 		z-index: 800;
 		/*background-color: lavender;*/
 	}
@@ -49,7 +49,7 @@
 			@include transform(perspective($perspective) rotateY(180deg));
 			@include transform3d(perspective($perspective) rotateY(180deg));
 			@include transform-origin(left);
-			@include box-shadow(#999 -50px -10px 40px);
+			@include box-shadow(#fff -50px -10px 40px);
 		}
 		.going-out {
 			@include transform(perspective($perspective) rotateY(0deg));
