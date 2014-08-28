@@ -8,9 +8,9 @@
 	"Social Science": "(ANTHR-(101|110)|ECON-110|PSYCH-111|SFL-(160|210)|SOC-(111|112)|SOC\\sW-200)",
 	"Religion": "((REL A)-(121|122|211|212)|(REL C)-(324|325))",
 	"American Heritage": "((A HTG)-(100)|(ECON|PL SC)-(110)|(HIST)-(220|221))",
-	"Global and Cultural Awareness": "((ANTHR)-(101)|(GEOG)-(120|130)|(HIST)-(202|304)|(PL SC)-(170))",
+	"Global and Cultural Awareness": "((ANTHR)-(101)|(GEOG)-(120|130)|(HIST)-(202|304)|(PL SC)-(170)|(JAPAN)-(301|302))",
 	"First-Year Writing": "((WRTG)-(150))",
 	"Advanced Written & Oral Communication": "((ENGL)-(312|313|315|316|495)|(M COM-320))",
-	"Quantitative Reasoning": "((ACC-200)|(MATH)-(110|111|112|113|119)|(PHIL-205)|(SFL-260)|(STAT-121))",
+	"Quantitative Reasoning": "((ACC-200)|(MATH)-(110|111|112|113|119)|(PHIL-205)|(SFL-260)|(STAT-121)|(PSYCH-308))",
 	"Languages of Learning": "((MATH)-(112|113|119)|(PHIL-305)|(PSYCH-308)|(STAT-121)|(FREN-202)|(JAPAN)-(301|302))"
 }

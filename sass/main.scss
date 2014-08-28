@@ -31,7 +31,7 @@ $default-text-shadow-v-offset: 2px;
 $default-text-shadow-h-offset: 1px;
 
 $OpenSans: "OpenSans", "OpenSans_IE";
-$OpenSansLt: "OpenSansLt", OpenSansLt_IE;
+$OpenSansLt: "OpenSansLt", "OpenSansLt_IE";
 
 @font-face {
     font-family: "OpenSans";
@@ -214,7 +214,7 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     padding-right:15px;
     padding-top:2em;
-    text-align:center;
+    text-align:right;
     z-index:-1;
 }
 
@@ -230,14 +230,14 @@ h1, h2, h3, h4 {
 	position:relative;
 	z-index:10;
     display:inline-block;
-    margin-top: 8%;
+    margin-top: 0px;
 }
 
 .h1Head, .h2Head {
-	font-family:$OpenSans;
+	font-family:$OpenSansLt;
 	color:#fff;
 	font-weight:400;
-	text-align:center;
+	text-align:right;
 	@include single-text-shadow;
 }
 
@@ -459,6 +459,11 @@ h1, h2, h3, h4 {
 	margin-bottom:8px;
 }
 
+.enrollButton:hover  {
+	cursor:pointer;
+	background-color:rgba($blue, .9);
+}
+
 .buttonContainer {
 	text-align:center;
 }
@@ -526,6 +531,15 @@ h1, h2, h3, h4 {
 	line-height:1.5em;
 	margin-bottom:.5em;
 	margin-right:11px;
+}
+
+.listi a {
+	color: #333;
+}
+
+    
+.listi a:hover {
+	color: $blue;
 }
 
 .listi:before {
@@ -670,25 +684,51 @@ h1, h2, h3, h4 {
 		margin:0;
 		padding:0.75em;
 		height:100%;
-		font-family: OpenSansLt, OpenSansLt_IE;
-		
-		& li:before {
+		font-family: OpenSansLt, OpenSansLt_IE;		
+		/* & li:before {
 			content: "\003E \020";
 			font-family:"consolas";
 			width:1em;
 			float:left;
-		}
+		} */		
 		& li {
 			display:block;
 			font-family:OpenSansLt, OpenSansLt_IE, "consolas";
-			margin:0;
-			padding:0;
 		}
 	}
 	& h3 {
 		display:none;
 	}
 }
+
+.majorTileTitle-s {
+	margin:0;
+	color:$blue;
+	font-size:1.1em;
+	line-height:1.35em;
+	margin-top:12px;
+	
+}
+
+.majorTileTitle-l {
+	margin:0;
+	margin-bottom:.4em;
+}
+
+.course-title-s {
+	margin:0;
+	color:$blue;
+	font-size:1.1em;
+	line-height:1.35em;
+	
+}
+
+.course-title-l {
+	margin:0;
+	margin-bottom:.4em;
+	
+}
+
 .tier3Info {
 	& .majorTile {
 		margin: 0px;
@@ -967,10 +1007,6 @@ textarea {
         float:left;
         margin-bottom:.1em;
         color: #333;
-    }
-    
-    .listi a {
-    	color: #333;
     }
 }
 	

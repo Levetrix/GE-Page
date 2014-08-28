@@ -160,14 +160,14 @@ $(document).ready(function() {
 				;
 				for(var i=0; i < geCourses[geCategory].length; i++) {
 					if(geCourses[geCategory][i]) {
-						var course = $('<li class="course-title">'+geCourses[geCategory][i]['course-title'].replace(/(\w)-(\d)/g,"$1 $2")+': '+(geCourses[geCategory][i]['title'].replace(/\s*\([^\)]+\)/g,"")).toTitleCase()+'</li>');
+						var course = $('<li class="course-title-s">'+geCourses[geCategory][i]['course-title'].replace(/(\w)-(\d)/g,"$1 $2")+'</li> <li class="course-title-l"> '+(geCourses[geCategory][i]['title'].replace(/\s*\([^\)]+\)/g,"")).toTitleCase()+'</li>');
 						categoryParent.find("ul").append(course);
 						course.css("cursor","pointer");
 					}
 					console.log(geCourses[geCategory][i]);
 					var courseElement = $('<div class="majorTile">' +
-					   '    	<p class="majorTileTitle">' +
-				       '    	' + geCourses[geCategory][i]['course-title'] + '<br /> ' + geCourses[geCategory][i]['title'] + '' +
+					   '    	<p class="majorTileTitle-s">' +
+				       '    	' + geCourses[geCategory][i]['course-title'] + '</p> <p class="majorTileTitle-l"> ' + geCourses[geCategory][i]['title'] + '' +
 				       '    </p>' +
 				       '    <p class="fulfilledLabel">GE Fulfilled:</p>' +
 				       '    <p class="fulfilled">' + geCategory + '</p>' +
