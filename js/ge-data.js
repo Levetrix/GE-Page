@@ -39,6 +39,33 @@ var flipFunction = function( e ) {
 			if($(e.data.targetId).find(".flipcombined").length == 0) {
 				flipTo.removeClass("flipcombined");
 			}
+			console.log($(e.data.targetId).children());
+			var imageThing = null;
+			switch($element.attr("id")) {
+				case "AdvancedWritten-OralCommunication":
+					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				break;
+				case "AdvancedWritten-OralCommunication":
+					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				break;
+				case "AdvancedWritten-OralCommunication":
+					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				break;
+				case "AdvancedWritten-OralCommunication":
+					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				break;
+				case "AdvancedWritten-OralCommunication":
+					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				break;
+				default:
+					imageThing = "myDefaultFancyClassNameForBackgroundImages";
+				break;
+			}
+			if($(e.data.targetId).children().length > 1) {
+				$(e.data.targetId).children().last().html("<div>Hello world left!</div>");
+			} else {
+				$(e.data.targetId).parent().children().first().html("<div>Hello world right!</div>");
+			}
 			targetToReplace.animateReplace("flip",flipTo);
 		} else if( ftIH > ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) {
 			//	Secondary case where the tile is too large - AND there hasn't already been a larger tile flipped.
