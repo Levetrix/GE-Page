@@ -607,7 +607,7 @@ h1, h2, h3, h4 {
 	position:relative;
 	/*left:-1px;*/
 }
-.tier2 > div, .tier3 > div {
+.tier2 > div, #fliphandle, .tier3 > div {
 	height:100%;
 }
 
@@ -648,7 +648,7 @@ h1, h2, h3, h4 {
 }
 
 .tier2Img .card-front{
-    background-image: url("../img/IMAGES/Physical%20Science/main.jpg");
+    background-image: url("../img/IMAGES/Physical%20Science/portrait.jpg");
     background-size:cover;
     background-position:50% 50%;
 }

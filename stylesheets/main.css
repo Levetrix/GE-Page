@@ -4500,7 +4500,7 @@ h1, h2, h3, h4 {
 }
 
 /* line 610, ../sass/main.scss */
-.tier2 > div, .tier3 > div {
+.tier2 > div, #fliphandle, .tier3 > div {
   height: 100%;
 }
 
@@ -4544,7 +4544,7 @@ h1, h2, h3, h4 {
 
 /* line 650, ../sass/main.scss */
 .tier2Img .card-front {
-  background-image: url("../img/IMAGES/Physical%20Science/main.jpg");
+  background-image: url("../img/IMAGES/Physical%20Science/portrait.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }

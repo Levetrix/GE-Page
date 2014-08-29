@@ -23,8 +23,14 @@ var flipFunction = function( e ) {
 	var $element = $(this),
 		data = $element.data("ge-courses-element"),
 		targetToReplace = $(e.data.targetId).children().first(),
-		flipTo = data.element.clone(true,true).addClass(targetToReplace.attr("class"))
+		flipTo = data.element.clone(true,true).addClass(targetToReplace.attr("class")),
+		arData = $element.data('plugin_animateReplace')
 	;
+	
+	if( arData && ((arData['flip-to'] == undefined && !targetToReplace.hasClass("animated")) || arData === null) ) {
+		console.log("animation in process, skipping clicking");
+		return false;
+	} 
 	//console.log("click registered on "+$element.text());
 	if(targetToReplace) {
 		var ftIH = data.innerHeight, //flipTo.insertAfter(targetToReplace).innerHeight(),
@@ -89,7 +95,6 @@ var flipFunction = function( e ) {
 		} else {
 			//$(e.data.targetId).parent().children().first().children().first().attr("class","card-front").addClass($element.attr("id")); //.html("<div>Hello world right!</div>");
 		}
-		
 		if( (ftIH <= ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) || ($(e.data.targetId).find(".flipcombined").length > 0 && ftIH > data.overflowElementHeight) ) {
 			//	Normal case - flip the tile like "normal"
 			//console.log("Case 1");
@@ -107,8 +112,17 @@ var flipFunction = function( e ) {
 		} else if( ftIH <= data.overflowElementHeight ) {
 			//	Third case, where the content is smaller than a tile height and a previous tile was large
 			//console.log("Case 3");
+			//console.log($(e.data.targetId).parent().attr("class").indexOf("tier2"));
+			if($(e.data.targetId).parent().attr("class").indexOf("tier2") > -1) {
+				//data.overflowElement.attr("class","card-front").addClass($element.attr("id"));
+				console.log("new class: "+$element.attr("id"));
+				flipElement = $('<div></div>').css("width","100%").attr("id",e.data.targetId.replace(/\#/,"")).append(flipTo).append($('<div></div>').addClass("tier2Img flip-card").append($('<div>&nbsp;</div>').addClass("card-front").addClass($element.attr("id"))));
+			} else {
+				flipElement = $('<div></div>').css("width","100%").attr("id",e.data.targetId.replace(/\#/,"")).append(flipTo).append(data.overflowElement.clone());
+			}
 			flipTo.removeClass("flipcombined");
-			targetToReplace.parent().animateReplace("flip",$('<div></div>').css("width","100%").attr("id",e.data.targetId.replace(/\#/,"")).append(flipTo).append(data.overflowElement.clone(true, true)));
+			targetToReplace.parent().animateReplace("flip",flipElement);
+
 		} else {
 			console.log("Unhandled case!");
 		}
