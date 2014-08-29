@@ -43,19 +43,46 @@ var flipFunction = function( e ) {
 			var imageThing = null;
 			switch($element.attr("id")) {
 				case "AdvancedWritten-OralCommunication":
-					imageThing = "myFirstFancyClassNameForBackgroundImages";
+					imageThing = "AdvancedWritten-OralCommunication";
 				break;
-				case "AdvancedWritten-OralCommunication":
-					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				case "AmericanHeritage":
+					imageThing = "AmericanHeritage";
 				break;
-				case "AdvancedWritten-OralCommunication":
-					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				case "Arts":
+					imageThing = "Arts";
 				break;
-				case "AdvancedWritten-OralCommunication":
-					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				case "BiologicalScience":
+					imageThing = "BiologicalScience";
 				break;
-				case "AdvancedWritten-OralCommunication":
-					imageThing = "myFirstFancyClassNameForBackgroundImages";
+				case "Civilization1":
+					imageThing = "Civilization1";
+				break;
+				case "Civilization2":
+					imageThing = "Civilization2";
+				break;
+				case "First-YearWriting":
+					imageThing = "First-YearWriting";
+				break;
+				case "GlobalandCulturalAwareness":
+					imageThing = "GlobalandCulturalAwareness";
+				break;
+				case "LanguagesofLearning":
+					imageThing = "LanguagesofLearning";
+				break;
+				case "Letters":
+					imageThing = "Letters";
+				break;
+				case "PhysicalScience":
+					imageThing = "PhysicalScience";
+				break;
+				case "QuantitativeReasoning":
+					imageThing = "QuantitativeReasoning";
+				break;
+				case "Religion":
+					imageThing = "Religion";
+				break;
+				case "SocialScience":
+					imageThing = "SocialScience";
 				break;
 				default:
 					imageThing = "myDefaultFancyClassNameForBackgroundImages";
