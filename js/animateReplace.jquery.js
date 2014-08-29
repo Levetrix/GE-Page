@@ -133,9 +133,17 @@ Animate and Replace (animateReplace for short)
 					methods['debug']( _this, "attr(id): "+$this.attr("id"), "flip");
 					if( (!data.options['anchor'] || data.options['anchor'].toLowerCase() !== "parent") && $this.attr("id") != "undefined" ) {
 						//	2
-						var anchor = $('<div style="display:block;margin:0;padding:0;border:0"></div>').attr("id", "arparent-id"+$this.attr("id")).css("height",$this.height()+"px").css("max-height",$this.height()+"px").css("width",$this.width()+"px").css("max-width",$this.width()+"px");
-						anchor.css("height",$this.height());
-						anchor.css("width",$this.width());
+						var anchor = $('<div style="display:block;margin:0;padding:0;border:0"></div>')
+							.attr("id", "arparent-id"+$this.attr("id"))
+							.css("height",$this.height()+"px")
+							.css("max-height",$this.outerHeight()+"px")
+							.css("width",$this.width()+"px")
+							.css("max-width",$this.outerWidth()+"px")
+						;
+						//anchor.css("height",$this.outerHeight());
+						//anchor.css("width",$this.outerWidth());
+						anchor.css("height","100%");
+						anchor.css("width","100%");
 						anchor.insertAfter($this);
 						anchor.data($this.data());
 						anchor.append($this);

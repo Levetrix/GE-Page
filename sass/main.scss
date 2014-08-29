@@ -26,9 +26,9 @@ $blue: #66B9E3;
 $charcoal: #323232;
 
 $default-text-shadow-color: rgba(70,70,70,.5);
-$default-text-shadow-blur: 3px;
+$default-text-shadow-blur: 6px;
 $default-text-shadow-v-offset: 2px;
-$default-text-shadow-h-offset: 1px;
+$default-text-shadow-h-offset: 2px;
 
 $OpenSans: "OpenSans", "OpenSans_IE";
 $OpenSansLt: "OpenSansLt", "OpenSansLt_IE";
@@ -78,6 +78,11 @@ div {
 }
 
     /* Card Flip CSS */
+
+.click-glow {
+	@include text-shadow($default-text-shadow-color 2px 2px 2px );
+	font-wight:bold;
+}
 
 .container { 
   width: 200px;
@@ -742,6 +747,8 @@ h1, h2, h3, h4 {
 
 .tier3Info, .tier2Info {
 	z-index:5000;
+}
+.tier2Info {
 	position:relative;
 }
 .tier3Img, .tier2Img {

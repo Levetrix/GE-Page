@@ -28,10 +28,12 @@ var flipFunction = function( e ) {
 	;
 	
 	if( arData && ((arData['flip-to'] == undefined && !targetToReplace.hasClass("animated")) || arData === null) ) {
-		console.log("animation in process, skipping clicking");
+		//console.log("animation in process, skipping clicking");
 		return false;
 	} 
 	//console.log("click registered on "+$element.text());
+	$(".click-glow").removeClass("click-glow");
+	$element.parent().addClass("click-glow");
 	if(targetToReplace) {
 		var ftIH = data.innerHeight, //flipTo.insertAfter(targetToReplace).innerHeight(),
 			ttrIH = targetToReplace.innerHeight()
@@ -40,7 +42,6 @@ var flipFunction = function( e ) {
 		//console.log("space to hold it: "+ttrIH);
 		flipTo.detach();
 		
-		console.log($(e.data.targetId).children());
 		var imageThing = null;
 		switch($element.attr("id")) {
 			case "AdvancedWritten-OralCommunication":
@@ -89,7 +90,7 @@ var flipFunction = function( e ) {
 				imageThing = "DefaultImg";
 			break;
 		}
-		if($(e.data.targetId).children().length > 1) {
+		if($(e.data.targetId).parent().attr("class") && $(e.data.targetId).parent().attr("class").indexOf("tier2") > -1) {
 			$(e.data.targetId).children().last().children().first().attr("class","card-front").addClass($element.attr("id"));	//("<div>Hello world left!</div>");
 			$(".tier3Img .card-front").attr("class","card-front").addClass($element.attr("id"));
 		} else {
@@ -101,7 +102,6 @@ var flipFunction = function( e ) {
 			if($(e.data.targetId).find(".flipcombined").length == 0) {
 				flipTo.removeClass("flipcombined");
 			}
-			
 			targetToReplace.animateReplace("flip",flipTo);
 		} else if( ftIH > ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) {
 			//	Secondary case where the tile is too large - AND there hasn't already been a larger tile flipped.
