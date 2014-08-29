@@ -653,13 +653,17 @@ h1, h2, h3, h4 {
 }
 
 .tier2Img .card-front{
+<<<<<<< HEAD
     background-image: url("../img/IMAGES/Physical%20Science/portrait.jpg");
+=======
+    background-image: url("../img/IMAGES/Civ%202/portrait.jpg");
+>>>>>>> origin/syncme
     background-size:cover;
     background-position:50% 50%;
 }
 
 .tier3Img .card-front{
-    background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
+    background-image: url("../img/IMAGES/Civ%202/prop.jpg");
     background-size:cover;
     background-position:50% 50%;
     position:relative;
@@ -673,6 +677,21 @@ h1, h2, h3, h4 {
     display:inline-block;
  /*   background-color: $black;*/
 	vertical-align: top;
+}
+
+.adTitle {
+	font-size:1.65em;
+	color:$blue;
+	text-align:center;
+	margin-top:90px;
+	
+}
+
+.adContent {
+	font-size:1.35em;
+	text-align:center;
+	display:block;
+	
 }
 
 .ge-section {

@@ -4550,14 +4550,18 @@ h1, h2, h3, h4 {
 
 /* line 655, ../sass/main.scss */
 .tier2Img .card-front {
+<<<<<<< HEAD
   background-image: url("../img/IMAGES/Physical%20Science/portrait.jpg");
+=======
+  background-image: url("../img/IMAGES/Civ%202/portrait.jpg");
+>>>>>>> origin/syncme
   background-size: cover;
   background-position: 50% 50%;
 }
 
 /* line 661, ../sass/main.scss */
 .tier3Img .card-front {
-  background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
+  background-image: url("../img/IMAGES/Civ%202/prop.jpg");
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
@@ -4575,7 +4579,26 @@ h1, h2, h3, h4 {
   vertical-align: top;
 }
 
+<<<<<<< HEAD
 /* line 678, ../sass/main.scss */
+=======
+/* line 673, ../sass/main.scss */
+.adTitle {
+  font-size: 1.65em;
+  color: #66b9e3;
+  text-align: center;
+  margin-top: 90px;
+}
+
+/* line 681, ../sass/main.scss */
+.adContent {
+  font-size: 1.35em;
+  text-align: center;
+  display: block;
+}
+
+/* line 688, ../sass/main.scss */
+>>>>>>> origin/syncme
 .ge-section {
   min-width: 50%;
   width: 100%;
@@ -4585,7 +4608,11 @@ h1, h2, h3, h4 {
   background-color: white;
   /*border: 1px solid #ccc;*/
 }
+<<<<<<< HEAD
 /* line 687, ../sass/main.scss */
+=======
+/* line 697, ../sass/main.scss */
+>>>>>>> origin/syncme
 .ge-section ul {
   margin: 0;
   padding: 0.75em;
@@ -4598,17 +4625,29 @@ h1, h2, h3, h4 {
   	float:left;
   } */
 }
+<<<<<<< HEAD
 /* line 698, ../sass/main.scss */
+=======
+/* line 708, ../sass/main.scss */
+>>>>>>> origin/syncme
 .ge-section ul li {
   display: block;
   font-family: OpenSansLt, OpenSansLt_IE, "consolas";
 }
+<<<<<<< HEAD
 /* line 703, ../sass/main.scss */
+=======
+/* line 713, ../sass/main.scss */
+>>>>>>> origin/syncme
 .ge-section h3 {
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 708, ../sass/main.scss */
+=======
+/* line 718, ../sass/main.scss */
+>>>>>>> origin/syncme
 .majorTileTitle-s {
   margin: 0;
   color: #66b9e3;
@@ -4617,13 +4656,21 @@ h1, h2, h3, h4 {
   margin-top: 12px;
 }
 
+<<<<<<< HEAD
 /* line 717, ../sass/main.scss */
+=======
+/* line 727, ../sass/main.scss */
+>>>>>>> origin/syncme
 .majorTileTitle-l {
   margin: 0;
   margin-bottom: .4em;
 }
 
+<<<<<<< HEAD
 /* line 722, ../sass/main.scss */
+=======
+/* line 732, ../sass/main.scss */
+>>>>>>> origin/syncme
 .course-title-s {
   margin: 0;
   color: #66b9e3;
@@ -4631,25 +4678,41 @@ h1, h2, h3, h4 {
   line-height: 1.3em;
 }
 
+<<<<<<< HEAD
 /* line 730, ../sass/main.scss */
+=======
+/* line 740, ../sass/main.scss */
+>>>>>>> origin/syncme
 .course-title-l {
   margin: 0;
   margin-bottom: .4em;
 }
 
+<<<<<<< HEAD
 /* line 737, ../sass/main.scss */
+=======
+/* line 747, ../sass/main.scss */
+>>>>>>> origin/syncme
 .tier3Info .majorTile {
   margin: 0px;
   width: 100%;
   height: 100%;
   border: 1px solid #ccc;
 }
+<<<<<<< HEAD
 /* line 743, ../sass/main.scss */
+=======
+/* line 753, ../sass/main.scss */
+>>>>>>> origin/syncme
 .tier3Info .majorTile.card-front {
   background-color: #fff;
 }
 
+<<<<<<< HEAD
 /* line 748, ../sass/main.scss */
+=======
+/* line 758, ../sass/main.scss */
+>>>>>>> origin/syncme
 .tier3Info, .tier2Info {
   z-index: 5000;
 }
@@ -4659,13 +4722,21 @@ h1, h2, h3, h4 {
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 754, ../sass/main.scss */
+=======
+/* line 762, ../sass/main.scss */
+>>>>>>> origin/syncme
 .tier3Img, .tier2Img {
   position: relative;
   z-index: 0;
 }
 
+<<<<<<< HEAD
 /* line 759, ../sass/main.scss */
+=======
+/* line 767, ../sass/main.scss */
+>>>>>>> origin/syncme
 .boxshadow {
   -webkit-box-shadow: #999999 5px 1px 10px;
   -moz-box-shadow: #999999 5px 1px 10px;
@@ -4674,6 +4745,7 @@ h1, h2, h3, h4 {
   z-index: 5000;
 }
 
+<<<<<<< HEAD
 /* line 766, ../sass/main.scss */
 .tier2Img .card-front.AdvancedWritten-OralCommunication {
   background-image: url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/portrait.jpg");
@@ -4727,10 +4799,66 @@ h1, h2, h3, h4 {
   background-image: url("../img/IMAGES/Religion/portrait.jpg");
 }
 /* line 805, ../sass/main.scss */
+=======
+/* line 774, ../sass/main.scss */
+.tier2Img .card-front.AdvancedWritten-OralCommunication {
+  background-image: url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/portrait.jpg");
+}
+/* line 777, ../sass/main.scss */
+.tier2Img .card-front.AmericanHeritage {
+  background-image: url("../img/IMAGES/American%20Heritage/portrait.jpg");
+}
+/* line 780, ../sass/main.scss */
+.tier2Img .card-front.Arts {
+  background-image: url("../img/IMAGES/Arts/portrait.jpg");
+}
+/* line 783, ../sass/main.scss */
+.tier2Img .card-front.BiologicalScience {
+  background-image: url("../img/IMAGES/Biological%20Sciences/portrait.jpg");
+}
+/* line 786, ../sass/main.scss */
+.tier2Img .card-front.Civilization1 {
+  background-image: url("../img/IMAGES/Civ%201/portrait.jpg");
+}
+/* line 789, ../sass/main.scss */
+.tier2Img .card-front.Civilization2 {
+  background-image: url("../img/IMAGES/Civ%202/portrait.jpg");
+}
+/* line 792, ../sass/main.scss */
+.tier2Img .card-front.First-YearWriting {
+  background-image: url("../img/IMAGES/First%20Year%20Writing/portrait.jpg");
+}
+/* line 795, ../sass/main.scss */
+.tier2Img .card-front.GlobalandCulturalAwareness {
+  background-image: url("../img/IMAGES/Global%20and%20Cultural%20Awareness/portrait.jpg");
+}
+/* line 798, ../sass/main.scss */
+.tier2Img .card-front.LanguagesofLearning {
+  background-image: url("../img/IMAGES/Languages%20of%20Learning/portrait.jpg");
+}
+/* line 801, ../sass/main.scss */
+.tier2Img .card-front.Letters {
+  background-image: url("../img/IMAGES/Letters/portrait.jpg");
+}
+/* line 804, ../sass/main.scss */
+.tier2Img .card-front.PhysicalScience {
+  background-image: url("../img/IMAGES/Physical%20Science/portrait.jpg");
+}
+/* line 807, ../sass/main.scss */
+.tier2Img .card-front.QuantitativeReasoning {
+  background-image: url("../img/IMAGES/Quantitative%20Reasoning/portrait.jpg");
+}
+/* line 810, ../sass/main.scss */
+.tier2Img .card-front.Religion {
+  background-image: url("../img/IMAGES/Religion/portrait.jpg");
+}
+/* line 813, ../sass/main.scss */
+>>>>>>> origin/syncme
 .tier2Img .card-front.SocialScience {
   background-image: url("../img/IMAGES/Social%20Science/portrait.jpg");
 }
 
+<<<<<<< HEAD
 /* line 813, ../sass/main.scss */
 .tier3Img .card-front.AdvancedWritten-OralCommunication {
   background-image: url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/prop.jpg");
@@ -4784,6 +4912,61 @@ h1, h2, h3, h4 {
   background-image: url("../img/IMAGES/Religion/prop.jpg");
 }
 /* line 852, ../sass/main.scss */
+=======
+/* line 821, ../sass/main.scss */
+.tier3Img .card-front.AdvancedWritten-OralCommunication {
+  background-image: url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/prop.jpg");
+}
+/* line 824, ../sass/main.scss */
+.tier3Img .card-front.AmericanHeritage {
+  background-image: url("../img/IMAGES/American%20Heritage/prop.jpg");
+}
+/* line 827, ../sass/main.scss */
+.tier3Img .card-front.Arts {
+  background-image: url("../img/IMAGES/Arts/prop.jpg");
+}
+/* line 830, ../sass/main.scss */
+.tier3Img .card-front.BiologicalScience {
+  background-image: url("../img/IMAGES/Biological%20Sciences/prop.jpg");
+}
+/* line 833, ../sass/main.scss */
+.tier3Img .card-front.Civilization1 {
+  background-image: url("../img/IMAGES/Civ%201/prop.jpg");
+}
+/* line 836, ../sass/main.scss */
+.tier3Img .card-front.Civilization2 {
+  background-image: url("../img/IMAGES/Civ%202/prop.jpg");
+}
+/* line 839, ../sass/main.scss */
+.tier3Img .card-front.First-YearWriting {
+  background-image: url("../img/IMAGES/First%20Year%20Writing/prop.jpg");
+}
+/* line 842, ../sass/main.scss */
+.tier3Img .card-front.GlobalandCulturalAwareness {
+  background-image: url("../img/IMAGES/Global%20and%20Cultural%20Awareness/prop.jpg");
+}
+/* line 845, ../sass/main.scss */
+.tier3Img .card-front.LanguagesofLearning {
+  background-image: url("../img/IMAGES/Languages%20of%20Learning/prop.jpg");
+}
+/* line 848, ../sass/main.scss */
+.tier3Img .card-front.Letters {
+  background-image: url("../img/IMAGES/Letters/prop.jpg");
+}
+/* line 851, ../sass/main.scss */
+.tier3Img .card-front.PhysicalScience {
+  background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
+}
+/* line 854, ../sass/main.scss */
+.tier3Img .card-front.QuantitativeReasoning {
+  background-image: url("../img/IMAGES/Quantitative%20Reasoning/prop.jpg");
+}
+/* line 857, ../sass/main.scss */
+.tier3Img .card-front.Religion {
+  background-image: url("../img/IMAGES/Religion/prop.jpg");
+}
+/* line 860, ../sass/main.scss */
+>>>>>>> origin/syncme
 .tier3Img .card-front.SocialScience {
   background-image: url("../img/IMAGES/Social%20Science/prop.jpg");
 }
@@ -4791,23 +4974,39 @@ h1, h2, h3, h4 {
 /* ------------------------ */
 /* ------Contact Form------ */
 /* ------------------------ */
+<<<<<<< HEAD
 /* line 865, ../sass/main.scss */
+=======
+/* line 873, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contact {
   text-align: center;
   padding: 16px;
 }
 
+<<<<<<< HEAD
 /* line 870, ../sass/main.scss */
+=======
+/* line 878, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contactTitle {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* line 874, ../sass/main.scss */
+=======
+/* line 882, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contactTitle h2 {
   font-size: 1.5em;
 }
 
+<<<<<<< HEAD
 /* line 878, ../sass/main.scss */
+=======
+/* line 886, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contactQuarter {
   display: inline-block;
   width: 230px;
@@ -4815,19 +5014,31 @@ h1, h2, h3, h4 {
   margin: 8px 16px;
 }
 
+<<<<<<< HEAD
 /* line 885, ../sass/main.scss */
+=======
+/* line 893, ../sass/main.scss */
+>>>>>>> origin/syncme
 input {
   font-family: "OpenSansLt";
   font-size: .95em;
 }
 
+<<<<<<< HEAD
 /* line 890, ../sass/main.scss */
+=======
+/* line 898, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contactAreaQuarter {
   width: 100%;
   height: 32px;
 }
 
+<<<<<<< HEAD
 /* line 895, ../sass/main.scss */
+=======
+/* line 903, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contactHalf {
   display: inline-block;
   width: 230px;
@@ -4835,20 +5046,32 @@ input {
   margin: 8px 16px;
 }
 
+<<<<<<< HEAD
 /* line 902, ../sass/main.scss */
+=======
+/* line 910, ../sass/main.scss */
+>>>>>>> origin/syncme
 .contactAreaHalf {
   width: 100%;
   height: 32px;
 }
 
+<<<<<<< HEAD
 /* line 907, ../sass/main.scss */
+=======
+/* line 915, ../sass/main.scss */
+>>>>>>> origin/syncme
 textarea {
   font-family: "OpenSansLt";
   font-size: .95em;
   min-height: 48px;
 }
 
+<<<<<<< HEAD
 /* line 913, ../sass/main.scss */
+=======
+/* line 921, ../sass/main.scss */
+>>>>>>> origin/syncme
 .submitButton {
   padding-top: 7px;
   margin-top: 8px;
@@ -4857,13 +5080,21 @@ textarea {
   background-color: #66b9e3;
 }
 
+<<<<<<< HEAD
 /* line 921, ../sass/main.scss */
+=======
+/* line 929, ../sass/main.scss */
+>>>>>>> origin/syncme
 .submitButton:hover {
   cursor: pointer;
   background-color: rgba(102, 185, 227, 0.95);
 }
 
+<<<<<<< HEAD
 /* line 926, ../sass/main.scss */
+=======
+/* line 934, ../sass/main.scss */
+>>>>>>> origin/syncme
 .form-success {
   color: #fff;
 }
@@ -4872,94 +5103,158 @@ textarea {
 /*//// Media Queries////*/
 /*//////////////////////*/
 @media (min-width: 408px) {
+<<<<<<< HEAD
   /* line 937, ../sass/main.scss */
+=======
+  /* line 945, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 577px) {
+<<<<<<< HEAD
   /* line 943, ../sass/main.scss */
+=======
+  /* line 951, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireH2 {
     margin-left: 0;
     font-size: 1.8em;
     text-align: center;
   }
 
+<<<<<<< HEAD
   /* line 949, ../sass/main.scss */
+=======
+  /* line 957, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireH2 > span {
     display: inline;
   }
 
+<<<<<<< HEAD
   /* line 953, ../sass/main.scss */
+=======
+  /* line 961, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireForm {
     width: calc(460px + 32px);
   }
 
+<<<<<<< HEAD
   /* line 958, ../sass/main.scss */
+=======
+  /* line 966, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireForm select {
     width: calc(460px + 32px + 25px);
   }
 
+<<<<<<< HEAD
   /* line 963, ../sass/main.scss */
+=======
+  /* line 971, ../sass/main.scss */
+>>>>>>> origin/syncme
   .contactTitle h2 {
     font-size: 1.8em;
   }
 
+<<<<<<< HEAD
   /* line 967, ../sass/main.scss */
+=======
+  /* line 975, ../sass/main.scss */
+>>>>>>> origin/syncme
   .contactHalf {
     width: calc(464px + 32px);
   }
 }
 @media (min-width: 665px) {
+<<<<<<< HEAD
   /* line 977, ../sass/main.scss */
+=======
+  /* line 985, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tileInvis {
     display: inline-block;
   }
 
+<<<<<<< HEAD
   /* line 981, ../sass/main.scss */
+=======
+  /* line 989, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tileContainer {
     max-width: 850px;
     min-height: 400px;
   }
 
+<<<<<<< HEAD
   /* line 986, ../sass/main.scss */
+=======
+  /* line 994, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile {
     max-width: 280px;
     margin-bottom: 2.25em;
   }
 
+<<<<<<< HEAD
   /* line 991, ../sass/main.scss */
+=======
+  /* line 999, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile:nth-child(even) {
     margin-left: 2.5em;
   }
 
+<<<<<<< HEAD
   /* line 996, ../sass/main.scss */
+=======
+  /* line 1004, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile:nth-child(even) > .h3Tile,
   .tile:nth-child(even) > .tileText {
     text-align: left;
   }
 
+<<<<<<< HEAD
   /* line 1001, ../sass/main.scss */
+=======
+  /* line 1009, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile:nth-child(odd) > .h3Tile,
   .tile:nth-child(odd) > .tileText {
     text-align: right;
   }
 
+<<<<<<< HEAD
   /* line 1005, ../sass/main.scss */
+=======
+  /* line 1013, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile:nth-child(odd) > .icon {
     float: right;
     margin-bottom: 3.5em;
     margin-left: .75em;
   }
 
+<<<<<<< HEAD
   /* line 1011, ../sass/main.scss */
+=======
+  /* line 1019, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile:nth-child(even) > .icon {
     float: left;
     margin-bottom: 3em;
     margin-right: .75em;
   }
 
+<<<<<<< HEAD
   /* line 1023, ../sass/main.scss */
+=======
+  /* line 1031, ../sass/main.scss */
+>>>>>>> origin/syncme
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -4969,7 +5264,11 @@ textarea {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
+<<<<<<< HEAD
   /* line 1032, ../sass/main.scss */
+=======
+  /* line 1040, ../sass/main.scss */
+>>>>>>> origin/syncme
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -4980,27 +5279,47 @@ textarea {
     vertical-align: top;
   }
 
+<<<<<<< HEAD
   /* line 1043, ../sass/main.scss */
+=======
+  /* line 1051, ../sass/main.scss */
+>>>>>>> origin/syncme
   .mobi {
     display: none;
   }
 
+<<<<<<< HEAD
   /* line 1047, ../sass/main.scss */
+=======
+  /* line 1055, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 595px;
   }
 
+<<<<<<< HEAD
   /* line 1051, ../sass/main.scss */
+=======
+  /* line 1059, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tier2 {
     display: inline-block;
   }
 
+<<<<<<< HEAD
   /* line 1056, ../sass/main.scss */
+=======
+  /* line 1064, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tier3 {
     display: inline-block;
   }
 
+<<<<<<< HEAD
   /* line 1060, ../sass/main.scss */
+=======
+  /* line 1068, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -5008,7 +5327,11 @@ textarea {
     padding-left: 1.05em;
   }
 
+<<<<<<< HEAD
   /* line 1067, ../sass/main.scss */
+=======
+  /* line 1075, ../sass/main.scss */
+>>>>>>> origin/syncme
   .listi {
     display: block;
     line-height: 1.5em;
@@ -5016,7 +5339,11 @@ textarea {
     margin-right: 11px;
   }
 
+<<<<<<< HEAD
   /* line 1074, ../sass/main.scss */
+=======
+  /* line 1082, ../sass/main.scss */
+>>>>>>> origin/syncme
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -5029,17 +5356,29 @@ textarea {
   }
 }
 @media (min-width: 716px) {
+<<<<<<< HEAD
   /* line 1087, ../sass/main.scss */
+=======
+  /* line 1095, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile:nth-child(even) {
     margin-left: 4em;
   }
 
+<<<<<<< HEAD
   /* line 1091, ../sass/main.scss */
+=======
+  /* line 1099, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 645px;
   }
 
+<<<<<<< HEAD
   /* line 1095, ../sass/main.scss */
+=======
+  /* line 1103, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -5047,7 +5386,11 @@ textarea {
     padding-left: 1em;
   }
 
+<<<<<<< HEAD
   /* line 1102, ../sass/main.scss */
+=======
+  /* line 1110, ../sass/main.scss */
+>>>>>>> origin/syncme
   .listi {
     display: block;
     line-height: 1.5em;
@@ -5055,7 +5398,11 @@ textarea {
     margin-right: 11px;
   }
 
+<<<<<<< HEAD
   /* line 1109, ../sass/main.scss */
+=======
+  /* line 1117, ../sass/main.scss */
+>>>>>>> origin/syncme
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -5067,27 +5414,47 @@ textarea {
   }
 }
 @media (min-width: 843px) {
+<<<<<<< HEAD
   /* line 1121, ../sass/main.scss */
+=======
+  /* line 1129, ../sass/main.scss */
+>>>>>>> origin/syncme
   .facts {
     display: block;
   }
 
+<<<<<<< HEAD
   /* line 1125, ../sass/main.scss */
+=======
+  /* line 1133, ../sass/main.scss */
+>>>>>>> origin/syncme
   .clincher {
     display: block;
   }
 
+<<<<<<< HEAD
   /* line 1129, ../sass/main.scss */
+=======
+  /* line 1137, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireForm {
     width: calc(462px + 64px);
   }
 
+<<<<<<< HEAD
   /* line 1133, ../sass/main.scss */
+=======
+  /* line 1141, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireForm select {
     width: calc(462px + 64px + 25px);
   }
 
+<<<<<<< HEAD
   /* line 1137, ../sass/main.scss */
+=======
+  /* line 1145, ../sass/main.scss */
+>>>>>>> origin/syncme
   .contactHalf {
     display: block;
     margin-right: auto;
@@ -5095,24 +5462,40 @@ textarea {
   }
 }
 @media (min-width: 870px) {
+<<<<<<< HEAD
   /* line 1145, ../sass/main.scss */
+=======
+  /* line 1153, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
+<<<<<<< HEAD
   /* line 1152, ../sass/main.scss */
+=======
+  /* line 1160, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tile {
     max-width: 375px;
     min-height: 100px;
   }
 
+<<<<<<< HEAD
   /* line 1161, ../sass/main.scss */
+=======
+  /* line 1169, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 775px;
   }
 
+<<<<<<< HEAD
   /* line 1165, ../sass/main.scss */
+=======
+  /* line 1173, ../sass/main.scss */
+>>>>>>> origin/syncme
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -5123,7 +5506,11 @@ textarea {
     vertical-align: top;
   }
 
+<<<<<<< HEAD
   /* line 1176, ../sass/main.scss */
+=======
+  /* line 1184, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -5131,7 +5518,11 @@ textarea {
     padding-left: 1.15em;
   }
 
+<<<<<<< HEAD
   /* line 1183, ../sass/main.scss */
+=======
+  /* line 1191, ../sass/main.scss */
+>>>>>>> origin/syncme
   .listi {
     display: block;
     line-height: 1.5em;
@@ -5139,7 +5530,11 @@ textarea {
     margin-right: 11px;
   }
 
+<<<<<<< HEAD
   /* line 1190, ../sass/main.scss */
+=======
+  /* line 1198, ../sass/main.scss */
+>>>>>>> origin/syncme
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -5150,7 +5545,11 @@ textarea {
     margin-bottom: .1em;
   }
 
+<<<<<<< HEAD
   /* line 1200, ../sass/main.scss */
+=======
+  /* line 1208, ../sass/main.scss */
+>>>>>>> origin/syncme
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -5161,47 +5560,79 @@ textarea {
   }
 }
 @media (min-width: 978px) {
+<<<<<<< HEAD
   /* line 1212, ../sass/main.scss */
+=======
+  /* line 1220, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
+<<<<<<< HEAD
   /* line 1218, ../sass/main.scss */
+=======
+  /* line 1226, ../sass/main.scss */
+>>>>>>> origin/syncme
   .coursesArea {
     height: 708px;
   }
 
+<<<<<<< HEAD
   /* line 1222, ../sass/main.scss */
+=======
+  /* line 1230, ../sass/main.scss */
+>>>>>>> origin/syncme
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;
   }
 }
 @media (min-width: 1109px) {
+<<<<<<< HEAD
   /* line 1231, ../sass/main.scss */
+=======
+  /* line 1239, ../sass/main.scss */
+>>>>>>> origin/syncme
   .factItem {
     width: calc(230px);
     margin: 16px;
   }
 
+<<<<<<< HEAD
   /* line 1236, ../sass/main.scss */
+=======
+  /* line 1244, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireForm {
     width: calc(492px + 64px);
   }
 
+<<<<<<< HEAD
   /* line 1240, ../sass/main.scss */
+=======
+  /* line 1248, ../sass/main.scss */
+>>>>>>> origin/syncme
   .questionnaireForm select {
     width: calc(492px + 64px + 25px);
   }
 
+<<<<<<< HEAD
   /* line 1244, ../sass/main.scss */
+=======
+  /* line 1252, ../sass/main.scss */
+>>>>>>> origin/syncme
   .number {
     font-size: 3em;
   }
 }
 @media (min-width: 1140px) {
+<<<<<<< HEAD
   /* line 1250, ../sass/main.scss */
+=======
+  /* line 1258, ../sass/main.scss */
+>>>>>>> origin/syncme
   .tileContainer {
     display: inline-block;
     width: 310px;
@@ -5211,23 +5642,39 @@ textarea {
     overflow: auto;
   }
 
+<<<<<<< HEAD
   /* line 1259, ../sass/main.scss */
+=======
+  /* line 1267, ../sass/main.scss */
+>>>>>>> origin/syncme
   .leftCol > .tile:nth-child(even) {
     display: none;
   }
 
+<<<<<<< HEAD
   /* line 1263, ../sass/main.scss */
+=======
+  /* line 1271, ../sass/main.scss */
+>>>>>>> origin/syncme
   .rightCol > .tile:nth-child(odd) {
     display: none;
     margin-left: 0px;
   }
 
+<<<<<<< HEAD
   /* line 1268, ../sass/main.scss */
+=======
+  /* line 1276, ../sass/main.scss */
+>>>>>>> origin/syncme
   .rightCol > .tile:nth-child(even) {
     margin-left: 0px;
   }
 
+<<<<<<< HEAD
   /* line 1272, ../sass/main.scss */
+=======
+  /* line 1280, ../sass/main.scss */
+>>>>>>> origin/syncme
   .midImg {
     display: inline-block;
     width: 445px;
