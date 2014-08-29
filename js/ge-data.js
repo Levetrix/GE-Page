@@ -33,66 +33,70 @@ var flipFunction = function( e ) {
 		//console.log("new element height: "+ftIH);
 		//console.log("space to hold it: "+ttrIH);
 		flipTo.detach();
+		
+		console.log($(e.data.targetId).children());
+		var imageThing = null;
+		switch($element.attr("id")) {
+			case "AdvancedWritten-OralCommunication":
+				imageThing = "AdvancedWritten-OralCommunication";
+			break;
+			case "AmericanHeritage":
+				imageThing = "AmericanHeritage";
+			break;
+			case "Arts":
+				imageThing = "Arts";
+			break;
+			case "BiologicalScience":
+				imageThing = "BiologicalScience";
+			break;
+			case "Civilization1":
+				imageThing = "Civilization1";
+			break;
+			case "Civilization2":
+				imageThing = "Civilization2";
+			break;
+			case "First-YearWriting":
+				imageThing = "First-YearWriting";
+			break;
+			case "GlobalandCulturalAwareness":
+				imageThing = "GlobalandCulturalAwareness";
+			break;
+			case "LanguagesofLearning":
+				imageThing = "LanguagesofLearning";
+			break;
+			case "Letters":
+				imageThing = "Letters";
+			break;
+			case "PhysicalScience":
+				imageThing = "PhysicalScience";
+			break;
+			case "QuantitativeReasoning":
+				imageThing = "QuantitativeReasoning";
+			break;
+			case "Religion":
+				imageThing = "Religion";
+			break;
+			case "SocialScience":
+				imageThing = "SocialScience";
+			break;
+			default:
+				imageThing = "DefaultImg";
+			break;
+		}
+		if($(e.data.targetId).children().length > 1) {
+			$(e.data.targetId).children().last().children().first().attr("class","card-front").addClass($element.attr("id"));	//("<div>Hello world left!</div>");
+			$(".tier3Img .card-front").attr("class","card-front").addClass($element.attr("id"));
+		} else {
+			//$(e.data.targetId).parent().children().first().children().first().attr("class","card-front").addClass($element.attr("id")); //.html("<div>Hello world right!</div>");
+		}
+		
 		if( (ftIH <= ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) || ($(e.data.targetId).find(".flipcombined").length > 0 && ftIH > data.overflowElementHeight) ) {
 			//	Normal case - flip the tile like "normal"
 			//console.log("Case 1");
 			if($(e.data.targetId).find(".flipcombined").length == 0) {
 				flipTo.removeClass("flipcombined");
 			}
-			console.log($(e.data.targetId).children());
-			var imageThing = null;
-			switch($element.attr("id")) {
-				case "AdvancedWritten-OralCommunication":
-					imageThing = "AdvancedWritten-OralCommunication";
-				break;
-				case "AmericanHeritage":
-					imageThing = "AmericanHeritage";
-				break;
-				case "Arts":
-					imageThing = "Arts";
-				break;
-				case "BiologicalScience":
-					imageThing = "BiologicalScience";
-				break;
-				case "Civilization1":
-					imageThing = "Civilization1";
-				break;
-				case "Civilization2":
-					imageThing = "Civilization2";
-				break;
-				case "First-YearWriting":
-					imageThing = "First-YearWriting";
-				break;
-				case "GlobalandCulturalAwareness":
-					imageThing = "GlobalandCulturalAwareness";
-				break;
-				case "LanguagesofLearning":
-					imageThing = "LanguagesofLearning";
-				break;
-				case "Letters":
-					imageThing = "Letters";
-				break;
-				case "PhysicalScience":
-					imageThing = "PhysicalScience";
-				break;
-				case "QuantitativeReasoning":
-					imageThing = "QuantitativeReasoning";
-				break;
-				case "Religion":
-					imageThing = "Religion";
-				break;
-				case "SocialScience":
-					imageThing = "SocialScience";
-				break;
-				default:
-					imageThing = "myDefaultFancyClassNameForBackgroundImages";
-				break;
-			}
-			if($(e.data.targetId).children().length > 1) {
-				$(e.data.targetId).children().last().html("<div>Hello world left!</div>");
-			} else {
-				$(e.data.targetId).parent().children().first().html("<div>Hello world right!</div>");
-			}
+			
 			targetToReplace.animateReplace("flip",flipTo);
 		} else if( ftIH > ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) {
 			//	Secondary case where the tile is too large - AND there hasn't already been a larger tile flipped.

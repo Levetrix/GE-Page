@@ -755,6 +755,102 @@ h1, h2, h3, h4 {
 	z-index:5000;
 }
 
+.tier2Img .card-front {
+	&.AdvancedWritten-OralCommunication {
+		background-image:url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/portrait.jpg");
+	}
+	&.AmericanHeritage {
+		background-image:url("../img/IMAGES/American%20Heritage/portrait.jpg");
+	}
+	&.Arts {
+		background-image:url("../img/IMAGES/Arts/portrait.jpg");
+	}
+	&.BiologicalScience {
+		background-image:url("../img/IMAGES/Biological%20Sciences/portrait.jpg");
+	}
+	&.Civilization1 {
+		background-image:url("../img/IMAGES/Civ%201/portrait.jpg");
+	}
+	&.Civilization2 {
+		background-image:url("../img/IMAGES/Civ%202/portrait.jpg");
+	}
+	&.First-YearWriting {
+		background-image:url("../img/IMAGES/First%20Year%20Writing/portrait.jpg");
+	}
+	&.GlobalandCulturalAwareness {
+		background-image:url("../img/IMAGES/Global%20and%20Cultural%20Awareness/portrait.jpg");
+	}
+	&.LanguagesofLearning {
+		background-image:url("../img/IMAGES/Languages%20of%20Learning/portrait.jpg");
+	}
+	&.Letters {
+		background-image:url("../img/IMAGES/Letters/portrait.jpg");
+	}
+	&.PhysicalScience {
+		background-image:url("../img/IMAGES/Physical%20Science/portrait.jpg");
+	}
+	&.QuantitativeReasoning {
+		background-image:url("../img/IMAGES/Quantitative%20Reasoning/portrait.jpg");
+	}
+	&.Religion {
+		background-image:url("../img/IMAGES/Religion/portrait.jpg");
+	}
+	&.SocialScience {
+		background-image:url("../img/IMAGES/Social%20Science/portrait.jpg");
+	}
+	
+	
+}
+
+.tier3Img .card-front {
+	&.AdvancedWritten-OralCommunication {
+		background-image:url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/prop.jpg");
+	}
+	&.AmericanHeritage {
+		background-image:url("../img/IMAGES/American%20Heritage/prop.jpg");
+	}
+	&.Arts {
+		background-image:url("../img/IMAGES/Arts/prop.jpg");
+	}
+	&.BiologicalScience {
+		background-image:url("../img/IMAGES/Biological%20Sciences/prop.jpg");
+	}
+	&.Civilization1 {
+		background-image:url("../img/IMAGES/Civ%201/prop.jpg");
+	}
+	&.Civilization2 {
+		background-image:url("../img/IMAGES/Civ%202/prop.jpg");
+	}
+	&.First-YearWriting {
+		background-image:url("../img/IMAGES/First%20Year%20Writing/prop.jpg");
+	}
+	&.GlobalandCulturalAwareness {
+		background-image:url("../img/IMAGES/Global%20and%20Cultural%20Awareness/prop.jpg");
+	}
+	&.LanguagesofLearning {
+		background-image:url("../img/IMAGES/Languages%20of%20Learning/prop.jpg");
+	}
+	&.Letters {
+		background-image:url("../img/IMAGES/Letters/prop.jpg");
+	}
+	&.PhysicalScience {
+		background-image:url("../img/IMAGES/Physical%20Science/prop.jpg");
+	}
+	&.QuantitativeReasoning {
+		background-image:url("../img/IMAGES/Quantitative%20Reasoning/prop.jpg");
+	}
+	&.Religion {
+		background-image:url("../img/IMAGES/Religion/prop.jpg");
+	}
+	&.SocialScience {
+		background-image:url("../img/IMAGES/Social%20Science/prop.jpg");
+	}
+	
+	
+}
+
+
+
 /* ------------------------ */
 /* ------Contact Form------ */
 /* ------------------------ */
