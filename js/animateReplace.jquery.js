@@ -19,7 +19,7 @@ Animate and Replace (animateReplace for short)
 	// regularly referenced in your plugin).
 
 	var pluginName = 'animateReplace',
-		defaultDebug = true,
+		defaultDebug = false,
 		defaults = {
 			"do-debug":(defaultDebug)?["pre","init-data"]:false,
 			"timing-duration": 0.75
@@ -133,9 +133,9 @@ Animate and Replace (animateReplace for short)
 					methods['debug']( _this, "attr(id): "+$this.attr("id"), "flip");
 					if( (!data.options['anchor'] || data.options['anchor'].toLowerCase() !== "parent") && $this.attr("id") != "undefined" ) {
 						//	2
-						var anchor = $('<div style="display:inline-block;margin:0;padding:0;border:0"></div>').attr("id", "arparent-id"+$this.attr("id")).css("height",$this.outerHeight()+"px").css("max-height",$this.outerHeight()+"px").css("width",$this.outerWidth()+"px").css("max-width",$this.outerWidth()+"px");
-						anchor.css("height",$this.outerHeight());
-						anchor.css("width",$this.outerWidth());
+						var anchor = $('<div style="display:block;margin:0;padding:0;border:0"></div>').attr("id", "arparent-id"+$this.attr("id")).css("height",$this.height()+"px").css("max-height",$this.height()+"px").css("width",$this.width()+"px").css("max-width",$this.width()+"px");
+						anchor.css("height",$this.height());
+						anchor.css("width",$this.width());
 						anchor.insertAfter($this);
 						anchor.data($this.data());
 						anchor.append($this);
