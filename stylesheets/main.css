@@ -3856,7 +3856,7 @@ div {
 /* Card Flip CSS */
 /* line 82, ../sass/main.scss */
 .click-glow {
-  text-shadow: rgba(70, 70, 70, 0.5) 2px 2px 2px;
+  text-shadow: rgba(102, 102, 102, 0.45) 1px 1px 0px;
   font-wight: bold;
 }
 
@@ -4667,20 +4667,21 @@ h1, h2, h3, h4 {
 /* line 763, ../sass/main.scss */
 .tier3Info, .tier2Info {
   z-index: 5000;
+  overflow: hidden;
 }
 
-/* line 766, ../sass/main.scss */
+/* line 767, ../sass/main.scss */
 .tier2Info {
   position: relative;
 }
 
-/* line 769, ../sass/main.scss */
+/* line 770, ../sass/main.scss */
 .tier3Img, .tier2Img {
   position: relative;
   z-index: 0;
 }
 
-/* line 774, ../sass/main.scss */
+/* line 775, ../sass/main.scss */
 .boxshadow {
   -webkit-box-shadow: #999999 5px 1px 10px;
   -moz-box-shadow: #999999 5px 1px 10px;
@@ -4690,115 +4691,146 @@ h1, h2, h3, h4 {
 }
 
 /* line 781, ../sass/main.scss */
+.compass {
+  height: 354px;
+  width: 450px;
+  max-width: 500px;
+  margin-left: -95px;
+  margin-top: -67px;
+}
+
+/* line 789, ../sass/main.scss */
+.wegowhereyougo img {
+  min-height: 85%;
+  margin-top: 1.5em;
+}
+
+/* line 793, ../sass/main.scss */
+.ISLOGO, .wegowhereyougo {
+  width: 289px;
+  height: 354px;
+  max-width: 700px;
+  background-image: url(../img/TOPOGRAPHICcontour-map_1.svg);
+  position: relative;
+  top: -1rem;
+  left: -1rem;
+}
+
+/* line 804, ../sass/main.scss */
+.tier2Img .card-front {
+  overflow: hidden;
+}
+/* line 807, ../sass/main.scss */
 .tier2Img .card-front.AdvancedWritten-OralCommunication {
   background-image: url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/portrait.jpg");
 }
-/* line 784, ../sass/main.scss */
+/* line 810, ../sass/main.scss */
 .tier2Img .card-front.AmericanHeritage {
   background-image: url("../img/IMAGES/American%20Heritage/portrait.jpg");
 }
-/* line 787, ../sass/main.scss */
+/* line 813, ../sass/main.scss */
 .tier2Img .card-front.Arts {
   background-image: url("../img/IMAGES/Arts/portrait.jpg");
 }
-/* line 790, ../sass/main.scss */
+/* line 816, ../sass/main.scss */
 .tier2Img .card-front.BiologicalScience {
   background-image: url("../img/IMAGES/Biological%20Sciences/portrait.jpg");
+  background-position: center 30%;
 }
-/* line 793, ../sass/main.scss */
+/* line 820, ../sass/main.scss */
 .tier2Img .card-front.Civilization1 {
   background-image: url("../img/IMAGES/Civ%201/portrait.jpg");
 }
-/* line 796, ../sass/main.scss */
+/* line 823, ../sass/main.scss */
 .tier2Img .card-front.Civilization2 {
   background-image: url("../img/IMAGES/Civ%202/portrait.jpg");
 }
-/* line 799, ../sass/main.scss */
+/* line 826, ../sass/main.scss */
 .tier2Img .card-front.First-YearWriting {
   background-image: url("../img/IMAGES/First%20Year%20Writing/portrait.jpg");
 }
-/* line 802, ../sass/main.scss */
+/* line 829, ../sass/main.scss */
 .tier2Img .card-front.GlobalandCulturalAwareness {
   background-image: url("../img/IMAGES/Global%20and%20Cultural%20Awareness/portrait.jpg");
 }
-/* line 805, ../sass/main.scss */
+/* line 832, ../sass/main.scss */
 .tier2Img .card-front.LanguagesofLearning {
   background-image: url("../img/IMAGES/Languages%20of%20Learning/portrait.jpg");
 }
-/* line 808, ../sass/main.scss */
+/* line 835, ../sass/main.scss */
 .tier2Img .card-front.Letters {
   background-image: url("../img/IMAGES/Letters/portrait.jpg");
 }
-/* line 811, ../sass/main.scss */
+/* line 838, ../sass/main.scss */
 .tier2Img .card-front.PhysicalScience {
   background-image: url("../img/IMAGES/Physical%20Science/portrait.jpg");
 }
-/* line 814, ../sass/main.scss */
+/* line 841, ../sass/main.scss */
 .tier2Img .card-front.QuantitativeReasoning {
   background-image: url("../img/IMAGES/Quantitative%20Reasoning/portrait.jpg");
 }
-/* line 817, ../sass/main.scss */
+/* line 844, ../sass/main.scss */
 .tier2Img .card-front.Religion {
   background-image: url("../img/IMAGES/Religion/portrait.jpg");
 }
-/* line 820, ../sass/main.scss */
+/* line 847, ../sass/main.scss */
 .tier2Img .card-front.SocialScience {
   background-image: url("../img/IMAGES/Social%20Science/portrait.jpg");
 }
 
-/* line 828, ../sass/main.scss */
+/* line 855, ../sass/main.scss */
 .tier3Img .card-front.AdvancedWritten-OralCommunication {
   background-image: url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/prop.jpg");
 }
-/* line 831, ../sass/main.scss */
+/* line 858, ../sass/main.scss */
 .tier3Img .card-front.AmericanHeritage {
   background-image: url("../img/IMAGES/American%20Heritage/prop.jpg");
 }
-/* line 834, ../sass/main.scss */
+/* line 861, ../sass/main.scss */
 .tier3Img .card-front.Arts {
   background-image: url("../img/IMAGES/Arts/prop.jpg");
 }
-/* line 837, ../sass/main.scss */
+/* line 864, ../sass/main.scss */
 .tier3Img .card-front.BiologicalScience {
   background-image: url("../img/IMAGES/Biological%20Sciences/prop.jpg");
 }
-/* line 840, ../sass/main.scss */
+/* line 867, ../sass/main.scss */
 .tier3Img .card-front.Civilization1 {
   background-image: url("../img/IMAGES/Civ%201/prop.jpg");
 }
-/* line 843, ../sass/main.scss */
+/* line 870, ../sass/main.scss */
 .tier3Img .card-front.Civilization2 {
   background-image: url("../img/IMAGES/Civ%202/prop.jpg");
 }
-/* line 846, ../sass/main.scss */
+/* line 873, ../sass/main.scss */
 .tier3Img .card-front.First-YearWriting {
   background-image: url("../img/IMAGES/First%20Year%20Writing/prop.jpg");
 }
-/* line 849, ../sass/main.scss */
+/* line 876, ../sass/main.scss */
 .tier3Img .card-front.GlobalandCulturalAwareness {
   background-image: url("../img/IMAGES/Global%20and%20Cultural%20Awareness/prop.jpg");
 }
-/* line 852, ../sass/main.scss */
+/* line 879, ../sass/main.scss */
 .tier3Img .card-front.LanguagesofLearning {
   background-image: url("../img/IMAGES/Languages%20of%20Learning/prop.jpg");
 }
-/* line 855, ../sass/main.scss */
+/* line 882, ../sass/main.scss */
 .tier3Img .card-front.Letters {
   background-image: url("../img/IMAGES/Letters/prop.jpg");
 }
-/* line 858, ../sass/main.scss */
+/* line 885, ../sass/main.scss */
 .tier3Img .card-front.PhysicalScience {
   background-image: url("../img/IMAGES/Physical%20Science/prop.jpg");
 }
-/* line 861, ../sass/main.scss */
+/* line 888, ../sass/main.scss */
 .tier3Img .card-front.QuantitativeReasoning {
   background-image: url("../img/IMAGES/Quantitative%20Reasoning/prop.jpg");
 }
-/* line 864, ../sass/main.scss */
+/* line 891, ../sass/main.scss */
 .tier3Img .card-front.Religion {
   background-image: url("../img/IMAGES/Religion/prop.jpg");
 }
-/* line 867, ../sass/main.scss */
+/* line 894, ../sass/main.scss */
 .tier3Img .card-front.SocialScience {
   background-image: url("../img/IMAGES/Social%20Science/prop.jpg");
 }
@@ -4806,23 +4838,23 @@ h1, h2, h3, h4 {
 /* ------------------------ */
 /* ------Contact Form------ */
 /* ------------------------ */
-/* line 880, ../sass/main.scss */
+/* line 907, ../sass/main.scss */
 .contact {
   text-align: center;
   padding: 16px;
 }
 
-/* line 885, ../sass/main.scss */
+/* line 912, ../sass/main.scss */
 .contactTitle {
   display: inline-block;
 }
 
-/* line 889, ../sass/main.scss */
+/* line 916, ../sass/main.scss */
 .contactTitle h2 {
   font-size: 1.5em;
 }
 
-/* line 893, ../sass/main.scss */
+/* line 920, ../sass/main.scss */
 .contactQuarter {
   display: inline-block;
   width: 230px;
@@ -4830,19 +4862,19 @@ h1, h2, h3, h4 {
   margin: 8px 16px;
 }
 
-/* line 900, ../sass/main.scss */
+/* line 927, ../sass/main.scss */
 input {
   font-family: "OpenSansLt";
   font-size: .95em;
 }
 
-/* line 905, ../sass/main.scss */
+/* line 932, ../sass/main.scss */
 .contactAreaQuarter {
   width: 100%;
   height: 32px;
 }
 
-/* line 910, ../sass/main.scss */
+/* line 937, ../sass/main.scss */
 .contactHalf {
   display: inline-block;
   width: 230px;
@@ -4850,20 +4882,20 @@ input {
   margin: 8px 16px;
 }
 
-/* line 917, ../sass/main.scss */
+/* line 944, ../sass/main.scss */
 .contactAreaHalf {
   width: 100%;
   height: 32px;
 }
 
-/* line 922, ../sass/main.scss */
+/* line 949, ../sass/main.scss */
 textarea {
   font-family: "OpenSansLt";
   font-size: .95em;
   min-height: 48px;
 }
 
-/* line 928, ../sass/main.scss */
+/* line 955, ../sass/main.scss */
 .submitButton {
   padding-top: 7px;
   margin-top: 8px;
@@ -4872,13 +4904,13 @@ textarea {
   background-color: #66b9e3;
 }
 
-/* line 936, ../sass/main.scss */
+/* line 963, ../sass/main.scss */
 .submitButton:hover {
   cursor: pointer;
   background-color: rgba(102, 185, 227, 0.95);
 }
 
-/* line 941, ../sass/main.scss */
+/* line 968, ../sass/main.scss */
 .form-success {
   color: #fff;
 }
@@ -4887,94 +4919,94 @@ textarea {
 /*//// Media Queries////*/
 /*//////////////////////*/
 @media (min-width: 408px) {
-  /* line 952, ../sass/main.scss */
+  /* line 979, ../sass/main.scss */
   .coursesArea {
     height: 540px;
   }
 }
 @media (min-width: 577px) {
-  /* line 958, ../sass/main.scss */
+  /* line 985, ../sass/main.scss */
   .questionnaireH2 {
     margin-left: 0;
     font-size: 1.8em;
     text-align: center;
   }
 
-  /* line 964, ../sass/main.scss */
+  /* line 991, ../sass/main.scss */
   .questionnaireH2 > span {
     display: inline;
   }
 
-  /* line 968, ../sass/main.scss */
+  /* line 995, ../sass/main.scss */
   .questionnaireForm {
     width: calc(460px + 32px);
   }
 
-  /* line 973, ../sass/main.scss */
+  /* line 1000, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(460px + 32px + 25px);
   }
 
-  /* line 978, ../sass/main.scss */
+  /* line 1005, ../sass/main.scss */
   .contactTitle h2 {
     font-size: 1.8em;
   }
 
-  /* line 982, ../sass/main.scss */
+  /* line 1009, ../sass/main.scss */
   .contactHalf {
     width: calc(464px + 32px);
   }
 }
 @media (min-width: 665px) {
-  /* line 992, ../sass/main.scss */
+  /* line 1019, ../sass/main.scss */
   .tileInvis {
     display: inline-block;
   }
 
-  /* line 996, ../sass/main.scss */
+  /* line 1023, ../sass/main.scss */
   .tileContainer {
     max-width: 850px;
     min-height: 400px;
   }
 
-  /* line 1001, ../sass/main.scss */
+  /* line 1028, ../sass/main.scss */
   .tile {
     max-width: 280px;
     margin-bottom: 2.25em;
   }
 
-  /* line 1006, ../sass/main.scss */
+  /* line 1033, ../sass/main.scss */
   .tile:nth-child(even) {
     margin-left: 2.5em;
   }
 
-  /* line 1011, ../sass/main.scss */
+  /* line 1038, ../sass/main.scss */
   .tile:nth-child(even) > .h3Tile,
   .tile:nth-child(even) > .tileText {
     text-align: left;
   }
 
-  /* line 1016, ../sass/main.scss */
+  /* line 1043, ../sass/main.scss */
   .tile:nth-child(odd) > .h3Tile,
   .tile:nth-child(odd) > .tileText {
     text-align: right;
   }
 
-  /* line 1020, ../sass/main.scss */
+  /* line 1047, ../sass/main.scss */
   .tile:nth-child(odd) > .icon {
     float: right;
     margin-bottom: 3.5em;
     margin-left: .75em;
   }
 
-  /* line 1026, ../sass/main.scss */
+  /* line 1053, ../sass/main.scss */
   .tile:nth-child(even) > .icon {
     float: left;
     margin-bottom: 3em;
     margin-right: .75em;
   }
 
-  /* line 1038, ../sass/main.scss */
+  /* line 1065, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -4984,7 +5016,7 @@ textarea {
     background-color: rgba(100, 60, 60, 0.5);
   }
 
-  /* line 1047, ../sass/main.scss */
+  /* line 1074, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -4995,27 +5027,27 @@ textarea {
     vertical-align: top;
   }
 
-  /* line 1058, ../sass/main.scss */
+  /* line 1085, ../sass/main.scss */
   .mobi {
     display: none;
   }
 
-  /* line 1062, ../sass/main.scss */
+  /* line 1089, ../sass/main.scss */
   .coursesArea {
     height: 595px;
   }
 
-  /* line 1066, ../sass/main.scss */
+  /* line 1093, ../sass/main.scss */
   .tier2 {
     display: inline-block;
   }
 
-  /* line 1071, ../sass/main.scss */
+  /* line 1098, ../sass/main.scss */
   .tier3 {
     display: inline-block;
   }
 
-  /* line 1075, ../sass/main.scss */
+  /* line 1102, ../sass/main.scss */
   .tier1 {
     font-size: 1.1em;
     margin: 0;
@@ -5023,7 +5055,7 @@ textarea {
     padding-left: 1.05em;
   }
 
-  /* line 1082, ../sass/main.scss */
+  /* line 1109, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -5031,7 +5063,7 @@ textarea {
     margin-right: 11px;
   }
 
-  /* line 1089, ../sass/main.scss */
+  /* line 1116, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -5044,17 +5076,17 @@ textarea {
   }
 }
 @media (min-width: 716px) {
-  /* line 1102, ../sass/main.scss */
+  /* line 1129, ../sass/main.scss */
   .tile:nth-child(even) {
     margin-left: 4em;
   }
 
-  /* line 1106, ../sass/main.scss */
+  /* line 1133, ../sass/main.scss */
   .coursesArea {
     height: 645px;
   }
 
-  /* line 1110, ../sass/main.scss */
+  /* line 1137, ../sass/main.scss */
   .tier1 {
     font-size: 1.3em;
     margin: 0;
@@ -5062,7 +5094,7 @@ textarea {
     padding-left: 1em;
   }
 
-  /* line 1117, ../sass/main.scss */
+  /* line 1144, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -5070,7 +5102,7 @@ textarea {
     margin-right: 11px;
   }
 
-  /* line 1124, ../sass/main.scss */
+  /* line 1151, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -5082,27 +5114,27 @@ textarea {
   }
 }
 @media (min-width: 843px) {
-  /* line 1136, ../sass/main.scss */
+  /* line 1163, ../sass/main.scss */
   .facts {
     display: block;
   }
 
-  /* line 1140, ../sass/main.scss */
+  /* line 1167, ../sass/main.scss */
   .clincher {
     display: block;
   }
 
-  /* line 1144, ../sass/main.scss */
+  /* line 1171, ../sass/main.scss */
   .questionnaireForm {
     width: calc(462px + 64px);
   }
 
-  /* line 1148, ../sass/main.scss */
+  /* line 1175, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(462px + 64px + 25px);
   }
 
-  /* line 1152, ../sass/main.scss */
+  /* line 1179, ../sass/main.scss */
   .contactHalf {
     display: block;
     margin-right: auto;
@@ -5110,24 +5142,24 @@ textarea {
   }
 }
 @media (min-width: 870px) {
-  /* line 1160, ../sass/main.scss */
+  /* line 1187, ../sass/main.scss */
   .coursesArea {
     height: 585px;
   }
 }
 @media (min-width: 940px) {
-  /* line 1167, ../sass/main.scss */
+  /* line 1194, ../sass/main.scss */
   .tile {
     max-width: 375px;
     min-height: 100px;
   }
 
-  /* line 1176, ../sass/main.scss */
+  /* line 1203, ../sass/main.scss */
   .coursesArea {
     height: 775px;
   }
 
-  /* line 1180, ../sass/main.scss */
+  /* line 1207, ../sass/main.scss */
   .leftHalf {
     min-height: 100%;
     height: 100%;
@@ -5138,7 +5170,7 @@ textarea {
     vertical-align: top;
   }
 
-  /* line 1191, ../sass/main.scss */
+  /* line 1218, ../sass/main.scss */
   .tier1 {
     font-size: 1.5em;
     margin: 0;
@@ -5146,7 +5178,7 @@ textarea {
     padding-left: 1.15em;
   }
 
-  /* line 1198, ../sass/main.scss */
+  /* line 1225, ../sass/main.scss */
   .listi {
     display: block;
     line-height: 1.5em;
@@ -5154,7 +5186,7 @@ textarea {
     margin-right: 11px;
   }
 
-  /* line 1205, ../sass/main.scss */
+  /* line 1232, ../sass/main.scss */
   .listi:before {
     content: "\003E \020";
     font-family: "consolas";
@@ -5165,7 +5197,7 @@ textarea {
     margin-bottom: .1em;
   }
 
-  /* line 1215, ../sass/main.scss */
+  /* line 1242, ../sass/main.scss */
   .rightHalf {
     min-height: 100%;
     height: 100%;
@@ -5176,47 +5208,47 @@ textarea {
   }
 }
 @media (min-width: 978px) {
-  /* line 1227, ../sass/main.scss */
+  /* line 1254, ../sass/main.scss */
   .coursesArea {
     height: 740px;
   }
 }
 @media (min-width: 1073px) {
-  /* line 1233, ../sass/main.scss */
+  /* line 1260, ../sass/main.scss */
   .coursesArea {
     height: 708px;
   }
 
-  /* line 1237, ../sass/main.scss */
+  /* line 1264, ../sass/main.scss */
   .rightHalf {
     min-width: 577.6px;
     max-width: 577.6px;
   }
 }
 @media (min-width: 1109px) {
-  /* line 1246, ../sass/main.scss */
+  /* line 1273, ../sass/main.scss */
   .factItem {
     width: calc(230px);
     margin: 16px;
   }
 
-  /* line 1251, ../sass/main.scss */
+  /* line 1278, ../sass/main.scss */
   .questionnaireForm {
     width: calc(492px + 64px);
   }
 
-  /* line 1255, ../sass/main.scss */
+  /* line 1282, ../sass/main.scss */
   .questionnaireForm select {
     width: calc(492px + 64px + 25px);
   }
 
-  /* line 1259, ../sass/main.scss */
+  /* line 1286, ../sass/main.scss */
   .number {
     font-size: 3em;
   }
 }
 @media (min-width: 1140px) {
-  /* line 1265, ../sass/main.scss */
+  /* line 1292, ../sass/main.scss */
   .tileContainer {
     display: inline-block;
     width: 310px;
@@ -5226,23 +5258,23 @@ textarea {
     overflow: auto;
   }
 
-  /* line 1274, ../sass/main.scss */
+  /* line 1301, ../sass/main.scss */
   .leftCol > .tile:nth-child(even) {
     display: none;
   }
 
-  /* line 1278, ../sass/main.scss */
+  /* line 1305, ../sass/main.scss */
   .rightCol > .tile:nth-child(odd) {
     display: none;
     margin-left: 0px;
   }
 
-  /* line 1283, ../sass/main.scss */
+  /* line 1310, ../sass/main.scss */
   .rightCol > .tile:nth-child(even) {
     margin-left: 0px;
   }
 
-  /* line 1287, ../sass/main.scss */
+  /* line 1314, ../sass/main.scss */
   .midImg {
     display: inline-block;
     width: 445px;

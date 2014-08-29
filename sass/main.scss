@@ -80,7 +80,7 @@ div {
     /* Card Flip CSS */
 
 .click-glow {
-	@include text-shadow($default-text-shadow-color 2px 2px 2px );
+	@include text-shadow(rgba(#666,.45) 1px 1px 0px );
 	font-wight:bold;
 }
 
@@ -762,6 +762,7 @@ h1, h2, h3, h4 {
 
 .tier3Info, .tier2Info {
 	z-index:5000;
+	overflow:hidden;
 }
 .tier2Info {
 	position:relative;
@@ -777,7 +778,32 @@ h1, h2, h3, h4 {
 	z-index:5000;
 }
 
+.compass {
+	height:354px;
+	width:450px;
+	max-width:500px;
+	margin-left:-95px;
+	margin-top:-67px;
+	
+}
+.wegowhereyougo img {
+	min-height:85%;
+	margin-top:1.5em;
+}
+.ISLOGO, .wegowhereyougo {
+	width:289px;
+	height:354px;
+	max-width:700px;
+	background-image:url(../img/TOPOGRAPHICcontour-map_1.svg);
+	position:relative;
+	top:-1rem;
+	left:-1rem;
+	
+}
+
 .tier2Img .card-front {
+	overflow:hidden;
+	
 	&.AdvancedWritten-OralCommunication {
 		background-image:url("../img/IMAGES/Advanced%20Oral%20&%20Written%20Communication/portrait.jpg");
 	}
@@ -789,6 +815,7 @@ h1, h2, h3, h4 {
 	}
 	&.BiologicalScience {
 		background-image:url("../img/IMAGES/Biological%20Sciences/portrait.jpg");
+		background-position: center 30%;
 	}
 	&.Civilization1 {
 		background-image:url("../img/IMAGES/Civ%201/portrait.jpg");

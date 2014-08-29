@@ -33,7 +33,7 @@ var flipFunction = function( e ) {
 	} 
 	//console.log("click registered on "+$element.text());
 	$(".click-glow").removeClass("click-glow");
-	$element.parent().addClass("click-glow");
+	if($element[0].tagName.toLowerCase() != "li") $element.parent().addClass("click-glow");
 	if(targetToReplace) {
 		var ftIH = data.innerHeight, //flipTo.insertAfter(targetToReplace).innerHeight(),
 			ttrIH = targetToReplace.innerHeight()
@@ -232,7 +232,7 @@ $(document).ready(function() {
 				;
 				for(var i=0; i < geCourses[geCategory].length; i++) {
 					if(geCourses[geCategory][i]) {
-						var course = $('<li class="course-title-s">'+geCourses[geCategory][i]['course-title'].replace(/(\w)-(\d)/g,"$1 $2")+'</li> <li class="course-title-l"> '+(geCourses[geCategory][i]['title'].replace(/\s*\([^\)]+\)/g,"")).toTitleCase()+'</li>');
+						var course = $('<li class="course-title-s">'+geCourses[geCategory][i]['course-title'].replace(/(\w)-(\d)/g,"$1 $2")+'</li><li class="course-title-l"> '+(geCourses[geCategory][i]['title'].replace(/\s*\([^\)]+\)/g,"")).toTitleCase()+'</li>');
 						categoryParent.find("ul").append(course);
 						course.css("cursor","pointer");
 					}
