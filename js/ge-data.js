@@ -91,9 +91,18 @@ var flipFunction = function( e ) {
 			break;
 		}
 		if($(e.data.targetId).parent().attr("class") && $(e.data.targetId).parent().attr("class").indexOf("tier2") > -1) {
+			//	The click is a course (tier 2)
 			$(e.data.targetId).children().last().children().first().attr("class","card-front").addClass($element.attr("id"));	//("<div>Hello world left!</div>");
 			$(".tier3Img .card-front").attr("class","card-front").addClass($element.attr("id"));
+			console.log("Flip right tile:");
+			
+			console.log($(".tier3Info .card-front").first());
+			if($(".tier3Info .card-front").first()) {
+				$(".tier3Info .card-front").first().replaceWith($("body").data("ge-courses-element-3Info").clone(true));
+			}
 		} else {
+			//	The click is not a course.
+			//console.log($(".tier3Info .card-front").first().data());
 			//$(e.data.targetId).parent().children().first().children().first().attr("class","card-front").addClass($element.attr("id")); //.html("<div>Hello world right!</div>");
 		}
 		if( (ftIH <= ttrIH && $(e.data.targetId).find(".flipcombined").length == 0) || ($(e.data.targetId).find(".flipcombined").length > 0 && ftIH > data.overflowElementHeight) ) {
@@ -164,7 +173,8 @@ $(document).ready(function() {
 			//console.log(geDoubleCreditCourses);
 			//console.log(geDoubleCreditCourses[geCategory]);
 		}
-	};
+	}
+	$("body").data("ge-courses-element-3Info", $("#fliphandle-course .card-front").first().clone(true));
 	$.ajax({
 		url: "http://is.byu.edu/site/courses/catalogdata.json.cfm",
 		dataType: "json"
