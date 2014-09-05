@@ -33,31 +33,12 @@ $default-text-shadow-h-offset: 2px;
 $OpenSans: "OpenSans", "OpenSans_IE";
 $OpenSansLt: "OpenSansLt", "OpenSansLt_IE";
 
-@font-face {
-    font-family: "OpenSans";
-    src: url(../fonts/OpenSans-regular.ttf);
-}
+@include font-face("OpenSans", font-files("../../fonts/OpenSans-regular.ttf", "../fonts/OpenSans-regular.ttf", "../fonts/OpenSans-regular.ttf", "../fonts/OpenSans-regular.ttf"));
+@include font-face("OpenSansLt", font-files("../../fonts/opensans-light-webfont.ttf", "../fonts/opensans-light-webfont.woff", "../fonts/opensans-light-webfont.eot", "../fonts/opensans-light-webfont.svg"));
+@include font-face("OpenSansLt_IE", font-files("../../fonts/opensans-light-webfont.ttf", "../fonts/opensans-light-webfont.woff", "../fonts/opensans-light-webfont.eot", "../fonts/opensans-light-webfont.svg"));
+@include font-face("OpenSansLtCn", font-files("../fonts/OpenSans-CondLight.ttf", "examples/bgrove.otf"));
+@include font-face("OpenSans_IE", font-files("../fonts/opensans-regular-webfont.eot", "examples/bgrove.otf"));
 
-@font-face {
-    font-family: "OpenSansLt";
-    src: url(../fonts/opensans-light-webfont.woff);
-}
-
-
-@font-face {
-    font-family: "OpenSansLtCn";
-    src: url(../fonts/OpenSans-CondLight.ttf);
-}
-
-@font-face{
-font-family: "OpenSans_IE";
-src: url(../fonts/opensans-regular-webfont.eot);
-}
-
-@font-face{
-font-family: "OpenSansLt_IE";
-src: url(../fonts/opensans-light-webfont.eot);
-}
 
 
 html, body {
@@ -344,6 +325,7 @@ h1, h2, h3, h4 {
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:24px;
+	margin-top:2em;
 	text-align:center;
 }
 
@@ -1165,7 +1147,7 @@ textarea {
 	}
 	
 	.clincher {
-	   display:block;
+	   display:inline-block;
 	}
 	
 	.questionnaireForm {
