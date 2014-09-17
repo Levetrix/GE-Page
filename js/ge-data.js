@@ -189,7 +189,7 @@ $(document).ready(function() {
 			dataType: "json"
 		}).done(function( data, textStatus ) {
 			//console.log(data);
-			console.log($("#BiologicalScience"));
+			//console.log($("#BiologicalScience"));
 			var geXref = data;
 			for(var key in geXref) {
 				geCourses[key] = [];
