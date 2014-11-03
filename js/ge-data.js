@@ -176,7 +176,7 @@ $(document).ready(function() {
 	}
 	$("body").data("ge-courses-element-3Info", $("#fliphandle-course .card-front").first().clone(true));
 	$.ajax({
-		url: "http://is.byu.edu/site/courses/catalogdata.json.cfm",
+		url: window.location.protocol + "//is.byu.edu/site/courses/catalogdata.json.cfm",
 		dataType: "json"
 	}).done(function( data, textStatus ) {
 		//console.log(data);
