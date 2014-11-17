@@ -30,12 +30,11 @@ $default-text-shadow-h-offset: 2px;
 $OpenSans: "OpenSans", "OpenSans_IE";
 $OpenSansLt: "OpenSansLt", "OpenSansLt_IE";
 
-@include font-face("OpenSans", font-files("//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "../../fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf"));
+@include font-face("OpenSans", font-files("//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf"));
 @include font-face("OpenSansLt", font-files("//is.byu.edu/site/resources/fonts/opensans-light-webfont.ttf", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.woff", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.eot", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.svg"));
 @include font-face("OpenSansLt_IE", font-files("//is.byu.edu/site/resources/fonts/opensans-light-webfont.ttf", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.woff", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.eot", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.svg"));
 @include font-face("OpenSansLtCn", font-files("//is.byu.edu/site/resources/fonts/OpenSans-CondLight.ttf", "examples/bgrove.otf"));
 @include font-face("OpenSans_IE", font-files("//is.byu.edu/site/resources/fonts/opensans-regular-webfont.eot", "examples/bgrove.otf"));
-
 
 
 html, body {
